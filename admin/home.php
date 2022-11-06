@@ -3,7 +3,7 @@
     /**
      * Realizando o require_once com o arquivo para acesso ao banco de dados
      */
-    require_once '../php_action/db_connect.php';
+    require_once 'php_action/db_connect.php';
 
     /**
      * Iniciando a sessão
@@ -52,8 +52,9 @@
 
     <nav class="admin-nav">
         <ul class="admin-nav-list">
-            <li class="admin-nav-item"><a href="#">Usuários</a></li>
-            <li class="admin-nav-item"><a href="#">Colaboradores</a></li>
+            <li class="admin-nav-item"><a href="pages/users-list.php">Usuários</a></li>
+            <li class="admin-nav-item"><a href="pages/colab-list.php">Colaboradores</a></li>
+            <li class="admin-nav-item"><a href="pages/catend-list.php">Catálogo de Endereços</a></li>
             <li class="admin-nav-item"><a href="#">Reserva de Salas</a></li>
             <li class="admin-nav-item"><a href="#">Unidades</a></li>
             <li class="admin-nav-item"><a href="#">Tutoriais</a></li>

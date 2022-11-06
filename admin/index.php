@@ -1,6 +1,6 @@
 <?php 
 /*Conexão */
-require_once '../php_action/db_connect.php';
+require_once 'php_action/db_connect.php';
 
 // Sessão -> Trabalhou com sessões, precisa usar o session-start
 session_start();
