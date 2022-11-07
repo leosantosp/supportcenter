@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* DEFININDO VARIÁVEIS DE CSS */
+/* Primary Colors */
+/* Auxiliary Colors */
+/* White/Black Colors */
+/* Gradient Colors */
+/* Todos os títulos utilizarão a fonte 'Ubuntu' */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Todos os parágrafos / listas / tabelas / links utilizarão a fonte 'Roboto' */
+p, li, span, a, th, td {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn-primary-blue {
+  -webkit-box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  font-size: 1em;
+  background-color: linear-gradient(90deg, #18336A 28.98%, #2A54AA 77.76%);
+}
+
+.btn-primary-blue:hover {
+  background-color: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
+}
+
+.btn-secondary-blue {
+  -webkit-box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  font-size: 1em;
+  background-color: #EBEEF3;
+  border: 1px solid linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
+}
+
+.btn-secondary-blue:hover {
+  background-color: linear-gradient(90deg, #18336A 28.98%, #2A54AA 77.76%);
+}
+
+.btn-excel {
+  background-color: #1d9637;
+  padding: 8px 6px;
+  border-radius: 8px;
+  width: 75px;
+  height: 75px;
+}
+
+.btn-excel:hover {
+  background-color: #32D957;
+}
+
+input, select, textarea {
+  background-color: #EBEEF3;
+  border-radius: 16px;
+}
+
+.form-success {
+  border: 2.5px solid #32D957;
+}
+
+.form-error {
+  border: 2.5px solid #F93B3B;
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 2.5px solid linear-gradient(90deg, #18336A 28.98%, #2A54AA 77.76%);
+}
+
+option:hover {
+  background-color: #CFD5E3;
+}
+/*# sourceMappingURL=style.css.map */

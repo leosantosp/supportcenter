@@ -1,0 +1,108 @@
+/* DEFININDO VARIÁVEIS DE CSS */
+
+/* Primary Colors */
+$blue: #18336A;
+$blue-light: #214692;
+$blue-dark: #11244B;
+$gray: #C4C4C4;
+$gray-light: #D9D9D9;
+$gray-dark: #A6A6A6;
+
+/* Auxiliary Colors */
+$red: #F93B3B;
+$red-light: #FA5757;
+$red-dark: #F82121;
+$green: #32D957;
+$green-light: #4FDE6E;
+$green-dark: #1d9637;
+$yellow: #FFCE52;
+$yellow-light: #FFD875;
+$yellow-dark: #FFC42E;
+
+/* White/Black Colors */
+$white: #EBEEF3;
+$white-light: #F9F9FB;
+$white-dark: #CFD5E3;
+$black: #2B2B2B;
+$black-light: #3B3B3B;
+$black-dark: #1A1A1A;
+
+/* Gradient Colors */
+$gradient-blue: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
+$gradient-blue-light: linear-gradient(90deg, #18336A 28.98%, #2A54AA 77.76%);
+
+/* Todos os títulos utilizarão a fonte 'Ubuntu' */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Todos os parágrafos / listas / tabelas / links utilizarão a fonte 'Roboto' */
+p, li, span, a, th, td {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn-primary-blue {
+    box-shadow: 0px 4px 25px -10px rgba(0,0,0,.5);
+    border-radius: 16px;
+    font-size: 1em;
+    background-color: $gradient-blue-light;
+
+    &:hover {
+        background-color: $gradient-blue;
+    }
+}
+
+.btn-secondary-blue {
+    box-shadow: 0px 4px 25px -10px rgba(0,0,0,.5);
+    border-radius: 16px;
+    font-size: 1em;
+    background-color: $white;
+    border: 1px solid $gradient-blue;
+
+    &:hover {
+        background-color: $gradient-blue-light;
+    }
+}
+
+.btn-excel {
+    background-color: $green-dark;
+    padding: 8px 6px;
+    border-radius: 8px;
+    width: 75px;
+    height: 75px;
+
+    &:hover {
+        background-color: $green;
+    }
+}
+
+input, select, textarea {
+    background-color: $white;
+    border-radius: 16px;
+}
+
+.form-success {
+    border: 2.5px solid $green;
+}
+
+.form-error {
+    border: 2.5px solid $red;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 2.5px solid $gradient-blue-light;
+}
+
+option:hover {
+    background-color: $white-dark;
+}
+

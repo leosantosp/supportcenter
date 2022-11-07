@@ -69,7 +69,7 @@
 
                 <div class="form-group mt-3">
                     <button type="submit" name="btn-atualizar" class="btn btn-success">ATUALIZAR</button>
-                    <a href="../home.php" class="btn btn-primary">VOLTAR</a>
+                    <a href="catend-list.php" class="btn btn-primary">VOLTAR</a>
                 </div>
             </form>
 

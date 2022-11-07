@@ -14,7 +14,9 @@
     <div class="row no-gutters mt-4">
         <div class="col-12 col-md-8 offset-md-2">
             <h3 class="text-center">CENTRAL DE SUPORTE | Lista de Contatos Internos</h3>
-            <table class="table">
+            <a class="btn-excel" href="includes/colab-excel.php"><img src="assets/images/icon-excel.svg" alt="Baixar catálogo de endereços atualizado"></a>
+
+            <table id="ramalList" class="table">
                 <thead class="thead-dark">
                     <tr>
                         <th>Unidade</th>
@@ -22,6 +24,13 @@
                         <th>Nome</th>
                         <th>E-mail</th>
                         <th>Ramal</th>
+                    </tr>
+                    <tr>
+                        <th><input class="form-control" id="srcCompany" type="text"></th>
+                        <th><input class="form-control" id="srcDepartment" type="text"></th>
+                        <th><input class="form-control" id="srcName" type="text"></th>
+                        <th><input class="form-control" id="srcEmail" type="text"></th>
+                        <th><input class="form-control" id="srcRamal" type="text"></th>
                     </tr>
                 </thead>
 
@@ -38,7 +47,7 @@
                         while($dados = mysqli_fetch_array($resultado)):
                     ?>
                     <tr>
-                        <td><?php echo $dados['unity']; ?></td>
+                        <td><?php echo $dados['company']; ?></td>
                         <td><?php echo $dados['department']; ?></td>
                         <td><?php echo $dados['fullname']; ?></td>
                         <td><?php echo $dados['email']; ?></td>
@@ -61,10 +70,8 @@
                 </tbody>
             </table>
 
-            <a href="colab-excel.php">Baixar catálogo de endereços</a>
         </div>
     </div>
-
 
 <?php 
 

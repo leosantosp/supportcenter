@@ -5,7 +5,7 @@ session_start(); // Session start
 // Limpar o buffer
 ob_start();
 
-include_once('admin/php_action/db_connect.php');
+include_once('../admin/php_action/db_connect.php');
 
 
 $query_usuarios = "SELECT tratamento, empresa, cargo, email FROM catalogoenderecos ORDER BY id DESC";

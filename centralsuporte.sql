@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Nov-2022 às 19:07
--- Versão do servidor: 10.4.17-MariaDB
--- versão do PHP: 8.0.0
+-- Tempo de geração: 07-Nov-2022 às 21:57
+-- Versão do servidor: 10.4.18-MariaDB
+-- versão do PHP: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -77,48 +77,45 @@ INSERT INTO `colaboradores` (`id`, `fullname`, `department`, `email`, `phone`, `
 
 CREATE TABLE `companys` (
   `id` int(11) NOT NULL,
-  `compnumber` int(11) NOT NULL,
-  `cnpj` varchar(20) NOT NULL,
-  `phone` varchar(15) NOT NULL,
+  `compnumber` varchar(20) NOT NULL,
+  `compname` varchar(100) NOT NULL,
+  `cnpj` varchar(25) NOT NULL,
+  `phone` varchar(20) NOT NULL,
   `address` varchar(255) NOT NULL,
-  `gestor` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `manager` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `meetings`
+-- Estrutura da tabela `ntlocation`
 --
 
-CREATE TABLE `meetings` (
+CREATE TABLE `ntlocation` (
   `id` int(11) NOT NULL,
-  `title` varchar(255) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `guests` varchar(500) DEFAULT NULL,
-  `link` varchar(255) DEFAULT NULL,
-  `room` varchar(100) NOT NULL,
-  `start` datetime NOT NULL,
-  `end` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `patrimony` int(5) NOT NULL,
+  `withdraw` date NOT NULL,
+  `devolution` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `ouvidoria`
+-- Estrutura da tabela `ombudsman`
 --
 
-CREATE TABLE `ouvidoria` (
+CREATE TABLE `ombudsman` (
   `id` int(11) NOT NULL,
-  `filial` varchar(3) NOT NULL,
-  `department` varchar(25) NOT NULL,
+  `company` varchar(12) NOT NULL,
+  `department` varchar(50) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `ramal` int(15) NOT NULL,
+  `phone` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `setor` varchar(255) NOT NULL,
-  `type` varchar(15) NOT NULL,
+  `sector` varchar(100) NOT NULL,
+  `notification` varchar(100) NOT NULL,
   `report` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -130,28 +127,21 @@ CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `login` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `profile` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `password` varchar(32) NOT NULL,
+  `profile` varchar(255) DEFAULT 'user'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `username`, `login`, `password`, `email`, `profile`) VALUES
-(1, 'Leonardo Santos', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'leonardo.santos@vipextransportes.com.br', 'admin'),
-(3, 'Francisco Alves', 'francisco.alves', 'c9d0f88705406a124fe0e2f3dd63445d', 'francisco.alves@vipextransportes.com.br', 'admin');
+INSERT INTO `usuarios` (`id`, `username`, `login`, `email`, `password`, `profile`) VALUES
+(1, 'Administrador', 'admin', 'leonardo.santos@vipextransportes.com.br', '21232f297a57a5a743894a0e4a801fc3', 'admin');
 
 --
 -- Índices para tabelas despejadas
 --
-
---
--- Índices para tabela `catalogoenderecos`
---
-ALTER TABLE `catalogoenderecos`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices para tabela `colaboradores`
@@ -166,15 +156,15 @@ ALTER TABLE `companys`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `meetings`
+-- Índices para tabela `ntlocation`
 --
-ALTER TABLE `meetings`
+ALTER TABLE `ntlocation`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `ouvidoria`
+-- Índices para tabela `ombudsman`
 --
-ALTER TABLE `ouvidoria`
+ALTER TABLE `ombudsman`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -188,40 +178,34 @@ ALTER TABLE `usuarios`
 --
 
 --
--- AUTO_INCREMENT de tabela `catalogoenderecos`
---
-ALTER TABLE `catalogoenderecos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT de tabela `colaboradores`
 --
 ALTER TABLE `colaboradores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `companys`
 --
 ALTER TABLE `companys`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de tabela `ntlocation`
+--
+ALTER TABLE `ntlocation`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `meetings`
+-- AUTO_INCREMENT de tabela `ombudsman`
 --
-ALTER TABLE `meetings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `ouvidoria`
---
-ALTER TABLE `ouvidoria`
+ALTER TABLE `ombudsman`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

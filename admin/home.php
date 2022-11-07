@@ -56,7 +56,7 @@
             <li class="admin-nav-item"><a href="pages/colab-list.php">Colaboradores</a></li>
             <li class="admin-nav-item"><a href="pages/catend-list.php">Catálogo de Endereços</a></li>
             <li class="admin-nav-item"><a href="#">Reserva de Salas</a></li>
-            <li class="admin-nav-item"><a href="#">Unidades</a></li>
+            <li class="admin-nav-item"><a href="pages/company-list.php">Unidades</a></li>
             <li class="admin-nav-item"><a href="#">Tutoriais</a></li>
             <li class="admin-nav-item"><a href="#">Erros do Sintra</a></li>
             <li class="admin-nav-item"><a href="#">Ouvidoria</a></li>

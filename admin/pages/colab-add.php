@@ -83,7 +83,7 @@
 
                 <div class="form-group mt-3">
                     <button type="submit" name="btn-cadastrar" class="btn btn-success">Cadastrar</button>
-                    <a href="home.php" class="btn btn-primary">Voltar</a>
+                    <a href="colab-list.php" class="btn btn-primary">Voltar</a>
                 </div>
             </form>
 
