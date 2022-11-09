@@ -10,8 +10,9 @@
         $cargo = mysqli_escape_string($connect, $_POST['empresa']);
         $email = mysqli_escape_string($connect, $_POST['email']);
         $senha = mysqli_escape_string($connect, $_POST['senha']);
+        $id = mysqli_escape_string($connect, $_POST['id']);
 
-        $sql = "UPDATE catalogoenderecos SET tratamento = '$tratamento', empresa = '$empresa', cargo = '$cargo', email = '$email', senha = '$senha'";
+        $sql = "UPDATE catalogoenderecos SET tratamento = '$tratamento', empresa = '$empresa', cargo = '$cargo', email = '$email', senha = '$senha' WHERE id = '$id'";
 
         if(mysqli_query($connect, $sql)){
             $_SESSION['mensagem'] = "<div class='alert alert-success'>Atualizado com sucesso!</div>";

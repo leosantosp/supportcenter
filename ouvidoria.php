@@ -1,5 +1,11 @@
 <?php
 
+    session_start();
+        if(isset($_SESSION['mensagem'])){
+            echo $_SESSION['mensagem'];
+        }
+    session_unset();
+
     include_once 'includes/header.php'; // Inclua o arquivo header.php 
 
 ?>
@@ -47,7 +53,7 @@
 
                 <div class="form-group">
                     <label for="name">Nome</label>
-                    <input class="form-control" type="text" name="name" id="name">
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Deixe vazio para Anônimo">
                 </div>
 
                 <div class="form-group">

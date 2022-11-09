@@ -15,13 +15,20 @@
         $notification = mysqli_escape_string($connect, $_POST['notification']);
         $report = mysqli_escape_string($connect, $_POST['report']);
 
+        if($name == "" && $phone == "" && $email == "" && $sector == ""){
+            $name = "Anônimo";
+            $phone = "Anônimo";
+            $email = "Anônimo";
+            $sector = "Anônimo";
+        }
+
         $sql = "INSERT INTO ombudsman (company, department, name, phone, email, sector, notification, report) VALUES ('$company', '$department', '$name', '$phone', '$email', '$sector', '$notification', '$report')";
 
         if(mysqli_query($connect, $sql)){
             $_SESSION['mensagem'] = "<div class='alert alert-success'>Ação executada com sucesso!</div>";
-            header('Location: ../pages/ouvid-list.php');
+            header('Location: ../../ouvidoria.php');
         } else {
             $_SESSION['mensagem'] = "<div class='alert alert-danger'>Ação não executada</div>";
-            header('Location: ../pages/ouvid-list.php');
+            header('Location: ../../ouvidoria.php');
         }
     }

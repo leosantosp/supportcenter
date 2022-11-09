@@ -57,12 +57,14 @@
             <li class="admin-nav-item"><a href="pages/catend-list.php">Catálogo de Endereços</a></li>
             <li class="admin-nav-item"><a href="#">Reserva de Salas</a></li>
             <li class="admin-nav-item"><a href="pages/company-list.php">Unidades</a></li>
-            <li class="admin-nav-item"><a href="#">Tutoriais</a></li>
-            <li class="admin-nav-item"><a href="#">Erros do Sintra</a></li>
-            <li class="admin-nav-item"><a href="#">Ouvidoria</a></li>
+            <li class="admin-nav-item"><a href="pages/tutorials-list.php">Tutoriais</a></li>
+            <li class="admin-nav-item"><a href="pages/errors-list.php">Erros do Sintra</a></li>
+            <li class="admin-nav-item"><a href="pages/ouvid-list.php">Ouvidoria</a></li>
             <li class="admin-nav-item">
                 <a href="logout.php">
-                    <button class="btn btn-secondary">LOGOUT</button>
+                    <button class="btn btn-secondary">
+                        <img src="assets/images/icon-logout.svg" alt="">
+                    </button>
                 </a>
             </li>
         </ul>
