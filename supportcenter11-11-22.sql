@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Nov-2022 às 21:57
+-- Tempo de geração: 11-Nov-2022 às 22:04
 -- Versão do servidor: 10.4.18-MariaDB
 -- versão do PHP: 8.0.3
 
@@ -88,6 +88,19 @@ CREATE TABLE `companys` (
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `errors`
+--
+
+CREATE TABLE `errors` (
+  `id` int(11) NOT NULL,
+  `status` varchar(25) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `solution` varchar(600) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `ntlocation`
 --
 
@@ -110,11 +123,63 @@ CREATE TABLE `ombudsman` (
   `company` varchar(12) NOT NULL,
   `department` varchar(50) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `phone` int(11) NOT NULL,
+  `phone` varchar(7) NOT NULL,
   `email` varchar(255) NOT NULL,
   `sector` varchar(100) NOT NULL,
   `notification` varchar(100) NOT NULL,
   `report` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `ombudsman`
+--
+
+INSERT INTO `ombudsman` (`id`, `company`, `department`, `name`, `phone`, `email`, `sector`, `notification`, `report`) VALUES
+(1, 'GRU', 'ADM - TI', 'Anônimo', 'Anônimo', 'Anônimo', 'Anônimo', 'Sugestão', 'Teste teste\r\n'),
+(2, 'GRU', 'ADM - TI', 'Anônimo', 'Anônimo', 'Anônimo', 'Anônimo', 'Sugestão', 'Teste teste\r\n');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `reservations`
+--
+
+CREATE TABLE `reservations` (
+  `id` int(11) NOT NULL,
+  `title` varchar(220) NOT NULL,
+  `host` varchar(100) NOT NULL,
+  `hostid` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `guests` varchar(600) DEFAULT NULL,
+  `room` varchar(35) NOT NULL,
+  `start` datetime NOT NULL,
+  `end` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `reservations`
+--
+
+INSERT INTO `reservations` (`id`, `title`, `host`, `hostid`, `email`, `guests`, `room`, `start`, `end`) VALUES
+(11, 'Teste', 'Teste da Silva', 0, 'teste@vipextransportes.com.br', 'pietro.cativelli@vipextransportes.com.br', 'VUC', '2022-11-11 08:00:00', '2022-11-11 09:00:00'),
+(12, 'teste', 'teste', 0, 'leonardo.santos@vipextransportes.com.br', 'francisco.alves@vipextransportes.com.br', 'Toco', '2022-11-11 08:00:00', '2022-11-11 09:00:00'),
+(14, 'teste', 'Teste da Silva', 0, 'teste@vipextransportes.com.br', 'pietro.cativelli@vipextransportes.com.br', 'Carreta', '2022-11-11 12:00:00', '2022-11-11 13:00:00'),
+(15, 'teste', 'teste', 0, 'teste@vipextransportes.com.br', 'pietro.cativelli@vipextransportes.com.br', 'VUC', '2022-11-11 12:00:00', '2022-11-11 13:00:00'),
+(16, 'teste', 'Teste da Silva', 0, 'teste@vipextransportes.com.br', 'sidnei.oliveira@vipextransportes.com.br', 'Toco', '2022-11-11 13:00:00', '2022-11-11 15:00:00'),
+(17, 'TESTE', 'Teste da Silva', 1, 'teste@vipextransportes.com.br', 'pietro.cativelli@vipextransportes.com.br', 'VUC', '2022-11-11 16:00:00', '2022-11-11 18:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tutoriais`
+--
+
+CREATE TABLE `tutoriais` (
+  `id` int(11) NOT NULL,
+  `class` varchar(100) NOT NULL,
+  `title` varchar(220) NOT NULL,
+  `description` varchar(600) NOT NULL,
+  `file` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -156,6 +221,12 @@ ALTER TABLE `companys`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `errors`
+--
+ALTER TABLE `errors`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices para tabela `ntlocation`
 --
 ALTER TABLE `ntlocation`
@@ -165,6 +236,18 @@ ALTER TABLE `ntlocation`
 -- Índices para tabela `ombudsman`
 --
 ALTER TABLE `ombudsman`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `reservations`
+--
+ALTER TABLE `reservations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `tutoriais`
+--
+ALTER TABLE `tutoriais`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -190,6 +273,12 @@ ALTER TABLE `companys`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT de tabela `errors`
+--
+ALTER TABLE `errors`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de tabela `ntlocation`
 --
 ALTER TABLE `ntlocation`
@@ -199,7 +288,19 @@ ALTER TABLE `ntlocation`
 -- AUTO_INCREMENT de tabela `ombudsman`
 --
 ALTER TABLE `ombudsman`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de tabela `reservations`
+--
+ALTER TABLE `reservations`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT de tabela `tutoriais`
+--
+ALTER TABLE `tutoriais`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
