@@ -66,4 +66,9 @@ body#login-page {
 #login .alert-warning-login {
   margin-top: 32px;
 }
+
+input[type="radio"]:checked + label {
+  background: red;
+  color: #FFF;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,102 @@
+body {
+    margin: 25px 25px;
+    text-decoration: none;
+    color: #2B2B2B !important;
+}
+
+#calendar {
+    padding: 0 75px;
+}
+
+.p-warning {
+    color: #FF0000;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.fc-daygrid-event {
+    color: #2B2B2B !important; 
+}
+
+.fc-daygrid-event-harness {
+    background-color: #2B2B2B;
+    color: #2B2B2B !important;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+
+    &:hover {
+    color: #2B2B2B;
+    }
+}
+
+
+.fc-daygrid-event-dot, .fc-event-time, .fc-event-title {
+    color: #FFF !important;
+}
+
+.fc-col-header-cell-cushion {
+    text-decoration: none;
+    color: #2b2b85;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fc-toolbar-title {
+    text-transform: uppercase;
+    color: #2b2b85;
+    font-weight: bold;
+
+}
+
+.fc-daygrid-day-number {
+    text-decoration: none;
+    color: #2B2B2B;
+    font-weight: bold;
+}
+
+.div-logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 250px;
+}
+
+a.fc-daygrid-event.fc-daygrid-dot-event.fc-event.fc-event-start.fc-event-end.fc-event-future {
+    position: relative;
+    overflow: hidden;
+
+    >div:not(.fc-daygrid-event-dot){
+        z-index: 1;
+    }
+
+    .fc-event-time {
+        padding-left: 5px;
+        font-weight: bold;
+    }
+
+    .fc-event-title {
+        font-weight: normal;
+    }
+
+    .fc-daygrid-event-dot {
+        position: absolute;
+        border-width: 1000px;
+        left: -500px;
+    }
+
+}
+
+.visualizar {
+    display: block;
+}
+
+.form  {
+    display: none;
+}

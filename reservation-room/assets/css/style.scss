@@ -71,3 +71,8 @@ body#login-page {
         margin-top: 32px;
     }
 }
+
+input[type="radio"]:checked + label{
+    background: red;
+    color: #FFF;
+}
