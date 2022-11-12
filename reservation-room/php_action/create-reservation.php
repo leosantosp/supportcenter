@@ -1,5 +1,7 @@
 <?php
 
+    date_default_timezone_set('America/Sao_Paulo');
+
     session_start();
 
     require_once 'db_connect.php';
@@ -22,6 +24,7 @@
         $email = mysqli_escape_string($connect, $_POST['email']);
         $guests = mysqli_escape_string($connect, $_POST['guests']);
         $room = mysqli_escape_string($connect, $_POST['rooms']);
+        $guests_conv = str_replace(',', ';', $guests);
             
         $data_start = str_replace('/', '-', $_POST['start']);
         $data_start_conv = date("Y-m-d H:i:s", strtotime($data_start));
@@ -36,18 +39,19 @@
         $resultDate = mysqli_fetch_array($verifyDate);
 
         if(!empty($resultDate)){
-            $_SESSION['mensagem'] = "<div class='alert alert-danger'>ERRO: Reserva não realizada! Data e Hora não disponíveis</div>" ;
-            header("Location: ../home.php");
+            $retorna = ['sit' => false, 'msg' => '<div class="alert alert-danger" role="alert">ERRO: RESERVA NÃO REALIZADA! DATA E HORA NÃO DISPONÍVEL</div>'];
+            
+            header('Content-Type: application/json');
+            echo json_encode($retorna);
 
             exit;
         }
 
-        $sql = "INSERT INTO reservations (title, host, hostid, email, guests, room, start, end) VALUES ('$title', '$host', '$hostid', '$email', '$guests', '$room', '$data_start_conv', '$data_end_conv')";
+        $sql = "INSERT INTO reservations (title, host, hostid, email, guests, room, start, end) VALUES ('$title', '$host', '$hostid', '$email', '$guests_conv', '$room', '$data_start_conv', '$data_end_conv')";
         
         if(mysqli_query($connect, $sql)){
-            $_SESSION['mensagem'] = "<div class='alert alert-success'>Ação executada com sucesso!</div>" ;
-            
-            
+            $retorna = ['sit' => true, 'msg' => '<div class="alert alert-success" role="alert">SUCESSO: RESERVA REALIZADA COM SUCESSO!</div>'];
+            $_SESSION['msg'] = '<div class="alert alert-success" role="alert">SUCESSO: RESERVA REALIZADA COM SUCESSO!</div>';
 
             // $emailBody = "
             //     <html>
@@ -87,10 +91,9 @@
             //     echo "Erro: ".$mail->ErrorInfo;
             // }
             
-            header("Location: ../home.php");
+
         } else{
-            $_SESSION['mensagem'] = "<div class='alert alert-danger'>Ação não executada</div>";
-            header("Location: ../home.php");
+            $retorna = ['sit' => false, 'msg' => '<div class="alert alert-danger" role="alert">ERRO: RESERVA NÃO REALIZADA! VERIFIQUE OS CAMPOS E PREENCHA NOVAMENTE</div>'];
         }
 
 

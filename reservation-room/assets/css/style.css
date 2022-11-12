@@ -10,46 +10,34 @@ body#login-page {
 }
 
 #login .login-bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
-
 #login .login-bg .login-card {
   background-color: #E1E1E6;
   width: 370px;
   padding: 16px 32px;
   text-align: center;
 }
-
 #login .login-bg .login-card .login-title {
   color: #020f3a;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 #login .login-bg .login-card .profile-user {
   width: 100px;
   margin: 0 auto;
   margin-bottom: 16px;
 }
-
 #login .login-bg .login-card .form-group label {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 #login .login-bg .login-card .form-group + .form-group {
   margin-top: 16px;
 }
-
 #login .login-bg .login-card .btn-login {
   background-color: #020f3a;
   color: #E1E1E6;
@@ -58,17 +46,22 @@ body#login-page {
   margin-top: 16px;
   padding: 16px 0;
 }
-
 #login .login-bg .login-card .btn-login:hover {
   background-color: #041f7a;
 }
-
 #login .alert-warning-login {
   margin-top: 32px;
 }
 
-input[type="radio"]:checked + label {
+input[type=radio]:checked + label {
   background: red;
   color: #FFF;
 }
-/*# sourceMappingURL=style.css.map */
+
+.viewReservationOwner {
+  display: block;
+}
+
+.editReservationOwner {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

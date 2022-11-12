@@ -70,6 +70,14 @@
         </ul>
     </nav>
 
+    <?php 
+        if(isset($_SESSION['mensagem'])){
+            echo $_SESSION['mensagem'];
+            unset($_SESSION['mensagem']);
+        }
+
+    ?>
+
     
 
 <script src="assets/js/main.js"></script>
