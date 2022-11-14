@@ -1,0 +1,233 @@
+
+.body-index {
+    width: 100%;
+    height: 100vh;
+    background-color: $blue-dark;
+    position: relative;
+    margin: 0;
+}
+
+.index-header {
+    width: 100%;
+    padding-top: 16px;
+}
+
+.img-index,.svg-index {
+    display: block;
+    width: 100%;
+}
+
+.navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.highlight {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 85vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+
+}
+
+.logo {
+    max-width: 88px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative; /* Quando um elemento está com position relative, seus filhos caso
+    sejam absolutos, ficarão absolutos em relação a tag father */
+    color: $white-dark;
+    transition: .7s ease;
+
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+
+        top: -40px;
+        left: 50%;
+
+        width: 2px;
+        height: 0px;
+        transform: rotate(-180deg);
+        background: linear-gradient(180.01deg, #1a60eb 0.01%, rgba(40, 207, 236, 0) 100%);
+        transition: .7s ease;
+        
+    }
+
+    &:hover{
+        color: $white-light;
+
+        &::after{
+            height: 40px;
+        }
+    }
+}
+
+.hamburguer {
+
+    @include responsive(){
+        display: block;
+    }
+
+    display: none;
+    width: 48px;
+    height: 48px;
+
+    background-color: $white;
+    border-radius: 8px;
+}
+
+.nav-social {
+    display: flex;
+
+    svg{
+        cursor: pointer;
+
+        margin-left: 16px;
+        width: 24px;
+
+        path,circle{
+            transition: .7s ease;
+        }
+
+        &:hover{
+            path,circle{
+                fill: $white-light;
+                transform: translate3d(0,-3px,0);
+            }
+        }
+    }
+
+
+    @include responsive(){
+        display: none;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 85vh;
+    padding: 36px 16px;
+    display: flex;
+    align-items: center;
+    overflow: none;
+
+    @include responsive(){
+        flex-direction: column;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+.highlight-text {
+    max-width: 576px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        background: linear-gradient(101.47deg, #11244B 26.38%, rgba(10, 12, 16, 0.8) 50.07%, #18336A 73.17%);
+    }
+}
+
+.highlight-title {
+    color: $white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4em;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.highlight-desc {
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.bg-loader{
+    width: 100%;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(225deg, $blue-dark 0%, $blue 100%);
+    overflow: hidden;
+}
+
+.logo-supportcenter {
+    fill: transparent;
+    animation: logo-supportcenter 12s ease infinite alternate;
+}
+
+@keyframes logo-supportcenter{
+    0%{
+        stroke-width: 0;
+        stroke-dasharray: 1 100;
+        fill: transparent;
+    }
+
+    25%{
+        stroke-width: 1;
+        fill: transparent;
+        stroke-dasharray: 100 0;
+    }
+
+    60%,100%{
+        stroke-width: 0.3;
+        fill: $white-dark;
+    }
+}

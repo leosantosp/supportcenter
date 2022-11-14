@@ -149,7 +149,7 @@
     </div>
 
     <!-- Modal de Visualização da Reserva -->
-    <div class="modal fade" id="viewReservation" tabindex="-1" role="dialog" aria-labelledby="viewReservationLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="viewReservation" tabindex="-1" role="dialog" aria-labelledby="viewReservationLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -191,7 +191,7 @@
             </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Modal de Edição da Reserva -->
     <div class="modal fade" id="viewReservationOwner" tabindex="-1" role="dialog" aria-labelledby="viewReservationOwnerLabel" aria-hidden="true">

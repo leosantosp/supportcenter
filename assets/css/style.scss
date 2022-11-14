@@ -31,24 +31,6 @@ $black-dark: #1A1A1A;
 $gradient-blue: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
 $gradient-blue-light: linear-gradient(90deg, #18336A 28.98%, #2A54AA 77.76%);
 
-/* Todos os títulos utilizarão a fonte 'Ubuntu' */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-/* Todos os parágrafos / listas / tabelas / links utilizarão a fonte 'Roboto' */
-p, li, span, a, th, td {
-    font-family: 'Roboto', sans-serif;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-ul {
-    list-style: none;
-}
 
 .btn-primary-blue {
     box-shadow: 0px 4px 25px -10px rgba(0,0,0,.5);
@@ -106,3 +88,10 @@ option:hover {
     background-color: $white-dark;
 }
 
+@mixin responsive(){
+    @media screen and (max-width: 960px){
+        @content;
+    }
+}
+
+@import 'partials/index';

@@ -8,72 +8,86 @@
 
     include_once 'admin/php_action/db_connect.php';
 
-    include_once __DIR__.'/includes/header.php';
+    
 ?>
 
-    <div class="row no-gutters mt-4">
-        <div class="col-12 col-md-8 offset-md-2">
-            <h3 class="text-center">CENTRAL DE SUPORTE | Lista de Contatos Internos</h3>
-            <a class="btn-excel" href="includes/colab-excel.php"><img src="assets/images/icon-excel.svg" alt="Baixar catálogo de endereços atualizado"></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Suporte | Sua Intranet Corporativa</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/svg-inject.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body class="body-index">
 
-            <table id="ramalList" class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Unidade</th>
-                        <th>Departamento</th>
-                        <th>Nome</th>
-                        <th>E-mail</th>
-                        <th>Ramal</th>
-                    </tr>
-                    <tr>
-                        <th><input class="form-control" id="srcCompany" type="text"></th>
-                        <th><input class="form-control" id="srcDepartment" type="text"></th>
-                        <th><input class="form-control" id="srcName" type="text"></th>
-                        <th><input class="form-control" id="srcEmail" type="text"></th>
-                        <th><input class="form-control" id="srcRamal" type="text"></th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <?php 
-                        // Realizando o select e atribuindo a uma variável
-                        $sql = "SELECT * FROM colaboradores";
-                        
-                        $resultado = mysqli_query($connect, $sql);
-
-                        if(mysqli_num_rows($resultado) > 0):
-
-                        // Enquanto (dados = a quantidade de resultados retornados)
-                        while($dados = mysqli_fetch_array($resultado)):
-                    ?>
-                    <tr>
-                        <td><?php echo $dados['company']; ?></td>
-                        <td><?php echo $dados['department']; ?></td>
-                        <td><?php echo $dados['fullname']; ?></td>
-                        <td><?php echo $dados['email']; ?></td>
-                        <td><?php echo $dados['phone']; ?></td>
-                    </tr>
-
-                    
-
-                    <?php 
-                        endwhile; 
-                    else : ?>
-                    
-                        <tr>
-                            <td colspan="8" class="text-center">Não existem dados para serem exibidos!</td>
-                        </tr>
-
-                    <?php
-                        endif;
-                    ?>
-                </tbody>
-            </table>
-
-        </div>
+    <div class="bg-loader">
+        <svg class="svg-index" style="max-width: 144px;" width="96" height="96" viewBox="0 0 619 628" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="logo-supportcenter" d="M1 310.5L302 6V137.5L129.5 310.5L309 494L482.5 310.5L309 137.5V1H617L531.5 103.5H405L617 310.5L302 626.5L1 310.5Z" fill="#EEF3FA" stroke="white"/>
+        </svg>
     </div>
+    
+    <header class="index-header">
+        <nav class="navbar">
+            <div class="nav-menu">
+                <div class="logo">
+                    <a href="#"><img class="img-index" src="assets/images/logo.svg" onload="SVGInject(this)" alt=""></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="colaborators.php" class="nav-link">Colaboradores</a></li>
+                    <li><a href="system-errors.php" class="nav-link">Erros</a></li>
+                    <li><a href="tutorials/index.php" class="nav-link">Tutoriais</a></li>
+                    <li><a href="companys.php" class="nav-link">Empresas</a></li>
+                    <li><a href="ouvidoria.php" class="nav-link">Ouvidoria</a></li>
+                    <li><a href="reservation-room/index.php" class="nav-link">Reserva de Sala</a></li>
+                    <li><a href="https://sintraweb.sdso.com.br/sintraweb/hsin000.aspx" class="nav-link">SINTRA</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfuYxLIDbd5iNavzySbu5ik7jJQQVEXI-9PrybplYcQBOFLZQ/viewform" class="nav-link">Chamados T.I</a></li>
+                </ul>
+            </div>
+
+            <div class="hamburguer"></div>
+        </nav>
+    </header>
+
+    <!-- BACKGROUND VIDEO -->
+    <section class="bg-video">
+        <video class="vipex-video" autoplay muted loop>
+            <source src="assets/video/bg-video-vipex.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- CONTAINER -->
+    <section class="highlight container">
+        
+        <div class="highlight-text">
+            <h1 class="highlight-title item-1">CENTRAL DE SUPORTE</h1>
+            <p class="highlight-desc item-2">Sua Intranet para Colaboradores. <br><br>
+                Na Central de Suporte você pode consultar várias informações referente a empresa e ficar por dentro de tudo que acontece nela.
+                Notícias, Listas de Ramais, Tutoriais, Erros de Sistema, Ouvidoria, tudo por aqui. <br><br>
+
+                Um desenvolvimento de: Leonardo Santos [T.I]
+            </p>
+        </div>
+
+    </section>
+
+
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+</body>
+</html>
+
+    
 
 <?php 
 
-    include_once __DIR__.'/includes/footer.php';
+    
 ?>

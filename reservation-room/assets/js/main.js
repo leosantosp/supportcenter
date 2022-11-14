@@ -6,6 +6,13 @@ document.addEventListener("DOMContentLoaded", function(){
     var calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
 
+        dayMaxEventRows: true, // for all non-TimeGrid views
+        views: {
+            timeGrid: {
+            dayMaxEventRows: 3 // adjust to 6 only for timeGridWeek/timeGridDay
+            }
+        },
+
         businessHours: {
             daysOfWeek: [1,2,3,4,5],
             startTime: '07:00',
