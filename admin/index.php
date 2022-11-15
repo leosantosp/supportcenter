@@ -1,11 +1,11 @@
 <?php 
-/*Conexão */
-require_once 'php_action/db_connect.php';
+    /*Conexão */
+    require_once 'php_action/db_connect.php';
 
-// Sessão -> Trabalhou com sessões, precisa usar o session-start
-session_start();
+    // Sessão -> Trabalhou com sessões, precisa usar o session-start
+    session_start();
 
-/* Botão enviar */
+    /* Botão enviar */
     if(isset($_POST['login'], $_POST['password'])):
         $erros = array();
         /** Necessário filtrar os dados por conta da busca que precisará ser feita no banco de dados 
@@ -76,7 +76,7 @@ session_start();
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -87,28 +87,30 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body id="login-page">
-    <main>
-        <section id="login">
-            <div class="container">
-                <div class="row">
-                    <article class="col-12 login-bg">
-                        <div class="login-card">
-                            <img class="profile-user img-fluid" src="assets/images/profile-user.png" alt="">    
+    <main class="row no-gutters">
+        <section class="login-image col-md-7">
+            <img class="img-fluid" src="assets/images/login-index-bg.svg" alt="">
+        </section>
+
+        <section id="login" class="login-form col-12 col-md-5">
+            
+            <div class="login-card">
+                <h2 class="login-card-title">Iniciar Sessão</h2>
                             
-                            <!-- -->
-                            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-                                <div class="form-group">
-                                    <label for="login">Login</label>
-                                    <input id="login" name="login" type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input id="password" name="password" type="password" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <button class="btn btn-login" type="submit" name="btn-entrar">ENTRAR</button>
-                                </div>
-                            </form>
+                <!-- -->
+                <form class="login-form-group" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                    <div class="form-group">
+                        <label class="label-login" for="login">Login</label>
+                        <input id="login" name="login" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-login" type="submit" name="btn-entrar">ENTRAR</button>
+                    </div>
+                </form>
 
                             <?php 
                                 /**
@@ -122,9 +124,6 @@ session_start();
                                     endforeach;
                                 endif;
                             ?>
-                        </div>
-                    </article>
-                </div>
             </div>
         </section>
     </main>

@@ -26,16 +26,16 @@
 ?>
 
     <div class="row no-gutters">
-        <div class="col-12 col-md-8 offset-md-2">
-            <h3>Novo Colaborador</h3>
-            <form action="../php_action/create-colab.php" method="POST">
+        <div class="col-12 col-md-5 offset-md-1">
+            <h3 class="addcolab-title"><ion-icon name="person-add-outline"></ion-icon> NOVO COLABORADOR</h3>
+            <form class="addcolab-form" action="../php_action/create-colab.php" method="POST">
                 <div class="form-group">
-                    <label for="nome">Nome</label>
+                    <label for="nome"><ion-icon name="person-outline"></ion-icon> Nome</label>
                     <input class="form-control" type="text" name="nome" id="nome">
                 </div>
 
                 <div class="form-group">
-                    <label for="department">Departamento</label>
+                    <label for="department"><ion-icon name="people-outline"></ion-icon> Departamento</label>
                     <select class="form-control" name="department" id="department">
                         <option selected disabled hidden>Selecione um departamento</option>
                         <option value="Operacional">Operacional</option>
@@ -51,17 +51,17 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="email">E-mail</label>
+                    <label for="email"><ion-icon name="people-outline"></ion-icon> E-mail</label>
                     <input class="form-control" type="email" name="email" id="email">
                 </div>
 
                 <div class="form-group">
-                    <label for="phone">Ramal</label>
+                    <label for="phone"><ion-icon name="call-outline"></ion-icon> Ramal</label>
                     <input class="form-control" type="phone" name="phone" id="phone">
                 </div>
 
                 <div class="form-group">
-                    <label for="company">Unidade</label>
+                    <label for="company"> <ion-icon name="git-branch-outline"></ion-icon> Unidade</label>
                     <select class="form-control" name="company" id="company">
                         <option selected disabled hidden>Selecione uma unidade</option>
                         <option value="02 - RIO">02 - RIO</option>
@@ -77,13 +77,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="birth">Aniversário</label>
+                    <label for="birth"><ion-icon name="calendar-number-outline"></ion-icon> Aniversário</label>
                     <input class="form-control" type="date" name="birth" id="birth">
                 </div>
 
                 <div class="form-group mt-3">
-                    <button type="submit" name="btn-cadastrar" class="btn btn-success">Cadastrar</button>
-                    <a href="colab-list.php" class="btn btn-primary">Voltar</a>
+                    <button type="submit" name="btn-cadastrar" class="btn btn-success"><ion-icon name="add-circle-outline"></ion-icon> Adicionar</button>
+                    <a href="colab-list.php" class="btn btn-primary"><ion-icon name="arrow-back-circle-outline"></ion-icon> Voltar</a>
                 </div>
             </form>
 

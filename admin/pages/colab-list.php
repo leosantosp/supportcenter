@@ -35,10 +35,12 @@
 ?>
 
     <div class="row no-gutters mt-4">
-        <div class="col-12 col-md-8 offset-md-2">
-            <h3 class="text-center">CENTRAL DE SUPORTE | Cadastro de Colaboradores</h3>
-            <table class="table">
-                <thead class="thead-dark">
+        <div class="col-12 col-md-10 offset-md-1">
+            <h3 class="listcolab-title text-center">COLABORADORES</h3>
+            <p class="text-center">Abaixo, segue uma listagem de todos os colaboradores cadastrados em sistema.</p>
+            <p class="text-center">Ao cadastrar um colaborador nesta lista o tornará visível no menu 'Colaboradores' na Central de Suporte</p>
+            <table class="table table-colaborators">
+                <thead class="thead-dark thead-colaborators">
                     <tr>
                         <th>Unidade</th>
                         <th>Departamento</th>
@@ -50,7 +52,7 @@
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody class="tbody-colaborators">
                     <?php 
                         // Realizando o select e atribuindo a uma variável
                         $sql = "SELECT * FROM colaboradores";
@@ -69,8 +71,8 @@
                         <td><?php echo $dados['email']; ?></td>
                         <td><?php echo $dados['phone']; ?></td>
                         <td><?php echo date('d/m', strtotime($dados['birth'])) ?></td>
-                        <td><a href="colab-edit.php?id=<?php echo $dados['id']; ?>" class="btn btn-primary">Editar</a></td>
-                        <td><a data-bs-toggle="modal" data-bs-target="#deleteModal<?php echo $dados['id']; ?>" class="btn btn-danger">Excluir</a></td>
+                        <td><a href="colab-edit.php?id=<?php echo $dados['id']; ?>" class="btn btn-primary"><ion-icon name="create-outline"></ion-icon></a></td>
+                        <td><a data-bs-toggle="modal" data-bs-target="#deleteModal<?php echo $dados['id']; ?>" class="btn btn-danger"><ion-icon name="trash-outline"></ion-icon></a></td>
                     </tr>
 
                     <!-- Modal -->
@@ -82,7 +84,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Tem certeza que deseja excluir o colaborador <strong><?php echo $dados['fullname'] ?></strong> </p>
+                            <p>Tem certeza que deseja excluir o colaborador <strong><?php echo $dados['fullname'] ?></strong>? </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -110,7 +112,7 @@
             </table>
 
             <br>
-            <a href="colab-add.php" class="btn btn-success">Adicionar colaborador</a>
+            <a href="colab-add.php" class="btn btn-success"><ion-icon name="person-add-outline"></ion-icon> Adicionar </a>
         </div>
     </div>
 

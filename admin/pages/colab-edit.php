@@ -40,9 +40,9 @@
 ?>
 
     <div class="row no-gutters mt-4">
-        <div class="col-12 col-md-8 offset-md-2">
-            <h3 class="text-center">CENTRAL DE SUPORTE | Editar Colaborador</h3>
-            <form action="../php_action/update-colab.php" method="POST">
+        <div class="col-12 col-md-6 offset-md-1">
+            <h3 class="editcolab-title text-center">EDITANDO COLABORADOR <strong><?php echo $dados['fullname'] ?></strong></h3>
+            <form class="editcolab-form" action="../php_action/update-colab.php" method="POST">
                 <input name="id" type="hidden" value="<?php echo $dados['id'] ?>">
                 <div class="form-group">
                     <label for="nome">Nome</label>
@@ -97,8 +97,8 @@
                 </div>
 
                 <div class="form-group mt-3">
-                    <button type="submit" name="btn-atualizar" class="btn btn-success">ATUALIZAR</button>
-                    <a href="colab-list.php" class="btn btn-primary">VOLTAR</a>
+                    <button type="submit" name="btn-atualizar" class="btn btn-success"><ion-icon name="refresh-outline"></ion-icon> Atualizar</button>
+                    <a href="colab-list.php" class="btn btn-primary"><ion-icon name="arrow-back-circle-outline"></ion-icon> Voltar</a>
                 </div>
             </form>
 

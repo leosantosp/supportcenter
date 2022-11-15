@@ -41,46 +41,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel Admin | Home</title>
+    <title>Home | Painel Administrativo</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body id="admin-panel">
+<body id="home-admin-panel">
+    <input type="checkbox" id="check">
+    <header>
+        <div class="icon-menu">
+            <label for="check">
+                <ion-icon name="grid-outline" id="sidebar-btn"></ion-icon>
+            </label>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="center">
+            <img class="image" src="../assets/images/logo.svg" alt="">
+            <h4><?php echo $dados['username'] ?></h4>
+        </div>
+        <a href="#"><ion-icon name="desktop-outline"></ion-icon><span>Home</span></a> <!-- Home -->
+        <a href="pages/users-list.php"><ion-icon name="person-outline"></ion-icon> <span>Usuários</span>    </a> <!-- Usuários -->
+        <a href="pages/colab-list.php"><ion-icon name="people-outline"></ion-icon> <span>Colaboradores</span>    </a> <!-- Colaboradores -->
+        <a href="pages/catend-list.php"><ion-icon name="mail-unread-outline"></ion-icon> <span>Base do Outlook</span>    </a> <!-- Catálogo de Endereços -->
+        <a href="../reservation-room/index.php"><ion-icon name="mail-unread-outline"></ion-icon> <span>Reserva de Salas</span>    </a> <!-- Sala de Reunião -->
+        <a href="pages/company-list.php"><ion-icon name="git-branch-outline"></ion-icon> <span>Empresas</span>    </a> <!-- Empresas -->
+        <a href="pages/tutorials-list.php"><ion-icon name="book-outline"></ion-icon> <span>Aprenda</span>    </a> <!-- Aprenda -->
+        <a href="pages/errors-list.php"><ion-icon name="bug-outline"></ion-icon> <span>Erros</span>    </a> <!-- Erros -->
+        <a href="pages/ouvid-list.php"><ion-icon name="archive-outline"></ion-icon><span>Ouvidoria</span>    </a> <!-- Ouvidoria -->
+        <a href="logout.php"><ion-icon name="log-out-outline"></ion-icon> <span>Sair</span>    </a> <!-- Sair -->
 
-    <h1>Bem vindo, <?php echo $dados['username']; ?>!</h1>
 
-    <nav class="admin-nav">
-        <ul class="admin-nav-list">
-            <li class="admin-nav-item"><a href="pages/users-list.php">Usuários</a></li>
-            <li class="admin-nav-item"><a href="pages/colab-list.php">Colaboradores</a></li>
-            <li class="admin-nav-item"><a href="pages/catend-list.php">Catálogo de Endereços</a></li>
-            <li class="admin-nav-item"><a href="#">Reserva de Salas</a></li>
-            <li class="admin-nav-item"><a href="pages/company-list.php">Unidades</a></li>
-            <li class="admin-nav-item"><a href="pages/tutorials-list.php">Tutoriais</a></li>
-            <li class="admin-nav-item"><a href="pages/errors-list.php">Erros do Sintra</a></li>
-            <li class="admin-nav-item"><a href="pages/ouvid-list.php">Ouvidoria</a></li>
-            <li class="admin-nav-item">
-                <a href="logout.php">
-                    <button class="btn btn-secondary">
-                        <img src="assets/images/icon-logout.svg" alt="">
-                    </button>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    </div>
 
-    <?php 
-        if(isset($_SESSION['mensagem'])){
-            echo $_SESSION['mensagem'];
-            unset($_SESSION['mensagem']);
-        }
+    <div class="content">
+        <h3>Bem vindo, <strong> <?php echo $dados['username']; ?></strong></h3>
+        <p>Este é o painel administrativo da Central de Suporte</p>
+        <p>Utilize o painel na lateral esquerda para verificar as opções que você tem liberado.</p> 
+        <p>Utilize com bastante cautela. as configurações aplicadas aqui terão influência na página principal da Central</p>
 
-    ?>
+        <?php 
+            if(isset($_SESSION['mensagem'])){
+                echo $_SESSION['mensagem'];
+                unset($_SESSION['mensagem']);
+            }
+
+        ?>
+    </div>
+
+
+
+
+    
 
     
 
 <script src="assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
