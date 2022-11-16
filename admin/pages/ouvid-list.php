@@ -35,25 +35,25 @@
 ?>
 
     <div class="row no-gutters mt-4">
-        <div class="col-12 col-md-8 offset-md-2">
-            <h3 class="text-center">CENTRAL DE SUPORTE | Ouvidoria Interna</h3>
-            <table class="table">
-                <thead class="thead-dark">
+        <div class="col-12 col-md-10 offset-md-1">
+            <h3 class="page-title text-center">Ouvidoria Interna</h3>
+            <table class="table table-admin">
+                <thead class="thead-dark thead-table">
                     <tr>
-                        <th>ID</th>
-                        <th>Filial</th>
-                        <th>Departamento</th>
-                        <th>Nome</th>
-                        <th>Ramal</th>
-                        <th>E-mail</th>
-                        <th>Setor</th>
-                        <th>Notificação</th>
-                        <th>Relato</th>
-                        <th class="text-center">Ações</th>
+                        <th class="th-title">ID</th>
+                        <th class="th-title">Filial</th>
+                        <th class="th-title">Departamento</th>
+                        <th class="th-title">Nome</th>
+                        <th class="th-title">Ramal</th>
+                        <th class="th-title">E-mail</th>
+                        <th class="th-title">Setor</th>
+                        <th class="th-title">Notificação</th>
+                        <th class="th-title">Relato</th>
+                        <th class="th-title text-center">Ações</th>
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody class="tbody-table">
                     <?php 
                         // Realizando o select e atribuindo a uma variável
                         $sql = "SELECT * FROM ombudsman";

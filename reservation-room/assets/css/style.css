@@ -1,59 +1,101 @@
+@charset "UTF-8";
+/* DEFININDO VARIÁVEIS DE CSS */
+/* Primary Colors */
+/* Auxiliary Colors */
+/* White/Black Colors */
+/* Gradient Colors */
 * {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+/* LOGIN PAGE */
 body#login-page {
-  background-color: #020f3a !important;
-  height: 100vh;
+  background-color: #FFF !important;
 }
 
-#login .login-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body#login-page main {
+  width: 100%;
   height: 100vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-#login .login-bg .login-card {
-  background-color: #E1E1E6;
-  width: 370px;
-  padding: 16px 32px;
+
+body#login-page .login-image {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body#login-page .login-form {
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.98%, #18336A), color-stop(77.76%, #001752));
+  background: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body#login-page .login-form .login-card {
+  width: 100%;
+}
+
+body#login-page .login-form .login-card .login-card-title {
+  color: #F9F9FB;
   text-align: center;
 }
-#login .login-bg .login-card .login-title {
-  color: #020f3a;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-#login .login-bg .login-card .profile-user {
-  width: 100px;
-  margin: 0 auto;
-  margin-bottom: 16px;
-}
-#login .login-bg .login-card .form-group label {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-#login .login-bg .login-card .form-group + .form-group {
-  margin-top: 16px;
-}
-#login .login-bg .login-card .btn-login {
-  background-color: #020f3a;
-  color: #E1E1E6;
-  font-weight: bold;
-  width: 100%;
-  margin-top: 16px;
-  padding: 16px 0;
-}
-#login .login-bg .login-card .btn-login:hover {
-  background-color: #041f7a;
-}
-#login .alert-warning-login {
+
+body#login-page .login-form .login-card .login-form-group {
+  padding: 0 20%;
   margin-top: 32px;
 }
 
-input[type=radio]:checked + label {
+body#login-page .login-form .login-card .login-form-group .form-group {
+  margin-top: 16px;
+}
+
+body#login-page .login-form .login-card .login-form-group label {
+  color: #CFD5E3;
+  font-weight: bold;
+}
+
+body#login-page .login-form .login-card .btn-login {
+  margin-top: 16px;
+  padding: 16px 32px;
+  background-color: #214692;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  color: #FFF;
+}
+
+body#login-page .login-form .login-card .btn-login:hover {
+  background-color: #11244B;
+}
+
+input[type="radio"]:checked + label {
   background: red;
   color: #FFF;
 }
@@ -64,4 +106,247 @@ input[type=radio]:checked + label {
 
 .editReservationOwner {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+body#home-admin-panel header {
+  position: fixed;
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.98%, #18336A), color-stop(77.76%, #001752));
+  background: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
+  padding: 10px;
+  width: 100%;
+  height: 60px;
+}
+
+body#home-admin-panel header .icon-menu {
+  width: 100%;
+  text-align: left;
+}
+
+body#home-admin-panel header .icon-menu label {
+  width: 25px;
+  height: 25px;
+}
+
+body#home-admin-panel .sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  margin-top: 60px;
+  padding-top: 30px;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.98%, #18336A), color-stop(77.76%, #001752));
+  background: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-property: left;
+  transition-property: left;
+}
+
+body#home-admin-panel .sidebar .center {
+  text-align: center;
+}
+
+body#home-admin-panel .sidebar .image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 16px;
+}
+
+body#home-admin-panel .sidebar h4 {
+  color: #CCC;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+body#home-admin-panel .sidebar a {
+  color: #FFF;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-property: background;
+  transition-property: background;
+}
+
+body#home-admin-panel .sidebar a:hover {
+  background: #51b3ec;
+}
+
+body#home-admin-panel .sidebar ion-icon {
+  padding-right: 10px;
+}
+
+body#home-admin-panel label #sidebar-btn {
+  z-index: 1;
+  position: fixed;
+  color: #FFF;
+  font-size: 25px;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+body#home-admin-panel label #sidebar-btn:hover {
+  color: #51b3ec;
+}
+
+body#home-admin-panel #check:checked ~ .sidebar {
+  left: -190px;
+}
+
+body#home-admin-panel #check:checked ~ .sidebar a span {
+  display: none;
+}
+
+body#home-admin-panel #check:checked ~ .sidebar h4 {
+  display: none;
+}
+
+body#home-admin-panel #check:checked ~ .sidebar a {
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
+
+body#home-admin-panel .content {
+  width: 100%;
+  height: 85vh;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding-top: 75px;
+  padding-left: 266px;
+}
+
+body#home-admin-panel #check:checked ~ .content {
+  margin-left: 60px;
+  padding-left: 16px;
+}
+
+body#home-admin-panel #check {
+  display: none;
+}
+
+#calendar {
+  padding: 16px 24px;
+}
+
+#calendar .fc-day-today {
+  background-color: #CFD5E3;
+}
+
+#calendar .fc-daygrid-day-number {
+  color: #18336A;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#calendar .fc {
+  border-radius: 8px 8px 0 0;
+}
+
+#calendar .fc-toolbar-title {
+  text-transform: uppercase;
+  color: #18336A;
+  font-weight: bold;
+}
+
+#calendar .fc-button-primary {
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.98%, #18336A), color-stop(77.76%, #2A54AA));
+  background: linear-gradient(90deg, #18336A 28.98%, #2A54AA 77.76%);
+  border-radius: 8px;
+  border: none;
+}
+
+#calendar .fc--button {
+  display: none;
+}
+
+#calendar .fc-scrollgrid thead {
+  background-color: #18336A;
+}
+
+#calendar .fc-scrollgrid thead .fc-col-header {
+  border-radius: 8px 8px 0 0;
+}
+
+#calendar .fc-scrollgrid thead .fc-col-header-cell {
+  padding: 16px;
+}
+
+#calendar .fc-scrollgrid thead .fc-col-header-cell-cushion {
+  color: #EBEEF3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.fc-daygrid-event.fc-daygrid-dot-event.fc-event.fc-event-start.fc-event-end.fc-event-future {
+  position: relative;
+  overflow: hidden;
+}
+
+a.fc-daygrid-event.fc-daygrid-dot-event.fc-event.fc-event-start.fc-event-end.fc-event-future > div:not(.fc-daygrid-event-dot) {
+  z-index: 1;
+}
+
+a.fc-daygrid-event.fc-daygrid-dot-event.fc-event.fc-event-start.fc-event-end.fc-event-future .fc-event-time {
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+a.fc-daygrid-event.fc-daygrid-dot-event.fc-event.fc-event-start.fc-event-end.fc-event-future .fc-event-title {
+  font-weight: normal;
+}
+
+a.fc-daygrid-event.fc-daygrid-dot-event.fc-event.fc-event-start.fc-event-end.fc-event-future .fc-daygrid-event-dot {
+  position: absolute;
+  border-width: 1000px;
+  left: -500px;
+}
+
+.fc-daygrid-event {
+  color: #2B2B2B !important;
+}
+
+.fc-daygrid-event-harness {
+  background-color: #2B2B2B;
+  color: #2B2B2B !important;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.fc-daygrid-event-harness:hover {
+  color: #2B2B2B;
+}
+
+.fc-daygrid-event-dot, .fc-event-time, .fc-event-title {
+  color: #FFF !important;
+}
+
+.fc-col-header-cell-cushion {
+  text-decoration: none;
+  color: #2b2b85;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.fc-toolbar-title {
+  text-transform: uppercase;
+  color: #2b2b85;
+  font-weight: bold;
+}
+
+.fc-daygrid-day-number {
+  text-decoration: none;
+  color: #2B2B2B;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CENTRAL DE SUPORTE | Cadastro de Colaboradores</title>
+    <title>Central de Suporte</title>
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Main CSS File -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> <!-- Bootstrap -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,3 +14,21 @@
 
 </head>
 <body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo"><a href="index.php"><img class="img-fluid" src="assets/images/logo.svg" alt=""></a></div>
+            <div class="hamburguer"></div>
+            <ul class="menu">
+                <li><a href="colaborators.php">COLABORADORES</a></li>
+                <li><a href="companys.php">EMPRESAS</a></li>
+                <li><a href="aprenda/index.php">APRENDA</a></li>
+                <li><a href="system-errors.php">SINTRA</a></li>
+                <li><a href="reservation-room/index.php">RESERVA DE SALAS</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfuYxLIDbd5iNavzySbu5ik7jJQQVEXI-9PrybplYcQBOFLZQ/viewform">CHAMADOS T.I</a></li>
+                <li><a href="ouvidoria.php">OUVIDORIA</a></li>
+                <li><a href="world-cup.html">COPA DO MUNDO</a></li>
+
+                <!-- <li><a href="http://reunioes.sdso.com.br:9000/index.php">SALA DE REUNIÃO</a></li> -->
+            </ul>
+        </div>
+    </header>

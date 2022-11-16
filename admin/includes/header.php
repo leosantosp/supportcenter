@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
+
 </head>
 <body id="home-admin-panel">
     <input type="checkbox" id="check">
@@ -24,7 +26,7 @@
             <img class="image" src="../../assets/images/logo.svg" alt="">
             <h4><?php echo $dados['username'] ?></h4>
         </div>
-        <a href="#"><ion-icon name="desktop-outline"></ion-icon><span>Home</span></a> <!-- Home -->
+        <a href="../home.php"><ion-icon name="desktop-outline"></ion-icon><span>Home</span></a> <!-- Home -->
         <a href="users-list.php"><ion-icon name="person-outline"></ion-icon> <span>Usuários</span>    </a> <!-- Usuários -->
         <a href="colab-list.php"><ion-icon name="people-outline"></ion-icon> <span>Colaboradores</span>    </a> <!-- Colaboradores -->
         <a href="catend-list.php"><ion-icon name="mail-unread-outline"></ion-icon> <span>Base do Outlook</span>    </a> <!-- Catálogo de Endereços -->

@@ -239,10 +239,12 @@ body#home-admin-panel {
     color: $white;
 
     tr {
+        border-style: hidden;
 
-        th {
+        .th-title {
             padding: 16px;
             text-align: center;
+            text-transform: uppercase;
 
             &:first-child {
                 border-top-left-radius: 8px;
@@ -321,5 +323,225 @@ body#home-admin-panel {
         font-weight: bold;
         color: $blue-dark;
         text-transform: uppercase;
+    }
+}
+
+/* USERS PAGE */
+
+.users-section {
+
+    
+    .users-title {
+        color: $blue-dark;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .users-description {
+        color: $blue;
+    }
+
+    .users-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            color: $blue-dark;
+        }
+    }
+
+    .btn-addusers {
+        padding: 8px 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .users-table {
+        margin-top: 24px;
+
+        .users-thead {
+            background-color: $blue;
+            color: $white;
+            border-style: hidden;
+
+
+            tr {
+                text-align: center;
+                border-style: hidden;
+
+                .th-title {
+                    text-transform: uppercase;
+
+                    &:first-child {
+                        border-top-left-radius: 8px;
+                    }
+        
+                    &:last-child {
+                        border-top-right-radius: 8px;
+                    }
+                }
+
+                .th-search {
+                    padding: 8px 24px;
+                }
+            }
+
+        }
+        .users-tbody {
+            tr {
+
+                td {
+                    text-align: center;
+                    vertical-align: middle;
+                }
+        
+                &:nth-child(even){
+                    background-color: $white-dark;
+                }
+                
+            }
+        }
+    }
+
+}
+
+.title-addform {
+    color: $blue-dark;
+    font-weight: bold;
+    text-align: center;
+}
+
+.addform {
+
+    .form-group {
+        margin-top: 16px;
+
+        label {
+            color: $blue-dark;
+            font-weight: bold;
+            vertical-align: middle;
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .btn-reveal {
+            width: 120px;
+            height: 45px;
+            padding: 8px 16px;
+            background-color: $blue-dark;
+            color: $white;
+            border-radius: 8px;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+
+        .btn {
+            font-weight: bold;
+            padding: 8px 16px;
+    
+            &:not(:first-child){
+                margin-left: 24px;
+            }
+        }
+    }
+    
+}
+
+.page-title {
+    color: $blue-dark;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.editform {
+
+    .form-group {
+        margin-top: 16px;
+
+        label {
+            font-weight: bold;
+        }
+    }
+
+    .btn {
+        font-weight: bold;
+        padding: 8px 16px;
+
+        &:not(:first-child){
+            margin-left: 24px;
+        }
+    }
+}
+
+.table-admin {
+
+
+    .thead-table {
+        background-color: $blue;
+        color: $white;
+        text-align: center;
+
+
+        .th-title {
+            text-transform: uppercase;
+            border-style: hidden;
+
+
+            &:first-child {
+                border-top-left-radius: 8px;
+            }
+
+            &:last-child {
+                border-top-right-radius: 8px;
+            }
+        }
+
+        .th-search {
+            padding: 8px 16px;
+        }
+    }
+
+    .tbody-table {
+        text-align: center;
+
+        tr {
+            &:nth-child(even){
+                background-color: $white-dark;
+            }
+        }
+    }
+}
+
+.btn-excel {
+    padding: 8px 16px;
+    background-color: $green;
+    border-radius: 8px;
+    text-decoration: none;
+    color: $white;
+    font-weight: bold;
+    height: 38px;
+}
+
+.form-admin {
+
+
+    .form-group {
+        margin-top: 16px;
+
+        label {
+            font-weight: bold;
+        }
+    }
+
+    .btn {
+        font-weight: bold;
+        padding: 8px 16px;
+        text-transform: uppercase;
+
+        &:not(:first-child){
+            margin-left: 24px;
+        }
     }
 }

@@ -49,8 +49,6 @@
                     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfuYxLIDbd5iNavzySbu5ik7jJQQVEXI-9PrybplYcQBOFLZQ/viewform" class="nav-link">Chamados T.I</a></li>
                 </ul>
             </div>
-
-            <div class="hamburguer"></div>
         </nav>
     </header>
 

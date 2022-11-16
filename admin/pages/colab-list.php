@@ -36,19 +36,28 @@
 
     <div class="row no-gutters mt-4">
         <div class="col-12 col-md-10 offset-md-1">
-            <h3 class="listcolab-title text-center">COLABORADORES</h3>
+            <h3 class="listcolab-title text-center"><ion-icon name="people-outline"></ion-icon> COLABORADORES</h3>
             <p class="text-center">Abaixo, segue uma listagem de todos os colaboradores cadastrados em sistema.</p>
             <p class="text-center">Ao cadastrar um colaborador nesta lista o tornará visível no menu 'Colaboradores' na Central de Suporte</p>
-            <table class="table table-colaborators">
+            <table id="table" class="table table-colaborators">
                 <thead class="thead-dark thead-colaborators">
                     <tr>
-                        <th>Unidade</th>
-                        <th>Departamento</th>
-                        <th>Nome</th>
-                        <th>E-mail</th>
-                        <th>Ramal</th>
-                        <th>Aniversário</th>
-                        <th class="text-center" colspan="2">Ações</th>
+                        <th class="th-title">Unidade</th>
+                        <th class="th-title">Departamento</th>
+                        <th class="th-title">Nome</th>
+                        <th class="th-title">E-mail</th>
+                        <th class="th-title">Ramal</th>
+                        <th class="th-title">Aniversário</th>
+                        <th class="th-title text-center" colspan="2">Ações</th>
+                    </tr>
+                    <tr>
+                        <th class="th-search"><input class="form-control" id="srcCompany" type="text"></th>
+                        <th class="th-search"><input class="form-control" id="srcDepartment" type="text"></th>
+                        <th class="th-search"><input class="form-control" id="srcNome" type="text"></th>
+                        <th class="th-search"><input class="form-control" id="srcEmail" type="text"></th>
+                        <th class="th-search"><input class="form-control" id="srcRamal" type="text"></th>
+                        <th class="th-search"><input class="form-control" id="srcBirth" type="text"></th>
+                        <th class="th-search" colspan="2"></th>
                     </tr>
                 </thead>
 
@@ -87,7 +96,7 @@
                             <p>Tem certeza que deseja excluir o colaborador <strong><?php echo $dados['fullname'] ?></strong>? </p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                             <form action="../php_action/delete-colab.php" method="POST">
                                 <input type="hidden" name="id" value="<?php echo $dados['id'] ?>">
                                 <button type="submit" name="btn-delete" class="btn btn-danger">Sim, quero excluir</button>
@@ -112,7 +121,7 @@
             </table>
 
             <br>
-            <a href="colab-add.php" class="btn btn-success"><ion-icon name="person-add-outline"></ion-icon> Adicionar </a>
+            <a href="colab-add.php" class="btn btn-addusers btn-success"><ion-icon name="person-add-outline"></ion-icon> Adicionar </a>
         </div>
     </div>
 

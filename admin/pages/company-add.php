@@ -21,8 +21,8 @@
 
 <div class="row no-gutters">
         <div class="col-12 col-md-8 offset-md-2">
-            <h3>Nova Empresa</h3>
-            <form action="../php_action/create-company.php" method="POST">
+            <h3 class="page-title"><ion-icon name="business-outline"></ion-icon> Nova Empresa</h3>
+            <form class="form-admin" action="../php_action/create-company.php" method="POST">
                 <div class="form-group">
                     <label for="compnumber">ID da Unidade</label>
                     <input class="form-control" type="text" name="compnumber" id="compnumber">
@@ -54,8 +54,8 @@
                 </div>
 
                 <div class="form-group mt-3">
-                    <button type="submit" name="btn-cadastrar" class="btn btn-success">Cadastrar</button>
-                    <a href="company-list.php" class="btn btn-primary">Voltar</a>
+                    <button type="submit" name="btn-cadastrar" class="btn btn-success"><ion-icon name="add-outline"></ion-icon> Cadastrar</button>
+                    <a href="company-list.php" class="btn btn-primary"><ion-icon name="arrow-back-outline"></ion-icon> Voltar</a>
                 </div>
             </form>
 

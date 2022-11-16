@@ -44,3 +44,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     {y: 0, opacity: 1, ease: Expo.easeInOut}, '-=0.5')
     
 });
+
+$('.js-tilt').tilt({
+    scale: 1.2
+})

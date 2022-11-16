@@ -12,45 +12,73 @@
 body#login-page {
   background-color: #FFF !important;
 }
+
 body#login-page main {
   width: 100%;
   height: 100vh;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 body#login-page .login-image {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 body#login-page .login-form {
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.98%, #18336A), color-stop(77.76%, #001752));
   background: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 body#login-page .login-form .login-card {
   width: 100%;
 }
+
 body#login-page .login-form .login-card .login-card-title {
   color: #F9F9FB;
   text-align: center;
 }
+
 body#login-page .login-form .login-card .login-form-group {
   padding: 0 20%;
   margin-top: 32px;
 }
+
 body#login-page .login-form .login-card .login-form-group .form-group {
   margin-top: 16px;
 }
+
 body#login-page .login-form .login-card .login-form-group label {
   color: #CFD5E3;
   font-weight: bold;
 }
+
 body#login-page .login-form .login-card .btn-login {
   margin-top: 16px;
   padding: 16px 32px;
@@ -60,6 +88,7 @@ body#login-page .login-form .login-card .btn-login {
   font-weight: bold;
   color: #FFF;
 }
+
 body#login-page .login-form .login-card .btn-login:hover {
   background-color: #11244B;
 }
@@ -67,19 +96,23 @@ body#login-page .login-form .login-card .btn-login:hover {
 /* HOME PAGE */
 body#home-admin-panel header {
   position: fixed;
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.98%, #18336A), color-stop(77.76%, #001752));
   background: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
   padding: 10px;
   width: 100%;
   height: 60px;
 }
+
 body#home-admin-panel header .icon-menu {
   width: 100%;
   text-align: left;
 }
+
 body#home-admin-panel header .icon-menu label {
   width: 25px;
   height: 25px;
 }
+
 body#home-admin-panel .sidebar {
   position: fixed;
   width: 250px;
@@ -87,23 +120,30 @@ body#home-admin-panel .sidebar {
   margin-top: 60px;
   padding-top: 30px;
   left: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.98%, #18336A), color-stop(77.76%, #001752));
   background: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-property: left;
   transition-property: left;
 }
+
 body#home-admin-panel .sidebar .center {
   text-align: center;
 }
+
 body#home-admin-panel .sidebar .image {
   width: 100px;
   height: 100px;
   margin-bottom: 16px;
 }
+
 body#home-admin-panel .sidebar h4 {
   color: #CCC;
   margin-top: 0;
   margin-bottom: 24px;
 }
+
 body#home-admin-panel .sidebar a {
   color: #FFF;
   display: block;
@@ -111,16 +151,22 @@ body#home-admin-panel .sidebar a {
   line-height: 60px;
   text-decoration: none;
   padding-left: 40px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transition-property: background;
   transition-property: background;
 }
+
 body#home-admin-panel .sidebar a:hover {
   background: #51b3ec;
 }
+
 body#home-admin-panel .sidebar ion-icon {
   padding-right: 10px;
 }
+
 body#home-admin-panel label #sidebar-btn {
   z-index: 1;
   position: fixed;
@@ -128,37 +174,48 @@ body#home-admin-panel label #sidebar-btn {
   font-size: 25px;
   margin: 5px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transition-property: color;
   transition-property: color;
 }
+
 body#home-admin-panel label #sidebar-btn:hover {
   color: #51b3ec;
 }
+
 body#home-admin-panel #check:checked ~ .sidebar {
   left: -190px;
 }
+
 body#home-admin-panel #check:checked ~ .sidebar a span {
   display: none;
 }
+
 body#home-admin-panel #check:checked ~ .sidebar h4 {
   display: none;
 }
+
 body#home-admin-panel #check:checked ~ .sidebar a {
   font-size: 20px;
   margin-left: 170px;
   width: 80px;
 }
+
 body#home-admin-panel .content {
   width: 100%;
   height: 85vh;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
   padding-top: 75px;
   padding-left: 266px;
 }
+
 body#home-admin-panel #check:checked ~ .content {
   margin-left: 60px;
   padding-left: 16px;
 }
+
 body#home-admin-panel #check {
   display: none;
 }
@@ -168,14 +225,22 @@ body#home-admin-panel #check {
   background-color: #18336A;
   color: #EBEEF3;
 }
-.thead-colaborators tr th {
+
+.thead-colaborators tr {
+  border-style: hidden;
+}
+
+.thead-colaborators tr .th-title {
   padding: 16px;
   text-align: center;
+  text-transform: uppercase;
 }
-.thead-colaborators tr th:first-child {
+
+.thead-colaborators tr .th-title:first-child {
   border-top-left-radius: 8px;
 }
-.thead-colaborators tr th:last-child {
+
+.thead-colaborators tr .th-title:last-child {
   border-top-right-radius: 8px;
 }
 
@@ -183,6 +248,7 @@ body#home-admin-panel #check {
   text-align: center;
   vertical-align: middle;
 }
+
 .tbody-colaborators tr:nth-child(even) {
   background-color: #CFD5E3;
 }
@@ -196,16 +262,23 @@ body#home-admin-panel #check {
 .addcolab-form .form-group {
   margin-top: 16px;
 }
+
 .addcolab-form .form-group label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: bold;
   text-transform: uppercase;
   color: #11244B;
 }
+
 .addcolab-form .form-group label ion-icon {
   margin-right: 8px;
 }
+
 .addcolab-form .form-group:last-child {
   margin-top: 24px;
 }
@@ -224,8 +297,203 @@ body#home-admin-panel #check {
 .editcolab-form .form-group {
   margin-top: 16px;
 }
+
 .editcolab-form label {
   font-weight: bold;
   color: #11244B;
   text-transform: uppercase;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* USERS PAGE */
+.users-section .users-title {
+  color: #11244B;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.users-section .users-description {
+  color: #18336A;
+}
+
+.users-section .users-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.users-section .users-list li {
+  color: #11244B;
+}
+
+.users-section .btn-addusers {
+  padding: 8px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.users-section .users-table {
+  margin-top: 24px;
+}
+
+.users-section .users-table .users-thead {
+  background-color: #18336A;
+  color: #EBEEF3;
+  border-style: hidden;
+}
+
+.users-section .users-table .users-thead tr {
+  text-align: center;
+  border-style: hidden;
+}
+
+.users-section .users-table .users-thead tr .th-title {
+  text-transform: uppercase;
+}
+
+.users-section .users-table .users-thead tr .th-title:first-child {
+  border-top-left-radius: 8px;
+}
+
+.users-section .users-table .users-thead tr .th-title:last-child {
+  border-top-right-radius: 8px;
+}
+
+.users-section .users-table .users-thead tr .th-search {
+  padding: 8px 24px;
+}
+
+.users-section .users-table .users-tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.users-section .users-table .users-tbody tr:nth-child(even) {
+  background-color: #CFD5E3;
+}
+
+.title-addform {
+  color: #11244B;
+  font-weight: bold;
+  text-align: center;
+}
+
+.addform .form-group {
+  margin-top: 16px;
+}
+
+.addform .form-group label {
+  color: #11244B;
+  font-weight: bold;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.addform .form-group .btn-reveal {
+  width: 120px;
+  height: 45px;
+  padding: 8px 16px;
+  background-color: #11244B;
+  color: #EBEEF3;
+  border-radius: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.addform .form-group .btn {
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+.addform .form-group .btn:not(:first-child) {
+  margin-left: 24px;
+}
+
+.page-title {
+  color: #11244B;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.editform .form-group {
+  margin-top: 16px;
+}
+
+.editform .form-group label {
+  font-weight: bold;
+}
+
+.editform .btn {
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+.editform .btn:not(:first-child) {
+  margin-left: 24px;
+}
+
+.table-admin .thead-table {
+  background-color: #18336A;
+  color: #EBEEF3;
+  text-align: center;
+}
+
+.table-admin .thead-table .th-title {
+  text-transform: uppercase;
+  border-style: hidden;
+}
+
+.table-admin .thead-table .th-title:first-child {
+  border-top-left-radius: 8px;
+}
+
+.table-admin .thead-table .th-title:last-child {
+  border-top-right-radius: 8px;
+}
+
+.table-admin .thead-table .th-search {
+  padding: 8px 16px;
+}
+
+.table-admin .tbody-table {
+  text-align: center;
+}
+
+.table-admin .tbody-table tr:nth-child(even) {
+  background-color: #CFD5E3;
+}
+
+.btn-excel {
+  padding: 8px 16px;
+  background-color: #32D957;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #EBEEF3;
+  font-weight: bold;
+  height: 38px;
+}
+
+.form-admin .form-group {
+  margin-top: 16px;
+}
+
+.form-admin .form-group label {
+  font-weight: bold;
+}
+
+.form-admin .btn {
+  font-weight: bold;
+  padding: 8px 16px;
+  text-transform: uppercase;
+}
+
+.form-admin .btn:not(:first-child) {
+  margin-left: 24px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -8,11 +8,12 @@
         $username = mysqli_escape_string($connect, $_POST['username']);
         $login = mysqli_escape_string($connect, $_POST['login']);
         $password = mysqli_escape_string($connect, $_POST['password']);
+        $password_conv = md5($password);
         $email = mysqli_escape_string($connect, $_POST['email']);
         $profile = mysqli_escape_string($connect, $_POST['profile']);
         $id = mysqli_escape_string($connect, $_POST['id']);
 
-        $sql = "UPDATE usuarios SET username = '$username', login = '$login', password = '$password', email = '$email', profile = '$profile' WHERE id = '$id'";
+        $sql = "UPDATE usuarios SET username = '$username', login = '$login', password = '$password_conv', email = '$email', profile = '$profile' WHERE id = '$id'";
 
         if(mysqli_query($connect, $sql)){
             $_SESSION['mensagem'] = "<div class='alert alert-success'>Atualizado com sucesso!</div>";

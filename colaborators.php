@@ -10,68 +10,75 @@
 
     include_once __DIR__.'/includes/header.php';
 ?>
+<section>  
+    <div class="container">  
+        <div class="row">
+            <div class="col-12">
+                <div class="div-intro">
+                    <img class="js-tilt img-fluid" style="width: 300px" src="assets/images/team-up.svg" onload="SVGInject(this)">
+                </div>
 
-    <div class="row no-gutters mt-4">
-        <div class="col-12 col-md-8 offset-md-2">
-            <h3 class="text-center">CENTRAL DE SUPORTE | Lista de Contatos Internos</h3>
-            <a class="btn-excel" href="includes/colab-excel.php"><img src="assets/images/icon-excel.svg" alt="Baixar catálogo de endereços atualizado"></a>
+                <a class="btn-excel" href="includes/colab-excel.php"><img src="assets/images/icon-excel.svg" alt="Baixar catálogo de endereços atualizado"></a>
 
-            <table id="ramalList" class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Unidade</th>
-                        <th>Departamento</th>
-                        <th>Nome</th>
-                        <th>E-mail</th>
-                        <th>Ramal</th>
-                    </tr>
-                    <tr>
-                        <th><input class="form-control" id="srcCompany" type="text"></th>
-                        <th><input class="form-control" id="srcDepartment" type="text"></th>
-                        <th><input class="form-control" id="srcName" type="text"></th>
-                        <th><input class="form-control" id="srcEmail" type="text"></th>
-                        <th><input class="form-control" id="srcRamal" type="text"></th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <?php 
-                        // Realizando o select e atribuindo a uma variável
-                        $sql = "SELECT * FROM colaboradores";
-                        
-                        $resultado = mysqli_query($connect, $sql);
-
-                        if(mysqli_num_rows($resultado) > 0):
-
-                        // Enquanto (dados = a quantidade de resultados retornados)
-                        while($dados = mysqli_fetch_array($resultado)):
-                    ?>
-                    <tr>
-                        <td><?php echo $dados['company']; ?></td>
-                        <td><?php echo $dados['department']; ?></td>
-                        <td><?php echo $dados['fullname']; ?></td>
-                        <td><?php echo $dados['email']; ?></td>
-                        <td><?php echo $dados['phone']; ?></td>
-                    </tr>
-
-                    
-
-                    <?php 
-                        endwhile; 
-                    else : ?>
-                    
+                <table id="table" class="table table-cds">
+                    <thead class="thead-dark thead-table">
                         <tr>
-                            <td colspan="8" class="text-center">Não existem dados para serem exibidos!</td>
+                            <th class="th-title">Unidade</th>
+                            <th class="th-title">Departamento</th>
+                            <th class="th-title">Nome</th>
+                            <th class="th-title">E-mail</th>
+                            <th class="th-title">Ramal</th>
+                        </tr>
+                        <tr>
+                            <th class="th-search"><input class="form-control" id="srcCompany" type="text"></th>
+                            <th class="th-search"><input class="form-control" id="srcDepartment" type="text"></th>
+                            <th class="th-search"><input class="form-control" id="srcName" type="text"></th>
+                            <th class="th-search"><input class="form-control" id="srcEmail" type="text"></th>
+                            <th class="th-search"><input class="form-control" id="srcRamal" type="text"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="tbody-table">
+                        <?php 
+                            // Realizando o select e atribuindo a uma variável
+                            $sql = "SELECT * FROM colaboradores";
+                            
+                            $resultado = mysqli_query($connect, $sql);
+
+                            if(mysqli_num_rows($resultado) > 0):
+
+                            // Enquanto (dados = a quantidade de resultados retornados)
+                            while($dados = mysqli_fetch_array($resultado)):
+                        ?>
+                        <tr>
+                            <td><?php echo $dados['company']; ?></td>
+                            <td><?php echo $dados['department']; ?></td>
+                            <td><?php echo $dados['fullname']; ?></td>
+                            <td><?php echo $dados['email']; ?></td>
+                            <td><?php echo $dados['phone']; ?></td>
                         </tr>
 
-                    <?php
-                        endif;
-                    ?>
-                </tbody>
-            </table>
+                        
 
+                        <?php 
+                            endwhile; 
+                        else : ?>
+                        
+                            <tr>
+                                <td colspan="8" class="text-center">Não existem dados para serem exibidos!</td>
+                            </tr>
+
+                        <?php
+                            endif;
+                        ?>
+                    </tbody>
+                </table>
+
+            </div>
         </div>
     </div>
+</section>
+
 
 <?php 
 

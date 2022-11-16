@@ -27,8 +27,8 @@
 
 <div class="row no-gutters">
         <div class="col-12 col-md-8 offset-md-2">
-            <h3>Novo Tutorial</h3>
-            <form action="../php_action/create-tutorial.php" method="POST" enctype="multipart/form-data">
+            <h3 class="page-title">Novo Tutorial</h3>
+            <form class="form-admin" action="../php_action/create-tutorial.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="class">Classificação</label>
                     <select required name="class" id="class" class="form-control">

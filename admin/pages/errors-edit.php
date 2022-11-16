@@ -30,8 +30,8 @@
 
 <div class="row no-gutters mt-4">
         <div class="col-12 col-md-8 offset-md-2">
-            <h3 class="text-center">CENTRAL DE SUPORTE | Editar Erros do Sintra</h3>
-            <form action="../php_action/update-errors.php" method="POST">
+            <h3 class="page-title text-center">Editar Status Sintra</h3>
+            <form class="form-admin" action="../php_action/update-errors.php" method="POST">
                 <input name="id" type="hidden" value="<?php echo $dados['id'] ?>">
                 <div class="form-group">
                     <label for="status">Status</label>

@@ -30,8 +30,8 @@
 
 <div class="row no-gutters mt-4">
         <div class="col-12 col-md-8 offset-md-2">
-            <h3 class="text-center">Editar Usuário</h3>
-            <form action="../php_action/update-users.php" method="POST">
+            <h3 class="page-title text-center"><ion-icon name="create-outline"></ion-icon> Editar Usuário</h3>
+            <form class="editform" action="../php_action/update-users.php" method="POST">
                 <input name="id" type="hidden" value="<?php echo $dados['id'] ?>">
                 <div class="form-group">
                     <label for="username">Username</label>
@@ -56,9 +56,6 @@
                         <option <?php if($dados['profile'] == "user") {echo "selected";} ?> value="user">User</option>
                         <option <?php if($dados['profile'] == "author") {echo "selected";} ?> value="author">Author</option>
                     </select>
-                    <p>O profile 'admin' dá acesso total a todas as manutenções na central</p>
-                    <p>O profile 'user' são para usuários que fazem a manuenção na central, mas não tem permissões para certas exclusões</p>
-                    <p>O profile 'author' apenas vai conseguir mexer na sessão do blog e tutoriais</p>
                 </div>
 
                 <div class="form-group">
@@ -68,8 +65,8 @@
                 </div>
 
                 <div class="form-group mt-3">
-                    <button type="submit" name="btn-atualizar" class="btn btn-success">ATUALIZAR</button>
-                    <a href="users-list.php" class="btn btn-primary">VOLTAR</a>
+                    <button type="submit" name="btn-atualizar" class="btn btn-success"><ion-icon name="cloud-upload-outline"></ion-icon> ATUALIZAR</button>
+                    <a href="users-list.php" class="btn btn-primary"><ion-icon name="arrow-back-outline"></ion-icon> VOLTAR</a>
                 </div>
             </form>
 

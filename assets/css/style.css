@@ -5,22 +5,26 @@
 /* White/Black Colors */
 /* Gradient Colors */
 .btn-primary-blue {
-  box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
   border-radius: 16px;
   font-size: 1em;
   background-color: linear-gradient(90deg, #18336A 28.98%, #2A54AA 77.76%);
 }
+
 .btn-primary-blue:hover {
   background-color: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
 }
 
 .btn-secondary-blue {
-  box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
   border-radius: 16px;
   font-size: 1em;
   background-color: #EBEEF3;
   border: 1px solid linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
 }
+
 .btn-secondary-blue:hover {
   background-color: linear-gradient(90deg, #18336A 28.98%, #2A54AA 77.76%);
 }
@@ -29,9 +33,18 @@
   background-color: #1d9637;
   padding: 8px 6px;
   border-radius: 8px;
-  width: 75px;
-  height: 75px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .btn-excel:hover {
   background-color: #32D957;
 }
@@ -78,15 +91,27 @@ option:hover {
 .navbar {
   max-width: 1440px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .highlight {
@@ -97,6 +122,8 @@ option:hover {
 
 .nav-list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-decoration: none;
 }
@@ -107,32 +134,39 @@ option:hover {
 
 .nav-link {
   text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   display: inline-block;
   padding: 8px 16px;
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  position: relative; /* Quando um elemento está com position relative, seus filhos caso
-sejam absolutos, ficarão absolutos em relação a tag father */
+  position: relative;
+  /* Quando um elemento está com position relative, seus filhos caso
+    sejam absolutos, ficarão absolutos em relação a tag father */
   color: #CFD5E3;
-  transition: 0.7s ease;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
 }
+
 .nav-link::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: -40px;
   left: 50%;
   width: 2px;
   height: 0px;
-  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
   background: linear-gradient(180.01deg, #1a60eb 0.01%, rgba(40, 207, 236, 0) 100%);
-  transition: 0.7s ease;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
 }
+
 .nav-link:hover {
   color: #F9F9FB;
 }
+
 .nav-link:hover::after {
   height: 40px;
 }
@@ -144,6 +178,7 @@ sejam absolutos, ficarão absolutos em relação a tag father */
   background-color: #EBEEF3;
   border-radius: 8px;
 }
+
 @media screen and (max-width: 960px) {
   .hamburguer {
     display: block;
@@ -151,20 +186,28 @@ sejam absolutos, ficarão absolutos em relação a tag father */
 }
 
 .nav-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .nav-social svg {
   cursor: pointer;
   margin-left: 16px;
   width: 24px;
 }
+
 .nav-social svg path, .nav-social svg circle {
-  transition: 0.7s ease;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
 }
+
 .nav-social svg:hover path, .nav-social svg:hover circle {
   fill: #F9F9FB;
-  transform: translate3d(0, -3px, 0);
+  -webkit-transform: translate3d(0, -3px, 0);
+          transform: translate3d(0, -3px, 0);
 }
+
 @media screen and (max-width: 960px) {
   .nav-social {
     display: none;
@@ -176,13 +219,21 @@ sejam absolutos, ficarão absolutos em relação a tag father */
   margin: 0 auto;
   height: 85vh;
   padding: 36px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: none;
 }
+
 @media screen and (max-width: 960px) {
   .container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: auto;
     overflow: hidden;
   }
@@ -190,9 +241,16 @@ sejam absolutos, ficarão absolutos em relação a tag father */
 
 .highlight-text {
   max-width: 576px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   overflow: hidden;
 }
 
@@ -204,12 +262,17 @@ sejam absolutos, ficarão absolutos em relação a tag father */
   height: 100%;
   z-index: -1;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .bg-video::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -221,7 +284,7 @@ sejam absolutos, ficarão absolutos em relação a tag father */
 
 .highlight-title {
   color: #EBEEF3;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 4em;
   margin: 0;
   margin-bottom: 24px;
@@ -229,7 +292,7 @@ sejam absolutos, ficarão absolutos em relação a tag father */
 
 .highlight-desc {
   color: #EBEEF3;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   margin: 0;
 }
@@ -241,9 +304,15 @@ sejam absolutos, ficarão absolutos em relação a tag father */
   top: 0;
   left: 0;
   z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: linear-gradient(225deg, #11244B 0%, #18336A 100%);
   overflow: hidden;
 }
@@ -286,4 +355,232 @@ sejam absolutos, ficarão absolutos em relação a tag father */
     stroke-width: 0.3;
     fill: #CFD5E3;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* COLABORATORS */
+.cds-title {
+  font-weight: bold;
+  color: #18336A;
+}
+
+.table-cds {
+  margin-top: 24px;
+}
+
+.table-cds .thead-table {
+  text-align: center;
+  border-style: hidden;
+  background-color: #18336A;
+}
+
+.table-cds .thead-table .th-title {
+  border-style: hidden;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #EBEEF3;
+}
+
+.table-cds .thead-table .th-title:first-of-type {
+  border-top-left-radius: 8px;
+}
+
+.table-cds .thead-table .th-title:last-of-type {
+  border-top-right-radius: 8px;
+}
+
+.table-cds .thead-table .th-search {
+  border-style: hidden;
+  padding: 8px 24px;
+}
+
+.table-cds .tbody-table {
+  text-align: center;
+}
+
+.table-cds .tbody-table tr:nth-child(odd) {
+  background-color: #EBEEF3;
+}
+
+.table-cds .tbody-table tr:nth-child(even) {
+  background-color: #CFD5E3;
+}
+
+.div-intro {
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  height: 65px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.98%, #18336A), color-stop(77.76%, #001752));
+  background: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
+  -webkit-box-shadow: 2px 3px 10px 4px rgba(0, 0, 0, 0.35);
+          box-shadow: 2px 3px 10px 4px rgba(0, 0, 0, 0.35);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.header .navbar {
+  max-width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.header .logo a {
+  color: #EBEEF3;
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.header .hamburguer {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+
+.header .hamburguer:after {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: 70%;
+  height: 5%;
+  border-radius: 5px;
+  background-color: #EBEEF3;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.header .hamburguer:before {
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  width: 70%;
+  height: 5%;
+  border-radius: 5px;
+  background-color: #EBEEF3;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.header .menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.header .menu li {
+  margin-left: 10px;
+}
+
+.header .menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #CCC;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.header .menu li a:hover {
+  color: #FFF;
+}
+
+.header .hamburguer {
+  display: block;
+  z-index: 999;
+}
+
+.header .menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  background-color: #11244B;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 250px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  padding: 100px 20px;
+}
+
+.header .menu.active {
+  right: 0;
+}
+
+.header .hamburguer.active:after {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  top: 35%;
+}
+
+.header .hamburguer.active:before {
+  top: 35%;
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+
+.companys .card-list .card {
+  border: none;
+  padding: 0 16px;
+}
+
+.companys .card-list .card .card-body {
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.98%, #18336A), color-stop(77.76%, #001752));
+  background: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
+  border-radius: 8px 8px 0 0;
+  color: #EBEEF3;
+  text-align: center;
+}
+
+.companys .card-list .card .card-body .card-title {
+  text-transform: uppercase;
+}
+
+.companys .card-list .card .list-group-item {
+  padding: 16px 24px;
+}
+
+.companys .card-list .card .list-group-item:nth-child(odd) {
+  background-color: #EBEEF3;
+}
+
+.companys .card-list .card .list-group-item:nth-child(even) {
+  background-color: #CFD5E3;
+}
+/*# sourceMappingURL=style.css.map */

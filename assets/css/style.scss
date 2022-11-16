@@ -59,8 +59,10 @@ $gradient-blue-light: linear-gradient(90deg, #18336A 28.98%, #2A54AA 77.76%);
     background-color: $green-dark;
     padding: 8px 6px;
     border-radius: 8px;
-    width: 75px;
-    height: 75px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
         background-color: $green;
@@ -95,3 +97,253 @@ option:hover {
 }
 
 @import 'partials/index';
+
+/* COLABORATORS */
+
+.cds-title {
+    font-weight: bold;
+    color: $blue;
+}
+
+.table-cds {
+    margin-top: 24px;
+
+    .thead-table {
+        text-align: center;
+        border-style: hidden;
+        background-color: $blue;
+
+        .th-title {
+            border-style: hidden;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $white;
+
+            &:first-of-type{
+                border-top-left-radius: 8px;
+            }
+
+            &:last-of-type{
+                border-top-right-radius: 8px;
+            }
+
+        }
+        .th-search {
+            border-style: hidden;
+            padding: 8px 24px;
+
+        }
+    }
+
+    .tbody-table {
+        text-align: center;
+        tr {
+
+            &:nth-child(odd){
+                background-color: $white;
+            }
+
+            &:nth-child(even){
+                background-color: $white-dark;
+            }
+
+            td {
+                
+            }
+        }
+    }
+}
+
+.colab-image {
+    
+}
+.colab-table {
+
+}
+
+.div-intro {
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 65px;
+    background: $gradient-blue;
+    box-shadow: 2px 3px 10px 4px rgba(0,0,0,.35);
+
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    .navbar{
+        max-width: 1200px;
+        height: 60px;
+
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        padding: 0 20px;
+    
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        text-align: center;
+    
+        a {
+            color: $white;
+            font-weight: bold;
+            font-size: 2em;
+            text-decoration: none;
+        }
+    
+    }
+    
+    .hamburguer {
+        width: 30px;
+        height: 30px;
+    
+        background-color: transparent;
+        border-radius: 5px;
+        border: 0;
+    
+        position: relative;
+        cursor: pointer;
+    
+        display: block;
+    }
+    
+    .hamburguer:after {
+        content: '';
+        position: absolute;
+        top: 35%;
+        left: 15%;
+    
+        width: 70%;
+        height: 5%;
+        border-radius: 5px;
+    
+        background-color: $white;
+        transition: 1s ease;
+    
+    }
+    
+    .hamburguer:before {
+        content: '';
+        position: absolute;
+        top: 55%;
+        left: 15%;
+    
+        width: 70%;
+        height: 5%;
+        border-radius: 5px;
+    
+        background-color: $white;
+        transition: 1s ease;
+    
+    }
+    
+    .menu {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    
+    
+        li {
+            margin-left: 10px;
+    
+            a {
+                display: block;
+                padding: 10px 15px;
+                text-decoration: none;
+                color: #CCC;
+                transition: 0.5s ease;
+    
+                &:hover {
+                    color: #FFF;
+                }
+            }
+        }
+    }
+    
+    .hamburguer {
+        display: block;
+        z-index: 999;
+    }
+    
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+    
+        height: 100vh;
+        background-color: $blue-dark;
+        margin: 0;
+    
+        flex-direction: column;
+        width: 100%;
+        max-width: 250px;
+    
+        transition: 0.5s ease;
+    
+        padding: 100px 20px;
+    }
+    
+    .menu.active{
+        right: 0;
+    }
+    
+    .hamburguer.active:after {
+        transform: rotate(225deg);
+        top: 35%;
+    }
+    
+    .hamburguer.active:before{
+        top: 35%;
+        transform: rotate(-225deg);
+    }
+    
+
+}
+
+.companys {
+
+    .card-list {
+
+
+        .card {
+            border: none;
+            padding: 0 16px;
+
+            .card-body {
+                background: $gradient-blue;
+                border-radius: 8px 8px 0 0;
+                color: $white;
+                text-align: center;
+
+                .card-title {
+                    text-transform: uppercase;
+                }
+
+
+            }
+
+            .list-group-item {
+                padding: 16px 24px;
+            }
+
+            .list-group-item:nth-child(odd){
+                background-color: $white;
+            }
+
+            .list-group-item:nth-child(even) {
+                background-color: $white-dark;
+            }
+        }
+    }
+}

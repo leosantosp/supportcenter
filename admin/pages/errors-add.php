@@ -27,8 +27,8 @@
 
     <div class="row no-gutters">
         <div class="col-12 col-md-8 offset-md-2">
-            <h3>Cadastrar novo status SINTRA</h3>
-            <form action="../php_action/create-errors.php" method="POST">
+            <h3 class="page-title">NOVO ALERTA SINTRA</h3>
+            <form class="form-admin" action="../php_action/create-errors.php" method="POST">
                 <div class="form-group">
                     <label for="status">Status</label>
                     <input class="form-control" type="text" name="status" id="status">

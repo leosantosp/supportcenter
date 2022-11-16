@@ -41,8 +41,8 @@
 
 <div class="row no-gutters mt-4">
         <div class="col-12 col-md-8 offset-md-2">
-            <h3 class="text-center">CENTRAL DE SUPORTE | Editar Tutorial</h3>
-            <form action="../php_action/update-tutorial.php" method="POST" enctype="multipart/form-data">
+            <h3 class="page-title text-center">EDITAR TUTORIAL</h3>
+            <form class="form-admin" action="../php_action/update-tutorial.php" method="POST" enctype="multipart/form-data">
                 <input name="id" type="hidden" value="<?php echo $dados['id'] ?>">
 
                 <div class="form-group">

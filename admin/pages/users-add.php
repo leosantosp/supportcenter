@@ -22,9 +22,9 @@
 ?>
 
 <div class="row no-gutters">
-        <div class="col-12 col-md-8 offset-md-2">
-            <h3>Novo Usuário</h3>
-            <form action="../php_action/create-users.php" method="POST">
+        <div class="usersadd-section col-12 col-md-8 offset-md-2">
+            <h3 class="page-title"><ion-icon name="person-add-outline"></ion-icon> Novo Usuário</h3>
+            <form class="addform" action="../php_action/create-users.php" method="POST">
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input class="form-control" type="text" name="username" id="username">
@@ -43,7 +43,7 @@
                 <div class="form-group">
                     <label for="password">Senha</label>
                     <input class="form-control" type="password" name="password" id="password">
-                    <input type="checkbox" class="form-control" onclick="revealPassword()"> Mostrar
+                    <input hidden id="reveal" type="checkbox" class="form-control" onclick="revealPassword()"> <label for="reveal" class="btn-reveal btn-primary">Mostrar <ion-icon name="eye-outline"></ion-icon></label>
                 </div>
 
                 <div class="form-group">
@@ -57,8 +57,8 @@
                 </div>
 
                 <div class="form-group mt-3">
-                    <button type="submit" name="btn-cadastrar" class="btn btn-success">Cadastrar</button>
-                    <a href="users-list.php" class="btn btn-primary">Voltar</a>
+                    <button type="submit" name="btn-cadastrar" class="btn btn-success"><ion-icon name="add-outline"></ion-icon> Cadastrar</button>
+                    <a href="users-list.php" class="btn btn-primary"><ion-icon name="arrow-back-outline"></ion-icon> Voltar</a>
                 </div>
             </form>
 

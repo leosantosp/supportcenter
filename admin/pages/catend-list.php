@@ -28,21 +28,28 @@
 ?>
 
 <div class="row no-gutters mt-4">
-        <div class="col-12 col-md-8 offset-md-2">
-            <h3 class="text-center">CENTRAL DE SUPORTE | Cadastro de Endereços para Catálogo</h3>
-            <table class="table">
-                <thead class="thead-dark">
+        <div class="col-12 col-md-10 offset-md-1">
+            <h3 class="page-title text-center"><ion-icon name="mail-outline"></ion-icon> Endereços de E-mail</h3>
+            <table id="table" class="table table-admin">
+                <thead class="thead-table thead-dark">
                     <tr>
-                        <th>Tratamento</th>
-                        <th>Empresa</th>
-                        <th>Cargo</th>
-                        <th>E-mail</th>
-                        <th>Senha</th>
-                        <th class="text-center" colspan="2">Ações</th>
+                        <th class="th-title">Tratamento</th>
+                        <th class="th-title">Empresa</th>
+                        <th class="th-title">Cargo</th>
+                        <th class="th-title">E-mail</th>
+                        <th class="th-title">Senha</th>
+                        <th class="th-title text-center" colspan="2">Ações</th>
+                    </tr>
+                    <tr>
+                        <th class="th-search"><input class="form-control" id="srcCompany" type="text"></th>
+                        <th class="th-search"><input class="form-control" id="srcDepartment" type="text"></th>
+                        <th class="th-search"><input class="form-control" id="srcNome" type="text"></th>
+                        <th class="th-search"><input class="form-control" id="srcEmail" type="text"></th>
+                        <th class="th-search" colspan="3"></th>
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody class="tbody-table">
                     <?php 
                         // Montando a Query
                         $sql = "SELECT * FROM catalogoenderecos";
@@ -62,8 +69,8 @@
                         <td><?php echo $dados['cargo']; ?></td>
                         <td><?php echo $dados['email']; ?></td>
                         <td><?php echo $dados['senha']; ?></td>
-                        <td><a href="catend-edit.php?id=<?php echo $dados['id']; ?>" class="btn btn-primary">Editar</a></td>
-                        <td><a data-bs-toggle="modal" data-bs-target="#deleteModal<?php echo $dados['id']; ?>" class="btn btn-danger">Excluir</a></td>
+                        <td><a href="catend-edit.php?id=<?php echo $dados['id']; ?>" class="btn btn-primary"><ion-icon name="create-outline"></ion-icon></a></td>
+                        <td><a data-bs-toggle="modal" data-bs-target="#deleteModal<?php echo $dados['id']; ?>" class="btn btn-danger"><ion-icon name="trash-outline"></ion-icon></a></td>
                     </tr>
 
                     <!-- Modal -->
@@ -75,10 +82,10 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Tem certeza que deseja excluir o colaborador <strong><?php echo $dados['tratamento'] ?></strong> </p>
+                            <p>Tem certeza que deseja excluir o e-mail <strong><?php echo $dados['tratamento'] ?></strong>? </p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                             <form action="../php_action/delete-catend.php" method="POST">
                                 <input type="hidden" name="id" value="<?php echo $dados['id'] ?>">
                                 <button type="submit" name="btn-delete" class="btn btn-danger">Sim, quero excluir</button>
@@ -103,8 +110,8 @@
             </table>
 
             <br>
-            <a href="catend-add.php" class="btn btn-success">Adicionar endereço de e-mail</a>
-            <a href="../../includes/colab-excel.php">Gerar Excel para Catálogo de Endereços</a>
+            <a href="catend-add.php" class="btn btn-success"><ion-icon name="add-outline"></ion-icon> Adicionar e-mail</a>
+            <a class="btn-excel" href="../../includes/colab-excel.php"><ion-icon name="file-tray-stacked-outline"></ion-icon> Gerar Excel</a>
         </div>
     </div>
 
