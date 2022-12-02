@@ -109,10 +109,79 @@ body#login-page {
     }
 }
 
+.modal-header {
+    background-color: $blue-dark;
+    color: $white;
+}
 
-input[type="radio"]:checked + label{
-    background: red;
-    color: #FFF;
+.form-label {
+    font-weight: bold;
+    margin-top: 16px;
+    color: $blue;
+    text-transform: uppercase;
+}
+
+.btn-close {
+    border: none;
+    padding: 8px;
+    background-color: transparent;
+
+    ion-icon {
+        font-size: 1.7em;
+        color: $white;
+    }
+}
+
+input[type="radio"] + label.card {
+    cursor: pointer;
+
+    .card-title {
+        font-weight: bold;
+        color: $blue;
+    }
+
+    .card-text {
+        color: $blue;
+    }
+
+    .list-group-item {
+        color: $blue;
+    }
+}
+
+input[type="radio"]:checked + label.card{
+    background: $blue-dark;
+    color: $white;
+    transition: .5s ease;
+
+    .card-title {
+        font-weight: bold;
+        color: $white;
+    }
+
+    .card-text {
+        color: $white;
+    }
+
+
+    .list-group-item {
+        background: $blue-dark;
+        color: $white;
+        transition: .5s ease;
+    }
+
+    
+}
+.detail-title {
+    color: $blue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button-form-group {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .viewReservationOwner {

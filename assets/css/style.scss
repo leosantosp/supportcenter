@@ -347,3 +347,54 @@ option:hover {
         }
     }
 }
+
+.companys {
+
+
+    .card-list {
+
+        .card-company {
+            margin-top: 24px;
+        }
+    }
+}
+
+.system-errors {
+
+    .system-errors-title {
+        .errors-title {
+            text-align: center;
+            color: $blue;
+            font-weight: bold;
+        }
+    
+        .errors-description {
+            color: $blue;
+            text-align: center;
+        }
+    }
+
+    
+}
+
+
+.page {
+
+    .page-info {
+
+        .page-title {
+            color: $blue;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+        }
+    }
+
+    .page-text {
+
+        .page-description {
+
+        }
+    }
+}
+

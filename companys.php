@@ -11,11 +11,14 @@
     include_once __DIR__.'/includes/header.php';
 ?>
 
-    <section class="companys">
-        <div class="container">
+    <section class="companys" style="margin-top: 75px">
+        <div class="container" style="height: 100%;">
             <article class="row">
                 <div class="col-12">
                     <div class="card-list row no-gutters">
+                        <div class="div-intro">
+                            <img class="img-fluid" style="width:300px" src="assets/images/undraw_conversation_re_c26v.svg" onload="SVGInject(this)" alt="">
+                        </div>
                         
                     <?php 
 
@@ -29,7 +32,7 @@
                     
                     ?>
                     
-                        <div class="card col-sm-4">
+                        <div class="card card-company col-sm-4">
                             <div class="card-body">
                                 <h5 class="card-title"> <strong><?php echo $dados['compnumber'] ?> | <?php echo $dados['compname'] ?> </strong></h5>
                             </div>

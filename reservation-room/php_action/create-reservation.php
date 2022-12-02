@@ -6,16 +6,15 @@
 
     require_once 'db_connect.php';
 
-    // use PHPMailer\PHPMailer\PHPMailer;
-    // use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
 
-    // require '../../PHPMailer/src/Exception.php';
-    // require '../../PHPMailer/src/PHPMailer.php';
-    // require '../../PHPMailer/src/SMTP.php';
-
-    
+    require '../PHPMailer/src/Exception.php';
+    require '../PHPMailer/src/PHPMailer.php';
+    require '../PHPMailer/src/SMTP.php';
 
     header('Content-Type: text/html; charset=utf-8');
+            
 
     if(isset($_POST['hostid'], $_POST['title'], $_POST['host'], $_POST['email'], $_POST['guests'], $_POST['rooms'], $_POST['start'], $_POST['end'])){
         $hostid = mysqli_escape_string($connect, $_POST['hostid']);
@@ -47,56 +46,93 @@
             exit;
         }
 
-        $sql = "INSERT INTO reservations (title, host, hostid, email, guests, room, start, end) VALUES ('$title', '$host', '$hostid', '$email', '$guests_conv', '$room', '$data_start_conv', '$data_end_conv')";
+            
+
+
+        $guestlist = explode(',', $guests);
+
+        $emailBody = "<body style='background-color:#FFFF; width:100%; margin: 0; font-family:Arial'>
+
+        <div style='background-color:blue;padding:20px 0; margin: 0;'>
+          <h3 style='color:#FFF;text-align:center;'>SUA REUNIÃO FOI AGENDADA COM SUCESSO!</h3>
+        </div>
+      
+        <div style='background-color:#fff; margin: 0; padding: 10px; text-align: center;'>
+          <p style='font-weight:bold; text-transform:uppercase;'>Confira os dados da sua reunião</p>
+        </div>
+      
+          <table width='100%' style='margin:0; padding:0;' border='0'>
+            <tbody>
+              <tr>
+                <td width='200px' style='background-color: blue; color: #FFF; font-weight:bold;text-transform: uppercase; padding: 16px 4px; text-align: center;border-top-left-radius:8px'>Título</td>
+                <td style='background-color: #CFD5E3; padding: 0 8px; border-top-right-radius:8px'>$title</td>
+              </tr>
+              <tr>
+                <td width='200px' style='background-color: blue; color: #FFF; font-weight:bold;text-transform: uppercase; padding: 16px 4px; text-align: center;'>Anfitrião:</td>
+                <td style='background-color: #CFD5E3; padding: 0 8px'>$host</td>
+              </tr>
+              <tr>
+                <td width='200px' style='background-color: blue; color: #FFF; font-weight:bold;text-transform: uppercase; padding: 16px 4px; text-align: center;'>E-mail:</td>
+                <td style='background-color: #CFD5E3; padding: 0 8px'>$email</td>
+              </tr>
+              <tr>
+                <td width='200px' style='background-color: blue; color: #FFF; font-weight:bold;text-transform: uppercase; padding: 16px 4px; text-align: center;'>Convidados: </td>
+                <td style='background-color: #CFD5E3; padding: 0 8px'>$guests</td>
+              </tr>
+              <tr>
+                <td width='200px' style='background-color: blue; color: #FFF; font-weight:bold;text-transform: uppercase; padding: 16px 4px; text-align: center;'>Sala escolhida: </td>
+                <td style='background-color: #CFD5E3; padding: 0 8px'>$room</td>
+              </tr>
+              <tr>
+                <td width='200px' style='background-color: blue; color: #FFF; font-weight:bold;text-transform: uppercase; padding: 16px 4px; text-align: center;'>Início:</td>
+                <td style='background-color: #CFD5E3; padding: 0 8px'>$data_start</td>
+              </tr>
+              <tr>
+                <td width='200px' style='background-color: blue; color: #FFF; font-weight:bold;text-transform: uppercase; padding: 16px 4px; text-align: center;border-bottom-left-radius:8px'>Término</td>
+                <td style='background-color: #CFD5E3; padding: 0 8px;border-bottom-right-radius:8px'>$data_end</td>
+              </tr>
+            </tbody>
+          </table>
+      </body>";
+
+        $mail = new PHPMailer();
+        $mail-> IsSMTP();
+        $mail-> Host = 'smtps.uhserver.com';
+        $mail-> SMTPAuth = true;
+        $mail-> SMTPSecure = 'ssl';
+        $mail-> Username = 'contato@vipextransportes.com.br';
+        $mail-> Password = '2445cont1180';
+        $mail-> Port = 465;
+        $mail->setFrom('contato@vipextransportes.com.br');
+        $mail->addReplyTo('no-reply@vipextransportes.com.br');            
+        $mail->addAddress($email);
         
+
+
+        foreach($guestlist as $guestmail){
+            $mail->addAddress($guestmail);
+        }
+
+        $mail->isHTML(true);
+        $mail->Subject = "[CdS Meeting] Reuniões";
+        $mail->Body = nl2br($emailBody);
+        $mail->AltBody = nl2br(strip_tags($emailBody));
+        $mail->CharSet = 'UTF-8';
+        $mail->send();
+
+        $sql = "INSERT INTO reservations (title, host, hostid, email, guests, room, start, end) VALUES ('$title', '$host', '$hostid', '$email', '$guests_conv', '$room', '$data_start_conv', '$data_end_conv')";
+
         if(mysqli_query($connect, $sql)){
+
+
+            
+
             $retorna = ['sit' => true, 'msg' => '<div class="alert alert-success" role="alert">SUCESSO: RESERVA REALIZADA COM SUCESSO!</div>'];
             $_SESSION['msg'] = '<div class="alert alert-success" role="alert">SUCESSO: RESERVA REALIZADA COM SUCESSO!</div>';
-
-            // $emailBody = "
-            //     <html>
-            //         <h2>SUA REUNIÃO FOI AGENDADA!</h2>
-            //         <p>Seguem os dados referente a reunião</p>
-            //         <ul>
-            //             <li style='list-style: none'><strong>Título:</strong> $title</li>
-            //             <li style='list-style: none'><strong>Anfitrião:</strong> $host</li>
-            //             <li style='list-style: none'><strong>E-mail:</strong> $email</li>
-            //             <li style='list-style: none'><strong>Convidados:</strong> $guests</li>
-            //             <li style='list-style: none'><strong>Sala escolhida:</strong> $room</li>
-            //             <li style='list-style: none'><strong>Início:</strong> $data_start_conv</li>
-            //             <li style='list-style: none'><strong>Término:</strong> $data_end_conv</li>
-            //         </ul>
-            //     </html>";
-
-            // $mail =  new PHPMailer();
-            // $mail-> IsSMTP();
-            // $mail-> Host = 'smtps.uhserver.com';
-            // $mail-> SMTPAuth = true;
-            // $mail-> SMTPSecure = 'ssl';
-            // $mail-> Username = 'comunica@vipextrans.com.br';
-            // $mail-> Password = '';
-            // $mail-> Port = 465;
-
-            // $mail->setFrom('comunica@vipextrans.com.br');
-            // $mail->addReplyTo('no-reply@vipextransportes.com.br');
-            // $mail->addAddress("$email");
-            // $mail->isHTML(true);
-            // $mail->Subject = "VIPEX | Reunião Agendada";
-            // $mail->Body = nl2br($emailBody);
-            // $mail->AltBody = nl2br(strip_tags($emailBody));
-            // $mail->CharSet = 'UTF-8';
-
-            // if(!$mail->send()){
-            //     echo "Não foi possível enviar a mensagem via e-mail. <br>";
-            //     echo "Erro: ".$mail->ErrorInfo;
-            // }
-            
 
         } else{
             $retorna = ['sit' => false, 'msg' => '<div class="alert alert-danger" role="alert">ERRO: RESERVA NÃO REALIZADA! VERIFIQUE OS CAMPOS E PREENCHA NOVAMENTE</div>'];
         }
-
-
 
     };
 

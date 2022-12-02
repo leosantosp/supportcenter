@@ -6,11 +6,6 @@
 
     session_start();
     
-
-    if(isset($_SESSION['mensagem'])){
-        echo $_SESSION['mensagem'];
-    }
-    
     
     /**
      * Verificação
@@ -39,6 +34,8 @@
             <h3 class="listcolab-title text-center"><ion-icon name="people-outline"></ion-icon> COLABORADORES</h3>
             <p class="text-center">Abaixo, segue uma listagem de todos os colaboradores cadastrados em sistema.</p>
             <p class="text-center">Ao cadastrar um colaborador nesta lista o tornará visível no menu 'Colaboradores' na Central de Suporte</p>
+            <a href="colab-add.php" class="btn btn-addusers btn-success" style="margin-bottom: 24px;"><ion-icon name="person-add-outline"></ion-icon> Adicionar </a>
+
             <table id="table" class="table table-colaborators">
                 <thead class="thead-dark thead-colaborators">
                     <tr>
@@ -121,7 +118,6 @@
             </table>
 
             <br>
-            <a href="colab-add.php" class="btn btn-addusers btn-success"><ion-icon name="person-add-outline"></ion-icon> Adicionar </a>
         </div>
     </div>
 

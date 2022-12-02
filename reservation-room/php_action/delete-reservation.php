@@ -11,7 +11,7 @@
     /* Captura dados da sessão */
 
     $idsessao = $_SESSION['id_usuario'];
-    $sqllogado = "SELECT * FROM usuarios WHERE id = '$id'";
+    $sqllogado = "SELECT * FROM usuarios WHERE id = '$idsessao'";
     $resultadologado = mysqli_query($connect, $sqllogado);
     $dadoslogado = mysqli_fetch_array($resultadologado);
 
@@ -31,6 +31,6 @@
         }
 
     } else {
-        $_SESSION['msg'] = "<div class='alert alert-danger' role='alert'>ERRO: VOCÊ TENTOU EXCLUIR UMA RESERVA QUE NÃO ERA SUA! PRESTE MAIS ATENÇÃO!</div>";
+        $_SESSION['msg'] = "<div class='alert alert-danger' role='alert'>ERRO: VOCÊ TENTOU EXCLUIR UMA RESERVA QUE NÃO ERA SUA!</div>";
         header('Location: ../home.php');
     }

@@ -93,8 +93,8 @@
 
             }
         } else {
-            $retorna = ['sit' => false, 'msg' => '<div class="alert alert-danger" role="alert">ERRO: VOCÊ TENTOU EDITAR UMA RESERVA QUE NÃO ERA SUA! MAIS ATENÇÃO NA REUNIÃO QUE QUER EDITAR!</div>'];
-            $_SESSION['msg'] = "<div class='alert alert-danger' role='alert'>ERRO: VOCÊ TENTOU EDITAR UMA RESERVA QUE NÃO ERA SUA! PRESTE MAIS ATENÇÃO!</div>";
+            $retorna = ['sit' => false, 'msg' => '<div class="alert alert-danger" role="alert">ERRO: VOCÊ TENTOU EDITAR UMA RESERVA QUE NÃO ERA SUA!</div>'];
+            $_SESSION['msg'] = "<div class='alert alert-danger' role='alert'>ERRO: VOCÊ TENTOU EDITAR UMA RESERVA QUE NÃO ERA SUA!</div>";
         }
 
     };

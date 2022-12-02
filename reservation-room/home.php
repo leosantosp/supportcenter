@@ -1,43 +1,10 @@
-<?php
+<?php 
 
-    require_once 'php_action/db_connect.php';
-
-    session_start();
-
-    if(!isset($_SESSION['logado'])):
-        header('Location: index.php');
-    endif;
-
-    /* Captura dados da sessão */
-
-    $id = $_SESSION['id_usuario'];
-    $sql = "SELECT * FROM usuarios WHERE id = '$id'";
-    $resultado = mysqli_query($connect, $sql);
-    $dados = mysqli_fetch_array($resultado);
-
+    include_once 'includes/header.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva de Salas | Central de Suporte</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="assets/lib/main.min.css" rel="stylesheet">
-    <script src="assets/lib/main.min.js"></script>
-    <script src="assets/lib/locales-all.min.js"></script>
-</head>
-<body id="admin-panel">
-
-    <h1>Bem vindo(a), <?php echo $dados['username']; ?>!</h1>
-    <p>Este é o módulo de Reserva de Salas, utilize o calendário abaixo para agendar uma reunião</p>
-
-    <?php 
+<?php 
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];
             unset($_SESSION['msg']);
@@ -51,12 +18,12 @@
 
     <!-- Modal de Cadastro de Reserva -->
     <div class="modal fade" id="newReservation" tabindex="-1" role="dialog" aria-labelledby="newReservationLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="newReservationLabel">NOVA RESERVA!</h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                <h5 class="modal-title" id="newReservationLabel"><ion-icon name="globe-outline"></ion-icon> NOVA RESERVA!</h5>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><ion-icon name="close-outline"></ion-icon></span>
                 </button>
             </div>
             <div class="modal-body">
@@ -67,23 +34,23 @@
                     <input type="hidden" name="hostid" id="hostid" value="<?php echo $dados['id']; ?>">
 
                     <div class="form-group">
-                        <label for="title">Título</label>
+                        <label class="form-label" for="title">Título</label>
                         <input id="title" name="title" class="form-control" required type="text" placeholder="Título da Reunião">
                     </div>
                     
                     <div class="form-group">
-                        <label for="host">Anfitrião</label>
+                        <label class="form-label" for="host">Anfitrião</label>
                         <input id="host" name="host" class="form-control" required type="text" placeholder="Quem está agendando a reunião?">
                     </div>
 
                     <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input id="email" name="email" class="form-control" required type="email" placeholder="example@company.com.br">
+                        <label class="form-label" for="email">E-mail</label>
+                        <input id="email" name="email" class="form-control" required type="email" placeholder="exemplo@empresa.com.br">
                     </div>
 
                     <div class="form-group">
-                        <label for="guests">Convidados</label>
-                        <input type="email" list="emails" id="guests" name="guests" class="form-control" multiple>
+                        <label class="form-label" for="guests">Convidados</label>
+                        <input type="email" list="emails" id="guests" name="guests" class="form-control" multiple placeholder="Após digitar um e-mail, utiliza o sinal de ',' para adicionar mais pessoas">
                         <datalist id="emails">
                             <?php 
                                 $sqlguests = "SELECT * FROM colaboradores";
@@ -105,34 +72,70 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="rooms">Escolha a sua sala</label>
+                        <label class="form-label" for="rooms">Escolha a sua sala</label>
                         <fieldset id="rooms">
                             <div class="form-group row no-gutters">
                                 <div class="room-card col-4">
                                     <input type="radio" name="rooms" hidden id="carreta" value="Carreta">
-                                    <label for="carreta">Carreta</label>
+                                    <label for="carreta" class="card">
+                                        <img class="card-img-top" src="assets/images/sala-carreta.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">CARRETA</h5>
+                                            <p class="card-text">Uma das salas disponíveis na Matriz, utilizada para treinamento de pessoal e apresentações</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><strong>Localização:</strong> No início do corredor, perto da escada</li>
+                                            <li class="list-group-item"><strong>Capacidade:</strong> 15 pessoas</li>
+                                            <li class="list-group-item"><strong>Rede:</strong> 8 acessos</li>
+                                            <li class="list-group-item"><strong>Diferenciais:</strong> Projetor / Lousa</li>
+                                        </ul>
+                                    </label>
                                 </div>
 
                                 <div class="room-card col-4">
                                     <input type="radio" name="rooms" hidden id="vuc" value="VUC">
-                                    <label for="vuc">VUC</label>
+                                    <label for="vuc" class="card">
+                                        <img class="card-img-top" src="assets/images/sala-vuc.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">VUC</h5>
+                                            <p class="card-text">Uma das salas disponíveis na Matriz, utilizada para entrevistas / gravações / reuniões pequenas / audiências</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><strong>Localização:</strong> Ao lado da sala do CEO</li>
+                                            <li class="list-group-item"><strong>Capacidade:</strong> 3 pessoas</li>
+                                            <li class="list-group-item"><strong>Rede:</strong> 2 acessos</li>
+                                        </ul>
+                                    </label>
                                 </div>
 
                                 <div class="room-card col-4">
-                                    <input type="radio" name="rooms" hidden id="toco" value="Toco">
-                                    <label for="toco">Toco</label>
+                                    <input type="radio" name="rooms" hidden id="truck" value="Truck">
+                                    <label for="truck" class="card">
+                                        <img class="card-img-top" src="assets/images/sala-truck.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">TRUCK</h5>
+                                            <p class="card-text">Uma das salas disponíveis na Matriz, utilizada para reuniões com cliente / gravações / reuniões de médio/grande porte</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><strong>Localização:</strong> Meio do corredor</li>
+                                            <li class="list-group-item"><strong>Capacidade:</strong> 8 pessoas</li>
+                                            <li class="list-group-item"><strong>Rede:</strong> 6 acessos</li>
+                                            <li class="list-group-item"><strong>Diferenciais:</strong> Frigobar / TV 55" / Webcam e Mic dedicado</li>
+                                        </ul>
+                                    </label>
                                 </div>
+
                             </div>
                         </fieldset>
                     </div>
 
                     <div class="form-group">
-                        <label for="start">Início</label>
+                        <label class="form-label" for="start">Início</label>
                         <input required type="text" class="form-control data-hora" name="start" id="start" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="end">Término</label>
+                        <label class="form-label" for="end">Término</label>
                         <input required type="text" class="form-control data-hora" name="end" id="end" required>
                     
                     </div>
@@ -140,58 +143,13 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="submit" class="btn btn-success">Reservar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><ion-icon name="close-circle-outline"></ion-icon> Cancelar</button>
+                <button type="submit" class="btn btn-success"><ion-icon name="checkmark-circle-outline"></ion-icon> Reservar</button>
                 </form> <!-- FIM DO FORMULÁRIO DE CADASTRO DE RESERVA -->
             </div>
             </div>
         </div>
     </div>
-
-    <!-- Modal de Visualização da Reserva -->
-    <!-- <div class="modal fade" id="viewReservation" tabindex="-1" role="dialog" aria-labelledby="viewReservationLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="viewReservationLabel">DETALHES DA RESERVA! #<span id="id"></span> </h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <dl class="row">
-                    <dt class="col-sm-3">Título</dt>
-                    <dd class="col-sm-9" id="title"></dd>
-                    <hr>
-
-                    <dt class="col-sm-3">Anfitrião</dt>
-                    <dd class="col-sm-9" id="host"></dd>
-                    <hr>
-
-                    <dt class="col-sm-3">E-mail</dt>
-                    <dd class="col-sm-9" id="email"></dd>
-                    <hr>
-
-                    <dt class="col-sm-3">Sala Escolhida</dt>
-                    <dd class="col-sm-9" id="room"></dd>
-                    <hr>
-
-                    <dt class="col-sm-3">Início</dt>
-                    <dd class="col-sm-9" id="start"></dd>
-                    <hr>
-
-                    <dt class="col-sm-3">Término</dt>
-                    <dd class="col-sm-9" id="end"></dd>
-                </dl>
-
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            </div>
-            </div>
-        </div>
-    </div> -->
 
     <!-- Modal de Edição da Reserva -->
     <div class="modal fade" id="viewReservationOwner" tabindex="-1" role="dialog" aria-labelledby="viewReservationOwnerLabel" aria-hidden="true">
@@ -199,8 +157,8 @@
             <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="viewReservationOwnerLabel">DETALHES DA RESERVA! #<span id="id"></span> </h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                <button type="button" class="close btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><ion-icon name="close-outline"></ion-icon></span>
                 </button>
 
             </div>
@@ -212,32 +170,40 @@
                 <!-- Content of ViewOwner -->
                 <div class="viewReservationOwner">
                     <dl class="row">
-                        <dt class="col-sm-3">Título</dt>
+                        <dt class="col-sm-3 detail-title">Título</dt>
                         <dd class="col-sm-9" id="title"></dd>
                         <hr>
 
-                        <dt class="col-sm-3">Anfitrião</dt>
+                        <dt class="col-sm-3 detail-title">Anfitrião</dt>
                         <dd class="col-sm-9" id="host"></dd>
                         <hr>
 
-                        <dt class="col-sm-3">E-mail</dt>
+                        <dt class="col-sm-3 detail-title">E-mail</dt>
                         <dd class="col-sm-9" id="email"></dd>
                         <hr>
 
-                        <dt class="col-sm-3">Sala Escolhida</dt>
+                        <dt class="col-sm-3 detail-title">Sala Escolhida</dt>
                         <dd class="col-sm-9" id="room"></dd>
                         <hr>
 
-                        <dt class="col-sm-3">Início</dt>
+                        <dt class="col-sm-3 detail-title">Início</dt>
                         <dd class="col-sm-9" id="start"></dd>
                         <hr>
 
-                        <dt class="col-sm-3">Término</dt>
+                        <dt class="col-sm-3 detail-title">Término</dt>
                         <dd class="col-sm-9" id="end"></dd>
                     </dl>
 
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-warning btnUpdate">Editar</button>
+                    <div class="button-form-group">
+                        <div class="button-1">
+                            <button type="button" class="btn btn-warning btnUpdate"><ion-icon name="create-outline"></ion-icon> Editar</button>
+                        </div>
+                        <div class="button-2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+
+                    
 
                 </div>
 
@@ -253,35 +219,40 @@
                             <input type="hidden" name="verified" id="verified" value="<?php echo $dados['id'] ?>">
 
                             <div class="form-group">
-                                <label for="title">Título</label>
+                                <label class="form-label" for="title">Título</label>
                                 <input id="title" name="title" class="form-control" required type="text" placeholder="Título da Reunião">
                             </div>
                             
                             <div class="form-group">
-                                <label for="host">Anfitrião</label>
+                                <label class="form-label" for="host">Anfitrião</label>
                                 <input id="host" name="host" class="form-control" required type="text" placeholder="Quem está agendando a reunião?">
                             </div>
 
                             <div class="form-group">
-                                <label for="email">E-mail</label>
+                                <label class="form-label" for="email">E-mail</label>
                                 <input id="email" name="email" class="form-control" required type="email" placeholder="example@company.com.br">
                             </div>
 
                             <div class="form-group">
-                                <label for="start">Início</label>
+                                <label class="form-label" for="start">Início</label>
                                 <input required type="text" class="form-control data-hora" name="start" id="start">
                             </div>
 
                             <div class="form-group">
-                                <label for="end">Término</label>
+                                <label class="form-label" for="end">Término</label>
                                 <input required type="text" class="form-control data-hora" name="end" id="end">
                             
                             </div>
 
-                            <div class="form-group">
-                                <button type="button" class="btn btn-secondary btnCancelUpdate">Cancelar</button>
-                                <a id="deleteReservation" class="btn btn-danger">Excluir</a>
-                                <button type="submit" class="btn btn-success btnUpdateConfirm">Atualizar</button>
+                            <div class="form-group button-form-group">
+                                <div class="buttons-section">
+                                    <button type="submit" class="btn btn-success btnUpdateConfirm"><ion-icon name="cloud-upload-outline"></ion-icon> Atualizar</button>
+                                </div>
+                                <div class="buttons-section-cancel">
+                                    <a id="deleteReservation" class="btn btn-danger"><ion-icon name="trash-outline"></ion-icon></a>
+                                    <button type="button" class="btn btn-secondary btnCancelUpdate">Cancelar</button>
+                                </div>
+                                
                             </div>
                                 
                         </form> <!-- FIM DO FORMULÁRIO DE CADASTRO DE RESERVA -->
@@ -292,42 +263,9 @@
             </div>
         </div>
     </div>
-    
-    
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-<script>
-        $('.data-hora').mask('00/00/0000 00:00:00');
+<?php 
 
-        function dataformatada() {
-            var hoje = new Date();
-            var dd = hoje.getDate();
-            var mm = hoje.getMonth()+1;
-            var aaaa = hoje.getFullYear();
-            var horas = hoje.getHours();
-            var minutos = hoje.getMinutes();
-            var segundos = hoje.getSeconds();
-                if(dd<10){dd='0'+dd}
-                if(mm<10){mm='0'+mm}
-                if(horas<10){horas='0'+horas}
-                if(minutos<10){minutos='0'+minutos}
-                if(segundos<10){segundos='0'+segundos}
-            return dd +'/'+ mm +'/'+ aaaa +' '+ horas +':'+ minutos +':'+ segundos;
-        }
+    require_once 'includes/footer.php'; 
 
-        function aplicahoras() {
-        debugger;
-        var campos = document.getElementsByClassName('data-hora'),
-            i = campos.length;
-
-        while(i < campos.length ) {
-            campos[i].value = dataformatada();
-        }
-        }
-    </script>
-
-</body>
-</html>
+?>

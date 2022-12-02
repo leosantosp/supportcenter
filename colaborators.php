@@ -10,8 +10,8 @@
 
     include_once __DIR__.'/includes/header.php';
 ?>
-<section>  
-    <div class="container">  
+<section class="colaborators" style="margin-top: 75px">  
+    <div class="container" style="height:100%">  
         <div class="row">
             <div class="col-12">
                 <div class="div-intro">

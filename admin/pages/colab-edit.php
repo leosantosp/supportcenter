@@ -55,13 +55,27 @@
                         <option <?php if($dados['department'] == "") {echo "selected";} ?> selected disabled hidden>Selecione um departamento</option>
                         <option <?php if($dados['department'] == "Operacional") {echo "selected";} ?> value="Operacional">Operacional</option>
                         <option <?php if($dados['department'] == "Assistência") {echo "selected";} ?> value="Assistência">Assistência</option>
-                        <option <?php if($dados['department'] == "Comercial") {echo "selected";} ?> value="Comercial">Comercial</option>
-                        <option <?php if($dados['department'] == "SAC") {echo "selected";} ?> value="SAC">SAC</option>
+                        <option <?php if($dados['department'] == "SAC Rastreio") {echo "selected";} ?> value="SAC Rastreio">SAC Rastreio</option>
+                        <option <?php if($dados['department'] == "SAC Coletas") {echo "selected";} ?> value="SAC Coletas">SAC Coletas</option>
                         <option <?php if($dados['department'] == "Financeiro") {echo "selected";} ?> value="Financeiro">Financeiro</option>
+                        <option <?php if($dados['department'] == "Cobrança") {echo "selected";} ?> value="Cobrança">Cobrança</option>
                         <option <?php if($dados['department'] == "Controladoria") {echo "selected";} ?> value="Controladoria">Controladoria</option>
                         <option <?php if($dados['department'] == "RH") {echo "selected";} ?> value="RH">RH</option>
                         <option <?php if($dados['department'] == "DP") {echo "selected";} ?> value="DP">DP</option>
                         <option <?php if($dados['department'] == "TI") {echo "selected";} ?> value="TI">TI</option>
+                        <option <?php if($dados['department'] == "Arquivo") {echo "selected"; } ?> value="Arquivo">Arquivo</option>
+                        <option <?php if($dados['department'] == "Gerencia") {echo "selected"; } ?> value="Gerencia">Gerencia</option>
+                        <option <?php if($dados['department'] == "Administrativo") {echo "selected"; } ?> value="Administrativo">Administrativo</option>
+                        <option <?php if($dados['department'] == "Frota") {echo "selected"; } ?> value="Frota">Frota</option>
+                        <option <?php if($dados['department'] == "Comercial ADM") {echo "selected"; } ?> value="Comercial ADM">Comercial ADM</option>
+                        <option <?php if($dados['department'] == "Marketing") {echo "selected"; } ?> value="Marketing">Marketing</option>
+                        <option <?php if($dados['department'] == "Comercial Vendas") {echo "selected"; }  ?> value="Comercial Vendas">Comercial Vendas</option>
+                        <option <?php if($dados['department'] == "Comercial Cotação") {echo "selected"; }  ?> value="Comercial Cotação">Comercial Cotação</option>
+                        <option <?php if($dados['department'] == "Recebimento") {echo "selected"; }  ?> value="Recebimento">Recebimento</option>
+                        <option <?php if($dados['department'] == "Compras") {echo "selected"; }  ?> value="Compras">Compras</option>
+
+
+
                     </select>
                 </div>
 

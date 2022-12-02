@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --card-color-primary: #F7DD43;
+  --card-border-color: #746615;
+  --card-text-color: #E1E1E6;
+  --card-title-color: #F7DD43;
+  --card-bg: #1D1C19;
+  --bg: url("./assets/images/bg-yellow.svg");
+}
+
+body {
+  /*             color   image      repeat  position-xy / size*/
+  background: #121214 var(--bg) no-repeat top center/cover;
+}
+
+body.blue {
+  --card-color-primary: #338AF3;
+  --card-border-color: #338AF3;
+  --card-bg: #202024;
+  --bg: url("./assets/images/bg-blue.svg");
+}
+
+body.green {
+  --card-color-primary: #047C3F;
+  --card-border-color: #047C3F;
+  --card-bg: #1A1F1B;
+  --bg: url("./assets/images/bg-green.svg");
+}
+
+#app {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding-top: 52px;
+}
+
+header {
+  margin-bottom: 63px;
+  text-align: center;
+}
+
+.logo-description {
+  color: var(--card-text-color);
+  margin-top: 16px;
+}
+
+#cards, #previous-games {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card {
+  padding: 32px 23px;
+  text-align: center;
+  background: var(--card-bg);
+  border-bottom: 2px solid var(--card-color-primary);
+  border-radius: 6px;
+  -webkit-animation: appear 3s forwards;
+          animation: appear 3s forwards;
+}
+
+.card-title {
+  padding: 8px 16px;
+  border: 1px solid var(--card-border-color);
+  border-radius: 6px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  color: var(--card-title-color);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 53px;
+  transition: transform 0.3s;
+}
+.card-title:hover {
+  transform: scale(1.1);
+}
+.card-title span {
+  color: var(--card-text-color);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.card-game {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-game .card-flag {
+  transition: transform 0.3s;
+}
+.card-game .card-flag:hover {
+  transform: scale(1.1);
+}
+.card-game .game-hour {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 125%;
+  color: #E1E1E6;
+  transition: transform 0.3s;
+}
+.card-game .game-hour:hover {
+  transform: scale(1.1);
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 300px;
+}
+
+.score-game + .stage {
+  padding-top: 24px;
+  border-top: 1px solid #323238;
+}
+
+.score-game .score-game-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.score-game .score-game-list .score-item {
+  font-size: 24px;
+  color: var(--card-text-color);
+  font-weight: 900;
+}
+
+.stage .stage-name {
+  color: var(--card-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 700px) {
+  #cards, #previous-games {
+    max-width: 724px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) {
+  #cards, #previous-games {
+    max-width: 1102px;
+  }
+}/*# sourceMappingURL=style.css.map */

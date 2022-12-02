@@ -39,22 +39,13 @@
                 $password = md5($password);
                 $sql = "SELECT * FROM usuarios WHERE login = '$login' AND password = '$password'";
                 $resultado = mysqli_query($connect, $sql);
+                $dados = mysqli_fetch_array($resultado);
+
                     /**
                      * Verificar se no banco de dados existe um login ou senha igual ao digitado
                      * Caso tenha, execute a função
                      */
-                    if(mysqli_num_rows($resultado) == 1):
-                        /**
-                         * Colocar na variável $dados os dados atribuídos a $resultado
-                         */
-                        $dados = mysqli_fetch_array($resultado);
-                        
-                        if($dados['profile'] == "user"){
-                            header('Location: index.php');
-                            $erros[] = '<div class="alert-warning-login alert alert-warning" role="alert">
-                                            Você não tem permissão para acessar esta página.
-                                        </div>';
-                        }
+                    if(mysqli_num_rows($resultado) == 1 AND $dados['profile'] !== "user" ):
 
                         mysqli_close($connect);
                         $_SESSION['logado'] = true;
@@ -96,6 +87,19 @@
             
             <div class="login-card">
                 <h2 class="login-card-title">Iniciar Sessão</h2>
+
+                <?php 
+                                /**
+                                 * Se o campo erro não estiver vazio
+                                 * enquanto tiver erros, atribua a variável erro
+                                 * e exiba o erro
+                                 */
+                                if(!empty($erros)):
+                                    foreach($erros as $erro):
+                                        echo $erro;
+                                    endforeach;
+                                endif;
+                            ?>
                             
                 <!-- -->
                 <form class="login-form-group" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
@@ -112,18 +116,7 @@
                     </div>
                 </form>
 
-                            <?php 
-                                /**
-                                 * Se o campo erro não estiver vazio
-                                 * enquanto tiver erros, atribua a variável erro
-                                 * e exiba o erro
-                                 */
-                                if(!empty($erros)):
-                                    foreach($erros as $erro):
-                                        echo $erro;
-                                    endforeach;
-                                endif;
-                            ?>
+                            
             </div>
         </section>
     </main>

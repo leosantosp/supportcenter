@@ -7,8 +7,8 @@
 
 $servername = "localhost"; // Nome do servidor
 $username = "root"; // Usuário do servidor
-$password = ""; // Senha do servidor
-$dbname = "centralsuporte"; // Nome do Banco de Dados
+$password = "500500500Ti"; // Senha do servidor
+$dbname = "supportcenter"; // Nome do Banco de Dados
 
 /**
  * Programação Procedural funciona apenas em MYSQLI
@@ -21,7 +21,7 @@ $dbname = "centralsuporte"; // Nome do Banco de Dados
  */
 
  $connect = mysqli_connect($servername, $username, $password, $dbname);
- mysqli_set_charset($connect, "utf-8");
+ mysqli_set_charset($connect, "UTF8");
 
  /**
   * Definindo um retorno caso dê algum erro de conexão e retornar ao usuário utilizando

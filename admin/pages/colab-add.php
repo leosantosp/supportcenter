@@ -38,15 +38,25 @@
                     <label for="department"><ion-icon name="people-outline"></ion-icon> Departamento</label>
                     <select class="form-control" name="department" id="department">
                         <option selected disabled hidden>Selecione um departamento</option>
+                        <option value="Arquivo">Arquivo</option>
                         <option value="Operacional">Operacional</option>
+                        <option value="Recebimento">Recebimento</option>
                         <option value="Assistência">Assistência</option>
-                        <option value="Comercial">Comercial</option>
-                        <option value="SAC">SAC</option>
+                        <option value="Comercial ADM">Comercial ADM</option>
+                        <option value="Comercial Vendas">Comercial Vendas</option>
+                        <option value="Comercial Cotação">Comercial Cotação</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="SAC Rastreio">SAC Rastreio</option>
+                        <option value="SAC Coletas">SAC Coletas</option>
                         <option value="Financeiro">Financeiro</option>
                         <option value="Controladoria">Controladoria</option>
                         <option value="RH">RH</option>
                         <option value="DP">DP</option>
                         <option value="TI">TI</option>
+                        <option value="Gerencia">Gerencia</option>
+                        <option value="Administrativo">Administrativo</option>
+                        <option value="Frota">Frota</option>
+                        <option value="Compras">Compras</option>
                     </select>
                 </div>
 
