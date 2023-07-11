@@ -24,6 +24,7 @@
 ?>
 
 <div class="row no-gutters mt-4">
+
         <div class="users-section col-12 col-md-10 offset-md-1">
             <h3 class="users-title text-center"><ion-icon name="person-outline"></ion-icon> Usuários</h3>
             <p class="users-description">Abaixo temos uma lista de todos os usuários que podem acessar alguma sessão no sistema.
@@ -36,6 +37,7 @@
                 <li><strong>AUTHOR</strong>: Além das mesmas opções do 'user' este usuário consegue inserir novos tutoriais e erros do sistema</li>
                 <li><strong>OVERWATCH</strong>: Usuários que possuem acesso apenas a sessão de Ouvidoria</li>
             </ul>
+            <a href="users-add.php" class="btn btn-addusers btn-success"><ion-icon name="person-add-outline"></ion-icon> Adicionar usuário</a>
             <table id="table" class="users-table table">
                 <thead class="users-thead thead-dark">
                     <tr>
@@ -43,6 +45,7 @@
                         <th class="th-title">Login</th>
                         <th class="th-title">E-mail</th>
                         <th class="th-title">Profile</th>
+                        <th class="th-title">Nível de Permissão</th>
                         <th class="th-title text-center" colspan="2">Ações</th>
                     </tr>
                     <tr>
@@ -50,6 +53,7 @@
                         <th class="th-search"><input class="form-control" id="srcLogin" type="text"></th>
                         <th class="th-search"><input class="form-control" id="srcEmail" type="text"></th>
                         <th class="th-search"><input class="form-control" id="srcProfile" type="text"></th>
+                        <th class="th-search"><input class="form-control" id="srcPermission" type="text"></th>
                         <th class="th-search" colspan="2"></th>
                     </tr>
                 </thead>
@@ -71,6 +75,7 @@
                         <td><?php echo $dados['login']; ?></td>
                         <td><?php echo $dados['email']; ?></td>
                         <td><?php echo $dados['profile']; ?></td>
+                        <td><?php echo $dados['permission']; ?></td>
                         <td><a href="users-edit.php?id=<?php echo $dados['id']; ?>" class="btn btn-primary"><ion-icon name="create-outline"></ion-icon></a></td>
                         <td><a data-bs-toggle="modal" data-bs-target="#deleteModal<?php echo $dados['id']; ?>" class="btn btn-danger"><ion-icon name="trash-outline"></ion-icon></a></td>
                     </tr>
@@ -114,7 +119,7 @@
             </table>
 
             <br>
-            <a href="users-add.php" class="btn btn-addusers btn-success"><ion-icon name="person-add-outline"></ion-icon> Adicionar usuário</a>
+            
         </div>
     </div>
 

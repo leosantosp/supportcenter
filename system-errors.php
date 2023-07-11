@@ -1,4 +1,5 @@
 <?php 
+    $titlepage = "Alertas/Erros do Sistema | Central de Suporte";
     session_start();
     if(isset($_SESSION['mensagem'])){
         echo $_SESSION['mensagem'];

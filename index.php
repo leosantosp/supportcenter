@@ -19,6 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central de Suporte | Sua Intranet Corporativa</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <script src="assets/js/svg-inject.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,12 +42,12 @@
                 <ul class="nav-list">
                     <li><a href="colaborators.php" class="nav-link">Colaboradores</a></li>
                     <li><a href="system-errors.php" class="nav-link">Erros</a></li>
-                    <li><a href="tutorials/index.php" class="nav-link">Tutoriais</a></li>
+                    <li><a href="aprenda/index.php" class="nav-link">Aprenda</a></li>
                     <li><a href="companys.php" class="nav-link">Empresas</a></li>
                     <li><a href="ouvidoria.php" class="nav-link">Ouvidoria</a></li>
                     <li><a href="reservation-room/index.php" class="nav-link">Reserva de Sala</a></li>
                     <li><a href="https://sintraweb.sdso.com.br/sintraweb/hsin000.aspx" class="nav-link">SINTRA</a></li>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfuYxLIDbd5iNavzySbu5ik7jJQQVEXI-9PrybplYcQBOFLZQ/viewform" class="nav-link">Chamados T.I</a></li>
+                    <li><a href="chamados/index.php" class="nav-link">Chamados T.I</a></li>
                 </ul>
             </div>
         </nav>

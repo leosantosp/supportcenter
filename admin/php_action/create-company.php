@@ -5,15 +5,16 @@
     require_once 'db_connect.php';
 
 
-    if(isset($_POST['compnumber'], $_POST['compname'], $_POST['cnpj'], $_POST['phone'], $_POST['address'], $_POST['manager'])){
+    if(isset($_POST['compnumber'], $_POST['compname'], $_POST['cnpj'], $_POST['phone'], $_POST['address'], $_POST['manager'], $_POST['ie'])){
         $compnumber = mysqli_escape_string($connect, $_POST['compnumber']);
         $compname = mysqli_escape_string($connect, $_POST['compname']);
         $cnpj = mysqli_escape_string($connect, $_POST['cnpj']);
         $phone = mysqli_escape_string($connect, $_POST['phone']);
         $address = mysqli_escape_string($connect, $_POST['address']);
         $manager = mysqli_escape_string($connect, $_POST['manager']);
+        $ie = mysqli_escape_string($connect, $_POST['ie']);
 
-        $sql = "INSERT INTO companys (compnumber, compname, cnpj, phone, address, manager) VALUES ('$compnumber', '$compname', '$cnpj', '$phone', '$address', '$manager')";
+        $sql = "INSERT INTO companys (compnumber, compname, cnpj, phone, address, manager, ie) VALUES ('$compnumber', '$compname', '$cnpj', '$phone', '$address', '$manager', '$ie')";
 
         if(mysqli_query($connect, $sql)){
             $_SESSION['mensagem'] = "<div class='alert alert-success'>Ação executada com sucesso!</div>";

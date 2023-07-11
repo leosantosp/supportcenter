@@ -1,4 +1,5 @@
 <?php 
+    $titlepage = "Colaboradores | Central de Suporte";
     session_start();
     if(isset($_SESSION['mensagem'])){
         echo $_SESSION['mensagem'];
@@ -18,7 +19,7 @@
                     <img class="js-tilt img-fluid" style="width: 300px" src="assets/images/team-up.svg" onload="SVGInject(this)">
                 </div>
 
-                <a class="btn-excel" href="includes/colab-excel.php"><img src="assets/images/icon-excel.svg" alt="Baixar catálogo de endereços atualizado"></a>
+                <a class="btn-excel" download href="assets/files/catalogo-de-enderecos.csv"><img src="assets/images/icon-excel.svg" alt="Baixar catálogo de endereços atualizado"></a>
 
                 <table id="table" class="table table-cds">
                     <thead class="thead-dark thead-table">

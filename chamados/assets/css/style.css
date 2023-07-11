@@ -1,0 +1,599 @@
+@charset "UTF-8";
+/* DEFININDO VARIÁVEIS DE CSS */
+/* Primary Colors */
+/* Auxiliary Colors */
+/* White/Black Colors */
+/* Gradient Colors */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* LOGIN PAGE */
+body#login-page {
+  background-color: #FFF !important;
+}
+body#login-page main {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body#login-page .login-image {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body#login-page .login-form {
+  background: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body#login-page .login-form .login-card {
+  width: 100%;
+}
+body#login-page .login-form .login-card .login-card-title {
+  color: #F9F9FB;
+  text-align: center;
+}
+body#login-page .login-form .login-card .login-form-group {
+  padding: 0 20%;
+  margin-top: 32px;
+}
+body#login-page .login-form .login-card .login-form-group .form-group {
+  margin-top: 16px;
+}
+body#login-page .login-form .login-card .login-form-group label {
+  color: #CFD5E3;
+  font-weight: bold;
+}
+body#login-page .login-form .login-card .btn-login {
+  margin-top: 16px;
+  padding: 16px 32px;
+  background-color: #214692;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  color: #FFF;
+}
+body#login-page .login-form .login-card .btn-login:hover {
+  background-color: #11244B;
+}
+
+.modal-header {
+  background-color: #11244B;
+  color: #EBEEF3;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-top: 16px;
+  color: #18336A;
+  text-transform: uppercase;
+}
+
+.btn-close {
+  border: none;
+  padding: 8px;
+  background-color: transparent;
+}
+.btn-close ion-icon {
+  font-size: 1.7em;
+  color: #EBEEF3;
+}
+
+input[type=radio] + label.card {
+  cursor: pointer;
+}
+input[type=radio] + label.card .card-title {
+  font-weight: bold;
+  color: #18336A;
+}
+input[type=radio] + label.card .card-text {
+  color: #18336A;
+}
+input[type=radio] + label.card .list-group-item {
+  color: #18336A;
+}
+
+input[type=radio]:checked + label.card {
+  background: #11244B;
+  color: #EBEEF3;
+  transition: 0.5s ease;
+}
+input[type=radio]:checked + label.card .card-title {
+  font-weight: bold;
+  color: #EBEEF3;
+}
+input[type=radio]:checked + label.card .card-text {
+  color: #EBEEF3;
+}
+input[type=radio]:checked + label.card .list-group-item {
+  background: #11244B;
+  color: #EBEEF3;
+  transition: 0.5s ease;
+}
+
+.detail-title {
+  color: #18336A;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button-form-group {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.viewReservationOwner {
+  display: block;
+}
+
+.editReservationOwner {
+  display: none;
+}
+
+body#home-admin-panel header {
+  position: fixed;
+  background: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
+  padding: 10px;
+  width: 100%;
+  height: 60px;
+}
+body#home-admin-panel header .icon-menu {
+  width: 100%;
+  text-align: left;
+}
+body#home-admin-panel header .icon-menu label {
+  width: 25px;
+  height: 25px;
+}
+body#home-admin-panel .sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  margin-top: 60px;
+  padding-top: 30px;
+  left: 0;
+  background: linear-gradient(90deg, #18336A 28.98%, #001752 77.76%);
+  transition: 0.5s;
+  transition-property: left;
+}
+body#home-admin-panel .sidebar .center {
+  text-align: center;
+}
+body#home-admin-panel .sidebar .image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 16px;
+}
+body#home-admin-panel .sidebar h4 {
+  color: #CCC;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+body#home-admin-panel .sidebar a {
+  color: #FFF;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+body#home-admin-panel .sidebar a:hover {
+  background: #51b3ec;
+}
+body#home-admin-panel .sidebar ion-icon {
+  padding-right: 10px;
+}
+body#home-admin-panel label #sidebar-btn {
+  z-index: 1;
+  position: fixed;
+  color: #FFF;
+  font-size: 25px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-property: color;
+}
+body#home-admin-panel label #sidebar-btn:hover {
+  color: #51b3ec;
+}
+body#home-admin-panel #check:checked ~ .sidebar {
+  left: -190px;
+}
+body#home-admin-panel #check:checked ~ .sidebar a span {
+  display: none;
+}
+body#home-admin-panel #check:checked ~ .sidebar h4 {
+  display: none;
+}
+body#home-admin-panel #check:checked ~ .sidebar a {
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
+body#home-admin-panel .content {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  padding-top: 75px;
+  padding-left: 266px;
+  margin-bottom: 120px;
+}
+body#home-admin-panel #check:checked ~ .content {
+  margin-left: 60px;
+  padding-left: 16px;
+}
+body#home-admin-panel #check {
+  display: none;
+}
+
+.title-page {
+  color: #11244B;
+  font-weight: bold;
+}
+
+/* STATUS DOS BOTÕES DE CHAMADOS */
+.btn-status {
+  cursor: default;
+}
+
+.btn-status.btn-em-triagem {
+  background-color: #214692;
+  color: #EBEEF3;
+  cursor: default;
+}
+.btn-status.btn-em-triagem:hover {
+  background-color: #214692;
+  color: #EBEEF3;
+}
+.btn-status.btn-em-triagem:active {
+  background-color: #214692;
+  color: #EBEEF3;
+}
+
+.btn-status.btn-em-andamento {
+  background-color: #d88e03;
+  color: #EBEEF3;
+  cursor: default;
+}
+.btn-status.btn-em-andamento:hover {
+  background-color: #d88e03;
+  color: #EBEEF3;
+}
+.btn-status.btn-em-andamento:active {
+  background-color: #d88e03;
+  color: #EBEEF3;
+}
+
+.btn-status.btn-aguardando-usuario {
+  background-color: #FA5757;
+  color: #EBEEF3;
+  cursor: default;
+}
+.btn-status.btn-aguardando-usuario:hover {
+  background-color: #FA5757;
+  color: #EBEEF3;
+}
+.btn-status.btn-aguardando-usuario:active {
+  background-color: #FA5757;
+  color: #EBEEF3;
+}
+
+.btn-status.btn-redirecionado, .btn-status.btn-em-analise {
+  background-color: #FFC42E;
+  cursor: default;
+}
+.btn-status.btn-redirecionado:hover, .btn-status.btn-em-analise:hover {
+  background-color: #FFC42E;
+  cursor: default;
+}
+.btn-status.btn-redirecionado:active, .btn-status.btn-em-analise:active {
+  background-color: #FFC42E;
+  cursor: default;
+}
+
+.btn-status.btn-finalizado {
+  background-color: #1d9637;
+  color: #EBEEF3;
+  cursor: default;
+}
+.btn-status.btn-finalizado:hover {
+  background-color: #1d9637;
+  color: #EBEEF3;
+}
+.btn-status.btn-finalizado:active {
+  background-color: #1d9637;
+  color: #EBEEF3;
+}
+
+.btn-status.btn-fase-de-testes {
+  background-color: #214692;
+  color: #EBEEF3;
+}
+.btn-status.btn-fase-de-testes:hover {
+  background-color: #214692;
+  color: #EBEEF3;
+}
+.btn-status.btn-fase-de-testes:active {
+  background-color: #214692;
+  color: #EBEEF3;
+}
+
+.btn-status.btn-aguardando-responsavel {
+  background-color: #78059b;
+  color: #EBEEF3;
+}
+.btn-status.btn-aguardando-responsavel:hover {
+  background-color: #78059b;
+  color: #EBEEF3;
+}
+.btn-status.btn-aguardando-responsavel:active {
+  background-color: #78059b;
+  color: #EBEEF3;
+}
+
+.btn-status.btn-em-analise {
+  background-color: #ECD865;
+}
+.btn-status.btn-em-analise:hover {
+  background-color: #ECD865;
+}
+.btn-status.btn-em-analise:active {
+  background-color: #ECD865;
+}
+
+.btn-status.btn-aguardando-orcamento {
+  background-color: #2EADE8;
+  color: #EBEEF3;
+}
+.btn-status.btn-aguardando-orcamento:hover {
+  background-color: #2EADE8;
+  color: #EBEEF3;
+}
+.btn-status.btn-aguardando-orcamento:active {
+  background-color: #2EADE8;
+  color: #EBEEF3;
+}
+
+.btn-status.btn-orcamento-em-aprovacao {
+  background-color: #BF2900;
+  color: #EBEEF3;
+}
+.btn-status.btn-orcamento-em-aprovacao:hover {
+  background-color: #BF2900;
+  color: #EBEEF3;
+}
+.btn-status.btn-orcamento-em-aprovacao:active {
+  background-color: #BF2900;
+  color: #EBEEF3;
+}
+
+.btn-status.btn-em-desenvolvimento {
+  background-color: #2EE5E8;
+}
+.btn-status.btn-em-desenvolvimento:hover {
+  background-color: #2EE5E8;
+}
+.btn-status.btn-em-desenvolvimento:active {
+  background-color: #2EE5E8;
+}
+
+.btn-status.btn-homologacao {
+  background-color: #1A1569;
+  color: #EBEEF3;
+}
+.btn-status.btn-homologacao:hover {
+  background-color: #1A1569;
+  color: #EBEEF3;
+}
+.btn-status.btn-homologacao:active {
+  background-color: #1A1569;
+  color: #EBEEF3;
+}
+
+.btn-status.btn-gerando-versao {
+  background-color: #82E8C3;
+}
+.btn-status.btn-gerando-versao:hover {
+  background-color: #82E8C3;
+}
+.btn-status.btn-gerando-versao:active {
+  background-color: #82E8C3;
+}
+
+.call-legendas {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.thead-overview {
+  background-color: #11244B;
+  border-radius: 16px 16px 0 0;
+  color: #EBEEF3;
+  text-align: center;
+}
+
+.tr-overview:nth-child(odd) {
+  background-color: #CFD5E3;
+}
+
+.tr-overview:nth-child(even) {
+  background-color: #EBEEF3;
+}
+
+.tbody-overview {
+  text-align: center;
+}
+
+.btn-atualizar {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.btn-responsavel {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.btn-info {
+  color: #EBEEF3;
+}
+
+.overview-in-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview-finish-by-agent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-nivel.Baixa {
+  background-color: #214692;
+  color: #F9F9FB;
+  cursor: default;
+}
+.btn-nivel.Baixa:hover {
+  background-color: #214692;
+  color: #F9F9FB;
+  cursor: default;
+}
+
+.btn-nivel.Media {
+  background-color: #d88e03;
+  color: #EBEEF3;
+  cursor: default;
+}
+.btn-nivel.Media:hover {
+  background-color: #d88e03;
+  color: #EBEEF3;
+  cursor: default;
+}
+
+.btn-nivel.Alta {
+  background-color: #FA5757;
+  color: #EBEEF3;
+  cursor: default;
+}
+.btn-nivel.Alta:hover {
+  background-color: #FA5757;
+  color: #EBEEF3;
+  cursor: default;
+}
+
+.btn-nivel.Critica {
+  background-color: #F93B3B;
+  color: #EBEEF3;
+  cursor: default;
+}
+.btn-nivel.Critica:hover {
+  background-color: #F93B3B;
+  color: #EBEEF3;
+  cursor: default;
+}
+
+.ck-content {
+  height: 300px;
+}
+
+.chat-align {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #EBEEF3;
+  padding: 16px;
+  border-radius: 20px 20px 0 20px;
+}
+
+.chat-other {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #214692;
+  padding: 16px;
+  border-radius: 20px 20px 20px 0;
+}
+
+.btn-sendcomment {
+  width: 100%;
+  padding: 16px;
+  height: 50px;
+}
+
+.chat-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.send-hour {
+  font-size: 0.75em;
+}
+
+.send-name {
+  font-size: 0.8em;
+}
+
+.chat-list {
+  margin-bottom: 50px;
+}
+
+.chat-body p, .chat-body ul, .chat-body a, .chat-body strong {
+  font-size: 0.8em;
+}
+
+.chat-body ul li {
+  font-size: 1em;
+}
+
+.callinfo {
+  background-color: #EBEEF3;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.callinfo-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.callinfo-body {
+  padding: 16px;
+}
+
+.callinfo-body ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chat-other {
+  color: #EBEEF3;
+}/*# sourceMappingURL=style.css.map */

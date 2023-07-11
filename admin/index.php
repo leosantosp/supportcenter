@@ -45,7 +45,7 @@
                      * Verificar se no banco de dados existe um login ou senha igual ao digitado
                      * Caso tenha, execute a função
                      */
-                    if(mysqli_num_rows($resultado) == 1 AND $dados['profile'] !== "user" ):
+                    if(mysqli_num_rows($resultado) == 1 AND $dados['profile'] == "ti" ):
 
                         mysqli_close($connect);
                         $_SESSION['logado'] = true;

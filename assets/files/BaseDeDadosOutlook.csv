@@ -1,188 +1,197 @@
-Tratamento,Sobrenome,Empresa,Cargo,E-mail Address,Tipo de email
-RIO OPE  |  Fausto,Hiath,VIPEX,Gestao,gerencia.rio@vipextransportes.com.br,SMTP
-RIO RH | Alessandra,Maria,VIPEX,DP,adm.rio@vipextransportes.com.br,SMTP
-RIO OPE  |  Luciano,Silva,VIPEX,Operacional,planejamento.rio@viptransportes.com.br,SMTP
-RIO OPE  |  Rodrigo,Oliveira,VIPEX,Operacional,operacional2.rio@vipextransportes.com.br,SMTP
-RIO OPE  |  Bruno,Nascimento,VIPEX,Operacional,operacional1.rio@vipextransportes.com.br,SMTP
-RIO OPE  |  Caio,Silva,VIPEX,Operacional,emissor2.rio@vipextransportes.com.br,SMTP
-RIO ASS  |  Caroline,Barros,VIPEX,Assistencia,expedicao3.rio@viptransportes.com.br,SMTP
-RIO ASS  |  Caroline,Barros,VIPEX,Assistencia,assistencia1.rio@viptransportes.com.br,SMTP
-RIO ASS  |  Joseane,Silva,VIPEX,Assistencia,emissor2.rio@viptransportes.com.br,SMTP
-RIO ADM  |  Mariana,Leal,VIPEX,Administrativo,cobranca.rio@viptransportes.com.br,SMTP
-RIO ADM | Lurriele,Miranda,VIPEX,Agendamento,lurriele.miranda@viptransportes.com.br,SMTP
-RIO OPE | Manuelle,Correa,VIPEX,Operacional,manuelle.correa@viptransportes.com.br,SMTP
-RIO COM | Patricia,Salim,VIPEX,Comercial,patricia.salim@vipextransportes.com.br,SMTP
-RIO COM | Leandro,Silva,VIPEX,Comercial,leandro.silva@vipextransportes.com.br,SMTP
-RIO OPE | Manuelle,Correa,VIPEX,Operacional,manuelle.correa@viptransportes.com.br,SMTP
-RIO ADM | Andressa,Peixoto,VIPEX,Jovem Aprendiz,andressa.peixoto@viptransportes.com.br,SMTP
-RIO COM | Patricia,Salim,VIPEX,Comercial,patricia.salim@vipextransportes.com.br,SMTP
-RIO COM | Leandro,Silva,VIPEX,Comercial,leandro.silva@vipextransportes.com.br,SMTP
-RIO OPE | Gilmara,Silva,VIPEX,Operacional,gilmara.silva@vipextransportes.com.br,SMTP
-RIO OPE | Carolina,Araujo,VIPEX,Operacional,carolina.araujo@vipextransportes.com.br,SMTP
-CTB OPE  |  Marcelo,Souza,Vip,Gestor,operacional1.ctb@viptransportes.com.br,SMTP
-CTB OPE |,VAGO,Vip,Emissor Ct-e,emissor1.ctb@viptransportes.com.br,SMTP
-CTB ASS  |  Evelin,Carvalho,Vip,Emissor Ct-e,evelin.carvalho@viptransportes.com.br,SMTP
-CTB OPE  |  Luan,Beffa,Vip,Operacional,emissor2.ctb@viptransportes.com.br,SMTP
-CTB ADM  |  Vivane,Santos,Vip,Jovem aprendiz,operacional2.ctb@viptransportes.com.br,SMTP
-CTB ADM  |  Evelyn,Santos,Vip,Jovem aprendiz,operacional2.ctb@viptransportes.com.br,SMTP
-CTB RH | Jessica,Balestrin,Vip,Departamento pessoal,adm1.ctb@viptransportes.com.br,SMTP
-CTB ADM | Valeria,Silva,Vip,Manifestos,expedicao1.ctb@viptransportes.com.br,SMTP
-CTB OPE | Erica,Navroski / Yara Silva,VIP,Jovem APrendiz,operacional2.ctb@viptransportes.com.br,SMTP
-BGV OPE | Adriano,Caliari,VIPEX,Gestao,adriano.caliari@vipextransportes.com.br,SMTP
-BGV COM  |  Daniel,Barbosa,VIPEX,Comercial,daniel@vipextransportes.com.br,SMTP
-BGV FIN | Nathalia,Neves,VIPEX,Financeiro,financeiro1.bgv@vipextransportes.com.br,SMTP
-BGV DP | Carla,Pires,VIPEX,DP,rh1.bgv@vipextransportes.com.br,SMTP
-BGV OPE  |  Shelon,Bianchi,VIPEX,Operacional,shelon.bianchi@vipextransportes.com.br,SMTP
-BGV OPE  |  Jonata,Rambo,VIPEX,Operacional,emissor1.bgv@vipextransportes.com.br,SMTP
-BGV OPE  |  Daniel,Martins,VIPEX,Operacional,daniel.martins@vipextransportes.com.br,SMTP
-BGV OPE  |  Marcos,Silva,VIPEX,Operacional,marcos.silva@vipextransportes.com.br,SMTP
-BGV OPE | Alexandra,Battu,VIPEX,Operacional,assistencia1.bgv@vipextransportes.com.br,SMTP
-BGV OPE  |  Marcos,Falcao,VIPEX,Operacional,marcos.falcao@vipextransportes.com.br,SMTP
-BGV OPE  |  Ricardo,Fernandes,VIPEX,Operacional,ricardo.fernandes@vipextransportes.com.br,SMTP
-BGV ADM | Rayane,Soares,VIPEX,Menor Aprendiz,rayane.soares@vipextransportes.com.br,SMTP
-BGV ASS | Andre,Panizzi,VIPEX,Administrativo,andre.panizzi@vipextransportes.com.br,SMTP
-BGV OPE | Alexandra,Battu,VIPEX,Operacional,alexandra.battu@vipextransportes.com.br,SMTP
-BGV ADM | Felipe,Fleck,VIPEX,Administrativo,felipe.fleck@vipextransportes.com.br,SMTP
-BGV ADM | Vitória,Pires,VIPEX,Administrativo,vitoria.pires@vipextransportes.com.br,SMTP
-BGV ADM | Edimer,Romero,VIPEX,Administrativo,edimer.romero@vipextransportes.com.br,SMTP
-LDA OPE  |  Paulo,Junior,VIPEX,Gestao,gerencia.lda@vipextransportes.com.br,SMTP
-LDA RH  |  Maria,Pagnan,Vip,Assistente Adm,adm.lda@vipextransportes.com.br,SMTP
-LDA OPE  |  Henrique,Souza,Vip,Jovem Aprendiz,assistencia1.lda@viptransportes.com.br,SMTP
-LDA OPE  |  Juliana,Angelis,VIPEX,Assistente Logistica,expedicao2.lda@vipextransportes.com.br,SMTP
-LDA OPE  |  Josilene,Monteiro,VIPEX,Auxiliar Expedicao,expedicao1.lda@vipextransportes.com.br,SMTP
-LDA OPE  |  Eduarda,Peres,Vip,Jovem Aprendiz,assistencia1.lda@viptransportes.com.br,SMTP
-LDA ADM | Mariana,Grande,VIPEX,Jovem Aprendiz,mariana.grande@vipextransportes.com.br,SMTP
-LDA ADM | Nicolas,Souza,VIPEX,Jovem Aprendiz,nicolas.souza@vipextransportes.com.br,SMTP
-LDA ASS | Jessica,Fulchini,VIPEX,Assistencia,jessica.fulchini@vipextransportes.com.br,SMTP
-MRG OPE  |  Marcone,Oliveira,VPX,Encarregado Operacional,operacional1.mrg@vipextransportes.com.br,SMTP
-MRG OPE  |  Lorena,Rigao,VPX,Emissao cte/Assist./coletas,expedicao1.mrg@barcelonatransportes.com.br,SMTP
-MRG ADM  |  Resimeire,Brajao,VPX,DP FIN,adm.mrg@barcelonatransportes.com.br,SMTP
-MRG OPE  |  Iara,Lima,VPX,Emissao CTE,coleta1.mrg@vipextransportes.com.br,SMTP
-MRG OPE  |  Joao,Pedro,VPX,Emissao CTE,expedicao2.mrg@vipextransportes.com.br,SMTP
-MRG FIN | Nathalia,Santos,VPX,Operacional,nathalia.santos@vipextransportes.com.br,SMTP
-FLN OPE  |  Antonio,Rodrigues,VPX,Gestao,gerencia.fln@vipextransportes.com.br,SMTP
-FLN OPE | Tatiany,Silva,VPX,Aux de Escritorio,coleta1.fln@vipextransportes.com.br,SMTP
-FLN ASS | Guilherme,Klein,VPX,Aux de Escritorio,expedicao1.fln@vipextransportes.com.br,SMTP
-FLN ADM  |  Patricia,Silva,VPX,Aux Administrativo,adm.fln@vipextransportes.com.br,SMTP
-FLN OPE | Jhonatan,Souza,VPX,Aux de Escritorio,expedicao2.fln@transfloripa.com.br,SMTP
-FLN OPE  |  Renan,Santos,VPX,Encarregado,operacional1.fln@vipextransportes.com.br,SMTP
-FLN COM | Glaucia,Ferreira,VPX,Executiva de Vendas,glaucia.ferreira@vipextransportes.com.br,SMTP
-BHZ DP  |  Raphael,Bruno,Vipex,RH,adm.bhz@vipextransportes.com.br,SMTP
-BHZ OPE | Arthur,Adriano,Vipex,Operacional,arthur.adriano@vipextransportes.com.br,SMTP
-BHZ OPE  |  Mateus,Martins,Vipex,Operacional,mateus.martins@vipextransportes.com.br,SMTP
-BHZ OPE  |  Gilson,Pereira,Vipex,Operacional,operacional1.bhz@vipextransportes.com.br,SMTP
-BHZ OPE | Diego,Monteiro,VIPEX,Gestor de Filial,diego.monteiro@vipextransportes.com.br,SMTP
-SUM OPE  |  Islane,Emidio,VIPEX,Gestao,islane.emidio@vipextransportes.com.br,SMTP
-SUM OPE  |  Marcio,Cruz,VIPEX,Assistente Adm,emissor2.sum@vipextransportes.com.br,SMTP
-SUM OPE | Kevin,Franca,VIPEX,Auxiliar de Expedicao,emissor1.sum@vipextransportes.com.br,SMTP
-SUM ADM  |  Angelica,Arantes,VIPEX,Auxiliar de Expedicao,angelica.arantes@vipextransportes.com.br,SMTP
-SUM OPE | Luis,Leonaldo,VIPEX,Coordenador,logistica1.sum@vipextransportes.com.br,SMTP
-SUM OPE  |  Deivid,Henrique,VIPEX,Encarregado,logistica2.sum@vipextransportes.com.br,SMTP
-SUM COM | Jacqueline,Goncalves,VIPEX,Vendedora Externa,jacqueline.goncalves@vipextransportes.com.br,SMTP
-SUM ADM | Vanessa,Maximiano,VIPEX,ADM,vanessa.maximiano@vipextransportes.com.br,SMTP
-SUM ADM | Daniel,Barbosa,VIPEX,Jovem Aprendiz,daniel.barbosa@vipextransportes.com.br,SMTP
-SUM ADM | Tatiane,Meneses,VIPEX,DP,adm1.sum@vipextransportes.com.br,SMTP
-SUM OPE | Marcia,Alves,VIPEX,Operacional,marcia.alves@vipextransportes.com.br,SMTP
-SUM ADM | Gustavo,Ribeiro,VIPEX,Administrativo,gustavo.ribeiro@vipextransportes.com.br,SMTP
-SUM OPE | Rafael,Silva,VIPEX,Assistência Técnica,rafael.silva@vipextransportes.com.br,SMTP
-SUM ADM | Camila,Andrade,VIPEX,SAC,camila.andrade@vipextransportes.com.br,SMTP
-POA OPE  |  Tania,Kuhn,Vipex,Gestao,gerencia.poa@vipextransportes.com.br,SMTP
-GRU DP | Flaviana,Souza,VIPEX,DP,flaviana.souza@vipextransportes.com.br,SMTP
-GRU DP | Luana,Santos,VIPEX,DP,luana.santos@vipextransportes.com.br,SMTP
-GRU COM | Igor,Santos,VIPEX,Comercial,igor.santos@vipextransportes.com.br,SMTP
-GRU COM | Andrea,Pereira,VIPEX,Comercial,andrea.pereira@vipextransportes.com.br,SMTP
-GRU SAC | Winie,Oliveira,VIPEX,SAC,winie.oliveira@vipextransportes.com.br,SMTP
-SUM ADM | Daniel,Barbosa,VIPEX,Jovem Aprendiz,daniel.barbosa@vipextransportes.com.br,SMTP
-GRU CON | Marcos,Correia,VIPEX,Controladoria,marcos.correia@vipextransportes.com.br,SMTP
-GRU QUA | Jonathan,Santos,VIPEX,Qualidade,jonathan.santos@vipextransportes.com.br,SMTP
-GRU DHO | Tayssa,Machado,VIPEX,Desenv Humano Organizacional,tayssa.machado@vipextransportes.com.br,SMTP
-GRU OPE | Bruno,Garcia,VIPEX ,Operacional,expedicao3.sao@vipextransportes.com.br,SMTP
-GRU FRO | Emerson,Muller,VIPEX ,Almoxarifado,emerson.muller@vipextransportes.com.br,SMTP
-GRU FRO | Gabriela,Jesus,VIPEX ,Almoxarifado,gabriela.jesus@vipextransportes.com.br,SMTP
-GRU COM | Tainara,Souza,VIPEX,Comercial,tainara.souza@vipextransportes.com.br,SMTP
-GRU MKT | Fabricio,Picone,VIPEX,Web Designer,fabricio.picone@vipextransportes.com.br,SMTP
-GRU SAC | Caio,Papalardo,VIPEX,SAC,caio.papalardo@vipextransportes.com.br,SMTP
-GRU COM | Thayla,Santos,VIPEX,Comercial,thayla.santos@vipextransportes.com.br,SMTP
-GRU COM | Thaila,Clemente,VIPEX,Comercial,thaila.clemente@vipextransportes.com.br,SMTP
-GRU SAC | Bianca,Mascarenhas,VIPEX,SAC,bianca.mascarenhas@vipextransportes.com.br,SMTP
-GRU OPE | Guilherme,Andrade,VIPEX,Monitoramento,guilherme.andrade@vipextransportes.com.br,SMTP
-GRU COM | Ludimila,Muller,VIPEX ,Comercial,ludimila.muller@vipextransportes.com.br,SMTP
-GRU COM | Matheus,Lima,VIPEX,Comercial,matheus.lima@vipextransportes.com.br,SMTP
-GRU COM | Sergio,Rocha,VIPEX ,Comercial,sergio.rocha@vipextransportes.com.br,SMTP
-GRU COM | Kennedy,Sousa,VIPEX ,Comercial,kennedy.sousa@vipextransportes.com.br,SMTP
-GRU FRO | Eloisa,Silva,VIPEX,Frota,eloisa.silva@vipextransportes.com.br,SMTP
-GRU OPE | Alexandre,Nascimento,VIPEX ,Administrativo Operacional,alexandre.nascimento@vipextransportes.com.br,SMTP
-GRU FIN | Monalizi,Santos,VIPEX,Auxiliar Financeiro,monalizi.santos@vipextransportes.com.br,SMTP
-GRU FIN | Edilani,Pinheiro,VIPEX,Estagiária,edilani.pinheiro@vipextransportes.com.br,SMTP
-GRU COM | Jady,Silva,VIPEX,Comercial,jady.silva@vipextransportes.com.br,SMTP
-GRU COM | Gisleide,Mascarenhas,VIPEX,Comercial Administrativo,gisleide.mascarenhas@vipextransportes.com.br,SMTP
-GRU COM | Larissa,Silva,VIPEX,Administrativo Comercial,larissa.silva@vipextransportes.com.br,SMTP
-GRU SAC | Ana,Vitoria,VIPEX,SAC,ana.vitoria@vipextransportes.com.br,SMTP
-GRU COM | Angela,Delmondes,VIPEX,Comercial,angela.delmondes@vipextransportes.com.br,SMTP
-GRU COM | Jessica,Lima,VIPEX,Comercial,jessica.lima@vipextransportes.com.br,SMTP
-GRU SAC | Stephane,Santana,VIPEX,SAC,stephane.santana@vipextransportes.com.br,SMTP
-GRU ASS | Ligia,Brito,VIPEX,Assistencia,ligia.brito@vipextransportes.com.br,SMTP
-GRU COM | Cyndi,Silva,VIPEX,Comercial,cyndi.silva@vipextransportes.com.br,SMTP
-GRU COM | Jose,Sales,VIPEX,Operacional,jose.sales@vipextransportes.com.br,SMTP
-GRU COM | Jessica,Nascimento,VIPEX,Comercial,jessica.nascimento@vipextransportes.com.br,SMTP
-GRU COM | Talita,Rodrigues,VIPEX,Comercial,talita.rodrigues@vipextransportes.com.br,SMTP
-GRU RH | Isabela,Reis,VIPEX,RH,isabela.reis@vipextransportes.com.br,SMTP
-GRU DP | Renata,Zamara,Vipex,DP,renata.zamara@vipextransportes.com.br,SMTP
-GRU COM | Renato,Junior,VIPEX,Comercial,renato.junior@vipextransportes.com.br,SMTP
-GRU COM | Fernanda,Pereira,VIPEX,Comercial,fernanda.pereira@vipextransportes.com.br,SMTP
-GRU TI | Pietro,Cativelli,Vipex,Assistente de TI,pietro.cativelli@vipextransportes.com.br,SMTP
-GRU COM | Mayara,Santos,VIPEX,Monitora de Qualidade,mayara.santos@vipextransportes.com.br,SMTP
-GRU DP | Kassia,Neves,VIPEX,Analista de DP,kassia.neves@vipextransportes.com.br,SMTP
-GRU MKT | Laura,Dantas,VIPEX,Marketing,laura.dantas@vipextransportes.com.br,SMTP
-GRU DIR  |  Fernando,Perez,Vipex,Gestao,fernando@vipextransportes.com.br,SMTP
-GRU DIR  |  Jose Luis,Perez,Vipex,Gestao,jluis@vipextransportes.com.br,SMTP
-GRU DIR  |  Fernando,Mello,Vipex,Gestao,fernando.mello@vipextransportes.com.br,SMTP
-GRU FIN  |  Matheus,Perez,Vipex,Gestao,matheus.perez@vipextransportes.com.br,SMTP
-GRU FRO  |  Maricarmen,Perez,Vipex,Gestao,maricarmen.perez@vipextransportes.com.br,SMTP
-GRU TI   |  Sidnei,Oliveira,Vipex,Gerente de TI,sidnei@vipextransportes.com.br,SMTP
-GRU TI   |  Francisco,Alves,Vipex,Suporte Junior,francisco.alves@vipextransportes.com.br,SMTP
-GRU TI   |  Leonardo,Santos,Vipex,Assistente de TI,leonardo.santos@vipextransportes.com.br,SMTP
-GRU ADM  |  Geraldo,Sossoloti Jr.,Vipex,Adiministrativo,geraldo@vipextransportes.com.br,SMTP
-GRU ADM  |  Ivone,Ferreira,Vipex,Adiministrativo,recepcao@vipextransportes.com.br,SMTP
-GRU FIN | Eduardo,Oliveira,Vipex,Financeiro,financeiro1@vipextransportes.com.br,SMTP
-GRU QUA  |  Marcos,Rovarotto,Vipex,Qualidade,marcos.rovarotto@vipextransportes.com.br,SMTP
-GRU CON  |  Fernando,Santos,Vipex,Controladoria,fernando.santos@vipextransportes.com.br,SMTP
-GRU CON  |  Gustavo,Lima,Vipex,Controladoria,gustavo.lima@vipextransportes.com.br,SMTP
-GRU DP |,VAGO,Vipex,Departamento Pessoal,rh4@vipextransportes.com.br,SMTP
-GRU DP |,VAGO,Vipex,Departamento Pessoal,rh1@vipextransportes.com.br,SMTP
-GRU FIN | Odileia,Santos,Vipex,Analista.Administrativo,credcob@vipextransportes.com.br,SMTP
-GRU FIN | Jessiel,Vaz,Vipex,Assis.Faturamento,faturamento2@vipextransportes.com.br,SMTP
-GRU FIN | ,VAGO,Vipex,Assis.Cobranca,cobranca4@vipextransportes.com.br,SMTP
-GRU FIN | Joilma,Borges,Vipex,Aux.Cobranca,cobranca3@vipextransportes.com.br,SMTP
-GRU FIN |,VAGO,Vipex,Aprendiz,cobranca2@vipextransportes.com.br,SMTP
-GRU FIN |,VAGO,Vipex,Aprendiz,cobranca1@vipextransportes.com.br,SMTP
-GRU COM  |  Maria Elena,Romualdo,Vipex,Comercial,mariaelena.romualdo@vipextransportes.com.br,SMTP
-GRU COM  |  Meire,Reis,Vipex,Comercial,meire.reis@vipextransportes.com.br,SMTP
-GRU COM  |  Claudineia,Silva,Vipex,Comercial,claudineia.silva@vipextransportes.com.br,SMTP
-GRU COM  |  Sheila,Deus,Vipex,Comercial,sheila.deus@vipextransportes.com.br,SMTP
-GRU COM  |  Wagner,Oliveira,Vipex,Comercial,comercial9@vipextransportes.com.br,SMTP
-GRU COM  |  Nathalia,Silva,Vipex,Comercial,nathalia.silva@vipextransportes.com.br,SMTP
-GRU COM  |  Cristiane,Santos,Vipex,Comercial,cristiane.santos@vipextransportes.com.br,SMTP
-GRU COM  |  Camila,Guimaraes,Vipex,Comercial,comercial13@vipextransportes.com.br,SMTP
-GRU COM  |  Irene,Camelo,Vipex,Comercial,irene.camelo@vipextransportes.com.br,SMTP
-GRU SAC  |  Ivana,Silvestrini,Vipex,SAC,ivana.silvestrini@vipextransportes.com.br,SMTP
-GRU SAC  |  Paloma,Silva,Vipex,SAC,paloma.silva@vipextransportes.com.br,SMTP
-GRU SAC  |  Erica,Silva,Vipex,SAC,erica.silva@vipextransportes.com.br,SMTP
-GRU SAC  |  Kelli,Borges,Vipex,SAC,kelli.borges@vipextransportes.com.br,SMTP
-GRU COM | Hiuly,Pietro,Vipex,COM,hiuly.pietro@vipextransportes.com.br,SMTP
-GRU OPE  |  Valdomiro,Fellippe,Vipex,Gerente Regional,valdomiro.fellippe@vipextransportes.com.br,SMTP
-GRU OPE  | ,VAGO,Vipex,Gerente de Filial,gerencia.sao@vipextransportes.com.br,SMTP
-GRU OPE  |  Silvano,Oliveira,Vipex,Coordenador,logistica1.sao@vipextransportes.com.br,SMTP
-GRU OPE  |  Ricardo,Moraes,Vipex,Assist Operacional,rastreamento1@vipextransportes.com.br,SMTP
-GRU OPE  |  Jhonathan,Pareira,Vipex,Assist Operacional,logistica3.sao@vipextransportes.com.br,SMTP
-GRU OPE  |  Flora,Santos,Vipex,Encarregado,admope.sao@vipextransportes.com.br,SMTP
-GRU OPE  |  Edimar,Santos,Vipex,Assist Operacional,expedicao2.sao@vipextransportes.com.br,SMTP
-GRU OPE  |  Jordana,Rodrigues,Vipex,Conferente,recebimento.sao@vipextransportes.com.br,SMTP
-GRU ASS  |  Tania,Rocha,Vipex,Assist Operacional,assistencia3.sao@vipextransportes.com.br,SMTP
-GRU ASS  |  Maristela,Trindade,Vipex,Assistente Tecnica,maristela.trindade@vipextransportes.com.br,SMTP
-GRU ASS  |  Jaqueline,Silva,Vipex,Jovem Aprendiz,assistencia1.sao@vipextransportes.com.br,SMTP
-GRU FRO  |  William,Santos,Vipex,Frota,william.santos@vipextransportes.com.br,SMTP
-GRU FRO  |  Maricarmen,Perez,Vipex,Frota,compras@vipextransportes.com.br,SMTP
-GRU FRO  |  Pedro,Ferreira,Vipex,Frota,frota2@vipextransportes.com.br,SMTP
-GRU ADM |  Rubens,Arquivo,Vip,Atendimento / Arquivo,arquivo@vipextransportes.com.br,SMTP
-GRU COM | Gabriella,Nascimento,VIPEX,Comercial,gabriella.nascimento@vipextransportes.com.br,SMTP
+Tratamento,Empresa,Cargo,E-mail Address
+POA OPE  |  Tania,Vipex,Gestao,gerencia.poa@vipextransportes.com.br
+GRU DIR  |  Fernando,Vipex,Gestao,fernando@viptransportes.com.br
+GRU DIR  |  Jose Luis,Vipex,Gestao,jluis@vipextransportes.com.br
+GRU DIR  |  Fernando,Vipex,Gestao,fernando.mello@vipextransportes.com.br
+GRU FIN  |  Matheus,Vipex,Gestao,matheus.perez@vipextransportes.com.br
+GRU FRO  |  Maricarmen,Vipex,Gestao,maricarmen.perez@vipextransportes.com.br
+GRU TI   |  Sidnei,Vipex,Gerente de TI,sidnei@vipextransportes.com.br
+GRU TI   |  Francisco,Vipex,Suporte Junior,francisco.alves@vipextransportes.com.br
+GRU TI   |  Leonardo,Vipex,Assistente de TI,ti2@vipextransportes.com.br
+GRU ADM  |  Geraldo,Vipex,Adiministrativo,geraldo@vipextransportes.com.br
+GRU ADM  |  Rubens,Vipex,Adiministrativo,recepcao@vipextransportes.com.br
+GRU FIN | Eduardo,Vipex,Financeiro,eduardo.oliveira@vipextransportes.com.br
+GRU QUA  |  Marcos,Vipex,Qualidade,marcos.rovarotto@vipextransportes.com.br
+GRU CON  |  Fernando,Vipex,Controladoria,fernando.santos@vipextransportes.com.br
+GRU CON  |  Gustavo,Vipex,Controladoria,gustavo.lima@vipextransportes.com.br
+GRU DP | Renata Zamara,Vipex,Departamento Pessoal,renata.zamara@vipextransportes.com.br
+GRU FIN  |  Odileia,Vipex,Analista.Administrativo,credcob@vipextransportes.com.br
+GRU FIN  |  Jessiel,Vipex,Assis.Faturamento,faturamento2@vipextransportes.com.br
+GRU FIN |,Vipex,Aprendiz,cobranca2@vipextransportes.com.br
+GRU FIN |,Vipex,Aprendiz,cobranca1@vipextransportes.com.br
+GRU COM  |  Maria Elena,Vipex,Comercial,mariaelena.romualdo@vipextransportes.com.br
+GRU COM  |  Meire,Vipex,Comercial,meire.reis@vipextransportes.com.br
+GRU COM  |  Claudineia,Vipex,Comercial,claudineia.silva@vipextransportes.com.br
+GRU COM  |  Wagner,Vipex,Comercial,comercial9@vipextransportes.com.br
+GRU COM  |  Nathalia Silva,Vipex,Comercial,nathalia.silva@vipextransportes.com.br
+GRU COM  |  Cristiane,Vipex,Comercial,cristiane.santos@vipextransportes.com.br
+GRU COM  |  Camila,Vipex,Comercial,comercial13@vipextransportes.com.br
+GRU COM  |  Irene,Vipex,Comercial,irene.camelo@vipextransportes.com.br
+GRU OPE | Douglas Baleeiro,Vipex,Comercial,douglas.baleeiro@vipextransportes.com.br
+GRU SAC  |  Ivana,Vipex,SAC,ivana.silvestrini@vipextransportes.com.br
+GRU SAC  |  Paloma,Vipex,SAC,paloma.silva@vipextransportes.com.br
+GRU SAC  |  Erica,Vipex,SAC,erica.silva@vipextransportes.com.br
+GRU SAC  |  Kelli,Vipex,SAC,kelli.borges@vipextransportes.com.br
+GRU OPE  |  Valdomiro,Vipex,Gerente Regional,valdomiro.fellippe@vipextransportes.com.br
+GRU OPE  |  Geir,Vipex,Gerente de Filial,gerencia.sao@vipextransportes.com.br
+GRU OPE  |  Silvano,Vipex,Coordenador,logistica1.sao@vipextransportes.com.br
+GRU OPE  |  Ricardo,Vipex,Assist Operacional,rastreamento1@vipextransportes.com.br
+GRU OPE  |  Jhonathan,Vipex,Assist Operacional,logistica3.sao@vipextransportes.com.br
+GRU OPE  |  Flora,Vipex,Encarregado,admope.sao@vipextransportes.com.br
+GRU OPE  |  Edimar,Vipex,Assist Operacional,expedicao2.sao@vipextransportes.com.br
+GRU OPE |,Vipex,Aux Administrativo,qualidade1@vipextransportes.com.br
+GRU OPE  | Victor Martinez,Vipex,Conferente,recebimento.sao@vipextransportes.com.br
+GRU ASS  |  Tania Rocha,Vipex,Assist Operacional,assistencia3.sao@vipextransportes.com.br
+GRU ASS  |  Maristela Trindade,Vipex,Assistente Tecnica,maristela.trindade@vipextransportes.com.br
+GRU ASS  |  Jaqueline,Vipex,Jovem Aprendiz,assistencia1.sao@vipextransportes.com.br
+GRU FRO  |  William,Vipex,Frota,william.santos@vipextransportes.com.br
+GRU FRO  |  Maricarmen,Vipex,Frota,compras@vipextransportes.com.br
+GRU FRO  |  Pedro,Vipex,Frota,frota2@vipextransportes.com.br
+GRU Adm  |  Rubens,Vip,Atendimento / Arquivo,arquivo@vipextransportes.com.br
+RIO OPE  |  Fausto,VIPEX,Gestao,fausto.hiath@viptransportes.com.br
+RIO RH | Alessandra,VIP,DP,adm.rio@viptransportes.com.br
+RIO OPE  |  Luciano,VIP,Operacional,planejamento.rio@viptransportes.com.br
+RIO OPE  |  Rodrigo,VIP,Operacional,operacional2.rio@viptransportes.com.br
+RIO OPE | Bruno,VIPEX,Operacional,operacional1.rio@viptransportes.com.br
+RIO OPE  |  Caio,VIP,Operacional,emissor2.rio@viptransportes.com.br
+RIO ASS  |  Caroline,VIP,Assistencia,expedicao3.rio@viptransportes.com.br
+RIO ASS  |  Caroline,VIP,Assistencia,assistencia1.rio@viptransportes.com.br
+RIO ASS  |  Joseane,VIP,Assistencia,emissor2.rio@viptransportes.com.br
+RIO ADM  |  Mariana,VIP,Administrativo,cobranca.rio@viptransportes.com.br
+RIO COM  |  Leila,VIP,Comercial,leila.simoes@viptransportes.com.br
+CTB OPE  |  Marcelo,Vip,Gestor,operacional1.ctb@viptransportes.com.br
+CTB OPE |,Vip,Emissor Ct-e,emissor1.ctb@viptransportes.com.br
+CTB ASS  |  Evelin,Vip,Emissor Ct-e,evelin.carvalho@viptransportes.com.br
+CTB OPE  |  Luan,Vip,Operacional,emissor2.ctb@viptransportes.com.br
+CTB ADM  |  Vivane,Vip,Jovem aprendiz,operacional2.ctb@viptransportes.com.br
+CTB ADM  |  Evelyn,Vip,Jovem aprendiz,operacional2.ctb@viptransportes.com.br
+CTB RH | Jessica,Vip,Departamento pessoal,adm1.ctb@viptransportes.com.br
+CTB ADM | Valeria,Vip,Manifestos,expedicao1.ctb@viptransportes.com.br
+BGV OPE | Adriano Caliari,VIPEX,Gestao,adriano.caliari@vipextransportes.com.br
+BGV COM  |  Daniel,VIPEX,Comercial,daniel@vipextransportes.com.br
+BGV FIN  |  Valdir,Vip,Financeiro,financeiro1.bgv@viptransportes.com.br
+BGV FIN | Nathalia  Machado,VIPEX,Financeiro,financeiro1.bgv@vipextransportes.com.br
+BGV DP | Kezia Albuquerque,VIPEX,DP,rh1.bgv@vipextransportes.com.br
+BGV OPE  |  Shelon,VIPEX,Operacional,shelon.bianchi@vipextransportes.com.br
+BGV OPE  |  Jonata,Vip,Operacional,emissor1.bgv@viptransportes.com.br
+BGV OPE  |  Daniel,Vip,Operacional,daniel.martins@viptransportes.com.br
+BGV OPE  |  Marcos,Vip,Operacional,marcos.silva@viptransportes.com.br
+BGV OPE | Alexandra Battu,VIPEX,Operacional,assistencia1.bgv@vipextransportes.com.br
+BGV OPE  |  Marcos,VIPEX,Operacional,marcos.falcao@vipextransportes.com.br
+BGV OPE  |  Ricardo,VIPEX,Operacional,ricardo.fernandes@vipextransportes.com.br
+LDA OPE  |  Paulo,VIPEX,Gestao,gerencia.lda@vipextransportes.com.br
+LDA RH  |  Maria,Vip,Assistente Adm,adm.lda@vipextransportes.com.br
+LDA OPE  |  Henrique,Vip,Jovem Aprendiz,assistencia1.lda@viptransportes.com.br
+LDA OPE  |  Juliana,VIPEX,Assistente Logistica,expedicao2.lda@vipextransportes.com.br
+LDA OPE  |  Josilene,VIPEX,Auxiliar Expedicao,expedicao1.lda@vipextransportes.com.br
+LDA OPE  |  Eduarda,Vip,Jovem Aprendiz,assistencia1.lda@viptransportes.com.br
+MRG OPE  |  Marcone,VIPEX,Encarregado Operacional,operacional1.mrg@vipextransportes.com.br
+MRG OPE  |  Lorena,Barcelona,Emissao cte/Assist./coletas,expedicao1.mrg@barcelonatransportes.com.br
+MRG ADM  |  Resimeire,Barcelona,DP FIN,adm.mrg@barcelonatransportes.com.br
+MRG OPE  |  Iara,VIPEX,Emissao CTE,coleta1.mrg@vipextransportes.com.br
+MRG OPE  |  Joao,VIPEX,Emissao CTE,expedicao2.mrg@vipextransportes.com.br
+FLN OPE  |  Antonio,VIPEX,Gestao,gerencia.fln@vipextransportes.com.br
+FLN OPE | Tatiany,VIPEX,Aux de Escritorio,coleta1.fln@vipextransportes.com.br
+FLN ASS | Guilherme,VIPEX,Aux de Escritorio,expedicao1.fln@vipextransportes.com.br
+FLN ADM  |  Patricia,VIPEX,Aux Administrativo,adm.fln@vipextransportes.com.br
+FLN OPE | Jhonatan,Transfloripa,Aux de Escritorio,expedicao2.fln@transfloripa.com.br
+FLN OPE  |  Renan,VIPEX,Encarregado,operacional1.fln@vipextransportes.com.br
+BHZ DP  |  Raphael,Vipex,RH,adm.bhz@vipextransportes.com.br
+BHZ OPE | Arthur,Vipex,Operacional,arthur.adriano@vipextransportes.com.br
+BHZ OPE  |  Mateus,Vipex,Operacional,mateus.martins@vipextransportes.com.br
+BHZ OPE  |  Gilson,Vipex,Operacional,operacional1.bhz@vipextransportes.com.br
+SUM OPE  |  Islane,Vipex,Gestao,islane.emidio@vipextransportes.com.br
+SUM OPE  |  Marcio,Vipex,Assistente Adm,emissor2.sum@vipextransportes.com.br
+SUM OPE |,Vipex,Auxiliar de Expedicao,emissor1.sum@vipextransportes.com.br
+SUM ADM  |  Angelica,Vipex,Auxiliar de Expedicao,angelica.arantes@vipextransportes.com.br
+SUM OPE | Luis,Vipex,Coordenador,logistica1.sum@vipextransportes.com.br
+SUM OPE  |  Deivid,Vipex,Encarregado,logistica2.sum@vipextransportes.com.br
+SUM COM | Jacqueline,Vipex,Vendedora Externa,jacqueline.goncalves@vipextransportes.com.br
+SUM ADM | Vanessa Maximiano,VIPEX,ADM,vanessa.maximiano@vipextransportes.com.br
+RIO ASS | Lurriele Miranda,VIP,Agendamento,lurriele.miranda@viptransportes.com.br
+GRU DP | Flaviana Souza,VIPEX,DP,flaviana.souza@vipextransportes.com.br
+GRU COM | Igor Santos,VIPEX,Comercial,igor.santos@vipextransportes.com.br
+GRU SAC | Andrea Pereira,VIPEX,Comercial,andrea.pereira@vipextransportes.com.br
+SUM ADM | Daniel Barbosa,VIPEX,Jovem Aprendiz,daniel.barbosa@vipextransportes.com.br
+GRU FIN | Marcos Correia,Vipex,Controladoria,marcos.correia@vipextransportes.com.br
+RIO ADM | Andressa Peixoto,VIP Transportes,Jovem Aprendiz,andressa.peixoto@viptransportes.com.br
+BGV ADM | Rayane Soares,VIPEX,Menor Aprendiz,rayane.soares@vipextransportes.com.br
+GRU OPE | Edimar,VIPEX Transportes,Operacional,expedicao3.sao@vipextransportes.com.br
+GRU FRO | Emerson Muller,VIPEX Transportes,Almoxarifado,emerson.muller@vipextransportes.com.br
+GRU FRO | Gabriela Jesus,VIPEX Transportes,Almoxarifado,gabriela.jesus@vipextransportes.com.br
+GRU COM | Tainara Souza,VIPEX,Comercial,tainara.souza@vipextransportes.com.br
+GRU MKT | Fabricio Picone,VIPEX,Web Designer,fabricio.picone@vipextransportes.com.br
+GRU SAC | Caio Papalardo,VIPEX,SAC,caio.papalardo@vipextransportes.com.br
+GRU COM | Thayla Santos,VIPEX,Comercial,thayla.santos@vipextransportes.com.br
+GRU COM | Thaila Clemente,VIPEX,Comercial,thaila.clemente@vipextransportes.com.br
+GRU OPE | Guilherme Andrade,VIPEX,Monitoramento,guilherme.andrade@vipextransportes.com.br
+BGV ASS | Andre Panizzi,VIPEX,Administrativo,andre.panizzi@vipextransportes.com.br
+SUM ADM | Tatiane Meneses,VIPEX,DP,adm1.sum@vipextransportes.com.br
+SUM OPE | Marcia Alves,VIPEX Transportes,Operacional,marcia.alves@vipextransportes.com.br
+SUM ADM | Gustavo Ribeiro,VIPEX,Administrativo,gustavo.ribeiro@vipextransportes.com.br
+GRU COM | Kennedy Sousa,VIPEX Transportes,Comercial,kennedy.sousa@vipextransportes.com.br
+BGV ADM | Edimer Romero,VIP Transportes,Administrativo,edimer.romero@viptransportes.com.br
+GRU FIN | Monalizi Santos,VIPEX Transportes,Auxiliar Financeiro,monalizi.santos@vipextransportes.com.br
+GRU FIN | Edilani Pinheiro,VIPEX Transportes,Auxiliar Financeiro,edilani.pinheiro@vipextransportes.com.br
+GRU COM | Jady Silva,VIPEX Transportes,Comercial,jady.silva@vipextransportes.com.br
+GRU COM | Gisleide,VIPEX Transportes,Comercial Administrativo,gisleide.mascarenhas@vipextransportes.com.br
+BGV OPE | Ricardo Campos,VIP Transportes,Comercial,ricardo.campos@viptransportes.com.br
+GRU COM | Larissa Silva,VIPEX Transportes,Administrativo Comercial,larissa.silva@vipextransportes.com.br
+LDA OPE | Jessica Fulchini,VIPEX,Assistencia,jessica.fulchini@vipextransportes.com.br
+GRU COM | Daniela Almeida,VIPEX,Comercial,daniela.almeida@vipextransportes.com.br
+GRU SAC | Ana Marques,VIPEX,SAC,ana.marques@vipextransportes.com.br
+GRU SAC | Stephane Santana,VIPEX,SAC,stephane.santana@vipextransportes.com.br
+GRU ASS | Ligia Brito,VIPEX,Assistencia,ligia.brito@vipextransportes.com.br
+BGV OPE | Kétlin Oliveira,VIP Transportes,Operacional,coleta2.bgv@viptransportes.com.br
+GRU OPE | José Sales,VIPEX,Operacional,jose.sales@vipextransportes.com.br
+GRU COM | Talita Rodrigues,VIPEX,Comercial,talita.rodrigues@vipextransportes.com.br
+GRU RH | Weslei Chaves,VIPEX,RH,weslei.chaves@vipextransportes.com.br
+GRU COM | Fernanda Pereira,VIPEX,Comercial,fernanda.pereira@vipextransportes.com.br
+GRU T.I | Pietro Cativelli,Vipex,Assistente de TI,pietro.cativelli@vipextransportes.com.br
+RIO COM | Leandro Silva,VIPEX,Comercial,leandro.silva@viptransportes.com.br
+GRU RH | Laura Dantas,VIPEX,RH,laura.dantas@vipextransportes.com.br
+BGV OPE | Alexandra Battu,VIPEX,Operacional,alexandra.battu@vipextransportes.com.br
+BGV ADM | Felipe Fleck,VIPEX,Administrativo,felipe.fleck@vipextransportes.com.br
+BGV ADM | Vitoria Pires,VIPEX,Administrativo,vitoria.pires@vipextransportes.com.br
+FLN COM | Glaucia Ferreira,VIPEX,Executiva de Vendas,glaucia.ferreira@vipextransportes.com.br
+CTB OPE | Viviane Santos,VIP,Jovem APrendiz,operacional2.ctb@viptransportes.com.br
+LDA ADM | Maria Grande,VIPEX,Jovem Aprendiz,mariana.grande@vipextransportes.com.br
+LDA ADM | Nicolas Souza,VIPEX,Jovem Aprendiz,nicolas.souza@vipextransportes.com.br
+MRG OPE | Nathalia Santos,VIPEX,Operacional,nathalia.santos@vipextransportes.com.br
+RIO OPE | Gilmara Silva,VIP,Operacional,gilmara.silva@viptransportes.com.br
+RIO OPE | Carolina Araujo,VIP,Operacional,carolina.araujo@viptransportes.com.br
+SUM ADM | Camila Andrade,VIPEX,SAC,camila.andrade@vipextransportes.com.br
+CTB COM | Marcos Silveira,VIP Transportes,Comercial,marcos.silveira@viptransportes.com.br
+GRU SAC | Leticia Silva,VIPEX,SAC,leticia.silva@vipextransportes.com.br
+GRU SAC | Rosineide Camilo,VIPEX,SAC,rosineide.camilo@vipextransportes.com.br
+GRU COM | Gabriella Nascimento,VIPEX,Comercial,gabriella.nascimento@vipextransportes.com.br
+CTB OPE | Angel Bravo,VIP Transportes,Operacional,angel.bravo@viptransportes.com.br
+CTB ADM | Milena Carneiro,VIP Transportes,Operacional,milena.carneiro@vipextransportes.com.br
+BGV COM | Artur Souza,VIP Transportes,Executivo de Vendas,artur.souza@viptransportes.com.br
+FLN OPE | Katia Silva,VIPEX Transportes,Operacional,katia.silva@vipextransportes.com.br
+GRU OPE | Maria Helena,VIPEX Transportes,Operacional,maria.helena@vipextranportes.com.br
+GRU DP | Julia Dias,VIPEX Transportes,Depto Pessoal,julia.dias@vipextransportes.com.br
+GRU FRO | Cezar Uchoa,VIPEX Transportes,Frota,cezar.uchoa@vipextransportes.com.br
+GRU SAC | Weslley Felix,VIPEX Transportes,SAC,weslley.felix@vipextransportes.com.br
+GRU DP | Elaine Medeiros,VIPEX Transportes,DP,elaine.medeiros@vipextransportes.com.br
+RIO OPE | Jhonatan Martins,VIP Transportes,Operacional,jhonatan.martins@viptransportes.com.br
+BGV ASS | Dayane Soares,VIPEX Transportes,Assistência,dayane.soares@vipextransportes.com.br
+BHZ OPE | Milena Costa,VIPEX Transportes,Operacional,milena.costa@vipextransportes.com.br
+BGV OPE | Jessica Radavilli,VIPEX Transportes,Operacional,jessica.radavilli@vipextransportes.com.br
+GRU RH | Daiane Ribeiro,VIPEX Transportes,RH,daiane.ribeiro@vipextransportes.com.br
+SSA OPE | Islane Arruda,VPX Transportes,Gerente de Filial,islane.arruda@vipextransportes.com.br
+RIO OPE | Thaynara Santos,VIP Transportes,Operacional,thaynara.santos@vipextransportes.com.br
+SUM OPE | Natalia Oliveira,VIPEX Transportes,Operacional,natalia.oliveira@vipextransportes.com.br
+SUM OPE | Caio Hezran,VIPEX Transportes,Operacional,caio.hezran@vipextransportes.com.br
+GRU DP | Mailde Paula,VIPEX Transportes,DP,mailde.paula@vipextransportes.com.br
+GRU FIN | Joao Victor,VIPEX Transportes,Financeiro,joao.victor@vipextransportes.com.br
+GRU COM | Lucas Marçal,VIPEX Transportes,Comercial Monitoramento,lucas.marcal@vipextransportes.com.br
+GRU COM | Giselly Cinacchi,VIPEX Transportes,Comercial,giselly.cinacchi@vipextransportes.com.br
+GRU COM | Sheila Deus,VIPEX Transportes,Comercial,supervisoracomercial@vipextransportes.com.br
+GRU FRO | Henrique Amaral,VIPEX Transportes,Frota,henrique.amaral@vipextransportes.com.br
+GRU COM | Maria Silva,VIPEX Transportes,Comercial,maria.silva@vipextransportes.com.br
+GRU COM | Livia Santos,VIPEX Transportes,Comercial,livia.santos@vipextransportes.com.br
+GRU COM | Vinicius Moraes,VIPEX Transportes,Comercial,"vinicius,moraes@vipextransportes.com.br"
+GRU SAC | Joyce Santos,VIPEX Transportes,SAC,joyce.santos@vipextransportes.com.br
+GRU OPE | Ricardo Moraes,VIPEX Transportes,Operacional,ricardo.moraes@vipextransportes.com.br
+GRU MKT | Ana Luíza,VIPEX Transportes,Marketing,marketing@vipextransportes.com.br

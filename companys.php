@@ -1,4 +1,5 @@
 <?php 
+    $titlepage = "Empresas | Central de Suporte";
     session_start();
     if(isset($_SESSION['mensagem'])){
         echo $_SESSION['mensagem'];
@@ -38,6 +39,7 @@
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><strong><ion-icon name="business"></ion-icon> CNPJ: </strong> <?php echo $dados['cnpj'] ?></li>
+                                <li class="list-group-item"><strong><ion-icon name="business"></ion-icon> IE: </strong> <?php echo $dados['ie'] ?></li>
                                 <li class="list-group-item"><strong><ion-icon name="call"></ion-icon> Phone: </strong> <?php echo $dados['phone'] ?></li>
                                 <li class="list-group-item"><strong><ion-icon name="navigate"></ion-icon> Endereço: </strong> <?php echo $dados['address'] ?></li>
                                 <li class="list-group-item"><strong><ion-icon name="person"></ion-icon> Gestor: </strong> <?php echo $dados['manager'] ?></li>

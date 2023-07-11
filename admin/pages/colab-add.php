@@ -45,6 +45,7 @@
                         <option value="Comercial ADM">Comercial ADM</option>
                         <option value="Comercial Vendas">Comercial Vendas</option>
                         <option value="Comercial Cotação">Comercial Cotação</option>
+                        <option value="Comercial Monitoria">Comercial Monitoria</option>
                         <option value="Marketing">Marketing</option>
                         <option value="SAC Rastreio">SAC Rastreio</option>
                         <option value="SAC Coletas">SAC Coletas</option>
@@ -83,6 +84,7 @@
                         <option value="11 - GRU">11 - GRU</option>
                         <option value="17 - BHZ">17 - BHZ</option>
                         <option value="19 - SUM">19 - SUM</option>
+                        <option value="20 - SSA">20 - SSA</option>
                     </select>
                 </div>
 

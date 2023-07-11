@@ -49,6 +49,11 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="ie">IE</label>
+                    <input type="text" name="ie" class="form-control" id="ie" value="<?php echo $dados['ie'] ?>">
+                </div>
+
+                <div class="form-group">
                     <label for="phone">Telefone</label>
                     <input class="form-control" type="phone" name="phone" id="phone" value="<?php echo $dados['phone'] ?>">
                 </div>

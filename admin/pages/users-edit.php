@@ -51,10 +51,29 @@
                 <div class="form-group">
                     <label for="profile">Profile</label>
                     <select class="form-control" name="profile" id="profile">
-                        <option disabled hidden>Selecione um profile</option>
-                        <option <?php if($dados['profile'] == "admin") {echo "selected";} ?> value="admin">Admin</option>
-                        <option <?php if($dados['profile'] == "user") {echo "selected";} ?> value="user">User</option>
-                        <option <?php if($dados['profile'] == "author") {echo "selected";} ?> value="author">Author</option>
+                        <option selected disabled hidden>Selecione uma unidade</option>
+                        <option value="ti" <?php if($dados['profile'] == "ti"){echo 'selected';} ?>>Admin</option>
+                        <option value="com" <?php if($dados['profile'] == "com"){echo 'selected';} ?>>Comercial</option>
+                        <option value="sac" <?php if($dados['profile'] == "sac"){echo 'selected';} ?>>SAC</option>
+                        <option value="adm" <?php if($dados['profile'] == "adm"){echo 'selected';} ?>>Administrativo</option>
+                        <option value="ctrl" <?php if($dados['profile'] == "ctrl"){echo 'selected';} ?>>Controladoria</option>
+                        <option value="fin" <?php if($dados['profile'] == "fin"){echo 'selected';} ?>>Financeiro</option>
+                        <option value="cob" <?php if($dados['profile'] == "cob"){echo 'selected';} ?>>Cobrança</option>
+                        <option value="ope" <?php if($dados['profile'] == "ope"){echo 'selected';} ?>>Operacional</option>
+                        <option value="ass" <?php if($dados['profile'] == "ass"){echo 'selected';} ?>>Assistência</option>
+                        <option value="dp" <?php if($dados['profile'] == "dp"){echo 'selected';} ?>>DP</option>
+                        <option value="rh" <?php if($dados['profile'] == "rh"){echo 'selected';} ?>>RH</option>
+                        <option value="dir" <?php if($dados['profile'] == "dir"){echo 'selected';} ?>>Diretoria</option>
+                        <option value="mnt" <?php if($dados['profile'] == "mnt"){echo 'selected';} ?>>Monitoria</option>
+                        <option value="fro" <?php if($dados['profile'] == "fro"){echo 'selected';} ?>>Frota</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="permission">Nível de Permissão</label>
+                    <select name="permission" id="permission" class="form-control">
+                        <option value="0" <?php if($dados['permission'] == "0"){ echo 'selected';} ?> >0 -> Não permite fazer alterações no Aprenda</option>
+                        <option value="1" <?php if($dados['permission'] == "1"){ echo 'selected';} ?>>1 -> Permite fazer alterações no Aprenda</option>
                     </select>
                 </div>
 

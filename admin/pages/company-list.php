@@ -33,6 +33,7 @@
                         <th class="th-title">ID</th>
                         <th class="th-title">Nome</th>
                         <th class="th-title">CNPJ</th>
+                        <th class="th-title">IE</th>
                         <th class="th-title">Telefone</th>
                         <th class="th-title">Endereço</th>
                         <th class="th-title">Gestor</th>
@@ -56,6 +57,7 @@
                         <td><?php echo $dados['compnumber']; ?></td>
                         <td><?php echo $dados['compname']; ?></td>
                         <td><?php echo $dados['cnpj']; ?></td>
+                        <td><?php echo $dados['ie'] ?></td> 
                         <td><?php echo $dados['phone']; ?></td>
                         <td><?php echo $dados['address']; ?></td>
                         <td><?php echo $dados['manager']; ?></td>

@@ -71,6 +71,7 @@
                         <option <?php if($dados['department'] == "Marketing") {echo "selected"; } ?> value="Marketing">Marketing</option>
                         <option <?php if($dados['department'] == "Comercial Vendas") {echo "selected"; }  ?> value="Comercial Vendas">Comercial Vendas</option>
                         <option <?php if($dados['department'] == "Comercial Cotação") {echo "selected"; }  ?> value="Comercial Cotação">Comercial Cotação</option>
+                        <option <?php if($dados['department'] == "Comercial Monitoria") {echo "selected"; }  ?>  value="Comercial Monitoria">Comercial Monitoria</option>
                         <option <?php if($dados['department'] == "Recebimento") {echo "selected"; }  ?> value="Recebimento">Recebimento</option>
                         <option <?php if($dados['department'] == "Compras") {echo "selected"; }  ?> value="Compras">Compras</option>
 
@@ -102,6 +103,7 @@
                         <option <?php if($dados['company'] == "11 - GRU") {echo "selected";} ?> value="11 - GRU">11 - GRU</option>
                         <option <?php if($dados['company'] == "17 - BHZ") {echo "selected";} ?> value="17 - BHZ">17 - BHZ</option>
                         <option <?php if($dados['company'] == "19 - SUM") {echo "selected";} ?> value="19 - SUM">19 - SUM</option>
+                        <option <?php if($dados['company'] == "20 - SSA") {echo "selected";} ?> value="20 - SSA">20 - SSA</option>
                     </select>
                 </div>
 

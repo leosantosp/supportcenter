@@ -114,7 +114,7 @@
         }
 
         $mail->isHTML(true);
-        $mail->Subject = "[CdS Meeting] Reuniões";
+        $mail->Subject = "Sua Reunião foi agendada | Central de Suporte";
         $mail->Body = nl2br($emailBody);
         $mail->AltBody = nl2br(strip_tags($emailBody));
         $mail->CharSet = 'UTF-8';

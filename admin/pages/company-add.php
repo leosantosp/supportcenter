@@ -39,6 +39,11 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="ie">IE</label>
+                    <input type="text" class="form-control" id="ie" name="ie">
+                </div>
+
+                <div class="form-group">
                     <label for="phone">Telefone</label>
                     <input class="form-control" type="phone" name="phone" id="phone">
                 </div>

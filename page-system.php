@@ -1,4 +1,5 @@
 <?php 
+    $titlepage = "Status ".$dados['status']." | Central de Suporte";
     session_start();
 
     include_once 'admin/php_action/db_connect.php';

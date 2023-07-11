@@ -50,9 +50,28 @@
                     <label for="profile">Profile</label>
                     <select class="form-control" name="profile" id="profile">
                         <option selected disabled hidden>Selecione uma unidade</option>
-                        <option value="admin">admin</option>
-                        <option value="user">user</option>
-                        <option value="author">author</option>
+                        <option value="ti">Admin</option>
+                        <option value="com">Comercial</option>
+                        <option value="sac">SAC</option>
+                        <option value="adm">Administrativo</option>
+                        <option value="ctrl">Controladoria</option>
+                        <option value="fin">Financeiro</option>
+                        <option value="cob">Cobrança</option>
+                        <option value="ope">Operacional</option>
+                        <option value="ass">Assistência</option>
+                        <option value="dp">DP</option>
+                        <option value="rh">RH</option>
+                        <option value="dir">Diretoria</option>
+                        <option value="mnt">Monitoria</option>
+                        <option value="fro">Frota</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="permission">Nível de Permissão: 0 -> Não permite alterar / 1 -> Permite alterar</label>
+                    <select name="permission" id="permission" class="form-control">
+                        <option value="0">0 -> Não permite fazer alterações no Aprenda</option>
+                        <option value="1">1 -> Permite fazer alterações no Aprenda</option>
                     </select>
                 </div>
 

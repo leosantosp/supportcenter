@@ -1,5 +1,5 @@
 <?php
-
+    $titlepage = "Ouvidoria | Central de Suporte";
     session_start();
         if(isset($_SESSION['mensagem'])){
             echo $_SESSION['mensagem'];
